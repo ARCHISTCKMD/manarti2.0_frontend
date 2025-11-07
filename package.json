@@ -1,0 +1,29 @@
+{
+  "name": "manarti2.0_frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ARCHISTCKMD/manarti2.0_frontend.git"
+  },
+  "keywords": [
+    "frontend",
+    "manarti",
+    "ui"
+  ],
+  "author": "archana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ARCHISTCKMD/manarti2.0_frontend/issues"
+  },
+  "homepage": "https://github.com/ARCHISTCKMD/manarti2.0_frontend#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.14",
+    "tailwindcss": "^4.1.14"
+  }
+}
