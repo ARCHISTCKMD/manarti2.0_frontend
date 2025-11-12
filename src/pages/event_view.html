@@ -4,18 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mnarti Category List</title>
+    <title>Manarti Events</title>
     <link href="../../assets/css/custom.css" rel="stylesheet">
-    <link href="../../assets/css/common.css" rel="stylesheet">
     <link href="../output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Fancybox CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
 </head>
 
 <body>
-    <div class="categoryWrapper bg-[#F5F5F5]">
+    <div class="eventPageWrapper">
         <!-- Navbar -->
         <div class="headerSec">
             <div class="section">
@@ -72,55 +73,77 @@
                                             <div class="border-r border-gray-200">
                                                 <img src="../../assets/images/static_imgs/TOP-PRODUCT.png"
                                                     alt="top product img" />
+
+                                                <div class="mt-4">
+                                                    <h4 class="font-semibold text-lg text-[#42AAA3]">Top
+                                                        Categories Of Equipment</h4>
+                                                    <p class="text-gray-500 text-sm mt-1">Contrary to popular belief,
+                                                        Lorem
+                                                        Ipsum is not simply random text. It has roots in a piece of
+                                                        classical
+                                                    </p>
+                                                </div>
                                             </div>
 
                                             <div class="col-span-3">
                                                 <!-- Category 1 -->
                                                 <div class="flex justify-between px-10 pb-6">
-                                                    <div>
+                                                    <div class="w-2xs">
                                                         <h4 class="font-medium text-gray-700 text-lg mb-4 relative">
-                                                            Surgical
-                                                            Equipments
+                                                            Surgical Equipments
                                                         </h4>
                                                         <ul class="space-y-2 text-gray-600 ml-1">
-                                                            <li><a class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
                                                                     href="#">Medical Sutures</a></li>
-                                                            <li><a class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
                                                                     href="#">Surgical Instruments</a></li>
-                                                            <li><a class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
                                                                     href="#">Hollowware</a></li>
-                                                            <li><a class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
                                                                     href="#">Sterilizers</a></li>
                                                         </ul>
                                                     </div>
 
+                                                    <div class="w-px bg-gray-100 h-40 mt-10"></div>
+
                                                     <!-- Category 2 -->
-                                                    <div>
+                                                    <div class="w-2xs">
                                                         <h4 class="font-medium text-gray-700 text-lg mb-4 relative">
-                                                            Medical
-                                                            Disposables
+                                                            Medical Disposables
                                                         </h4>
                                                         <ul class="space-y-2 text-gray-600 ml-1">
-                                                            <li><a class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
                                                                     href="#">Urology</a></li>
-                                                            <li><a class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
                                                                     href="#">Gastro Entrology</a></li>
-                                                            <li><a class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
                                                                     href="#">Oncology</a></li>
-                                                            <li><a class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
                                                                     href="#">Gynecology</a></li>
-                                                            <li><a class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
                                                                     href="#">Anesthesia</a></li>
-                                                            <li><a class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
                                                                     href="#">Transfusion</a></li>
                                                         </ul>
                                                     </div>
 
+
+                                                    <div class="w-px bg-gray-100 h-40 mt-10"></div>
+
                                                     <!-- Category 3 -->
-                                                    <div>
+                                                    <div class="w-2xs">
                                                         <h4 class="font-medium text-gray-700 text-lg mb-4 relative">
-                                                            Hospital
-                                                            Dressings
+                                                            Hospital Dressings
                                                         </h4>
                                                         <ul class="space-y-2 text-gray-600 ml-1">
                                                             <li><a class="hover:text-gray-800 text-sm hover:underline transition-all"
@@ -140,62 +163,80 @@
                                                 </div>
 
                                                 <div class="flex justify-between px-10 pb-4">
-                                                    <div>
+                                                    <div class="w-2xs">
                                                         <h4 class="font-medium text-gray-700 text-lg mb-4 relative">
-                                                            Surgical
-                                                            Equipments
+                                                            Rehabilitation And <br />Physiotherapy
                                                         </h4>
                                                         <ul class="space-y-2 text-gray-600 ml-1">
-                                                            <li><a class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
                                                                     href="#">Medical Sutures</a></li>
-                                                            <li><a class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
                                                                     href="#">Surgical Instruments</a>
                                                             </li>
-                                                            <li><a class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
                                                                     href="#">Hollowware</a></li>
-                                                            <li><a class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
                                                                     href="#">Sterilizers</a></li>
                                                         </ul>
                                                     </div>
 
+                                                    <div class="w-px bg-gray-100 h-40 mt-10"></div>
+
+
                                                     <!-- Category 2 -->
-                                                    <div>
+                                                    <div class="w-2xs">
                                                         <h4 class="font-medium text-gray-700 text-lg mb-4 relative">
-                                                            Medical
-                                                            Disposables
+                                                            Hospital Furniture
                                                         </h4>
                                                         <ul class="space-y-2 text-gray-600 ml-1">
-                                                            <li><a class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
                                                                     href="#">Urology</a></li>
-                                                            <li><a class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
                                                                     href="#">Gastro Entrology</a></li>
-                                                            <li><a class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
                                                                     href="#">Oncology</a></li>
-                                                            <li><a class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
                                                                     href="#">Gynecology</a></li>
-                                                            <li><a class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
                                                                     href="#">Anesthesia</a></li>
-                                                            <li><a class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
                                                                     href="#">Transfusion</a></li>
                                                         </ul>
                                                     </div>
 
+
+                                                    <div class="w-px bg-gray-100 h-40 mt-10"></div>
+
                                                     <!-- Category 3 -->
-                                                    <div>
+                                                    <div class="w-2xs">
                                                         <h4 class="font-medium text-gray-700 text-lg mb-4 relative">
-                                                            Hospital
-                                                            Dressings
+                                                            Medical Equipment
                                                         </h4>
                                                         <ul class="space-y-2 text-gray-600 ml-1">
-                                                            <li><a class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
                                                                     href="#">Bandages</a></li>
-                                                            <li><a class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
                                                                     href="#">Medical Swabs</a></li>
-                                                            <li><a class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
                                                                     href="#">Medical Cotton</a></li>
-                                                            <li><a class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
                                                                     href="#">Dressing Tape</a></li>
-                                                            <li><a class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
                                                                     href="#">Uniforms And Linen</a>
                                                             </li>
                                                             <li><a class="hover:text-gray-800 text-sm hover:underline transition-all"
@@ -258,17 +299,11 @@
             </div>
         </div>
 
-        <!-- <div class="smallBanner h-60 bg-[#0888C5] pt-18">
-            <div class="flex justify-center items-center h-full w-full">
-                <h2 class="text-2xl md:text-5xl font-semibold text-[#fff]">Product Detail</h2>
-            </div>
-        </div> -->
-
         <div class="smallBanner h-54 pt-18 bg-cover"
             style="background-image: url(../../assets/images/static_imgs/productPage/innerpage-small-banner.png);">
             <!-- <div class="flex justify-center items-center h-full w-full">
-                        <h2 class="text-2xl md:text-5xl font-semibold text-[#fff]">Events</h2>
-                    </div> -->
+                <h2 class="text-2xl md:text-5xl font-semibold text-[#fff]">Events</h2>
+            </div> -->
             <div class="w-full md:w-7xl mx-auto flex h-full justify-start items-center">
                 <nav class="bg-transparent border border-[#A4E1FC] py-2 inline-block rounded" aria-label="Breadcrumb">
                     <div class="max-w-7xl mx-auto px-6">
@@ -291,7 +326,18 @@
 
                             <!-- Intermediate Page -->
                             <li>
-                                <a href="#" class="hover:text-[#42AAA3] font-medium text-[#A4E1FC]">Products</a>
+                                <a href="#" class="hover:text-[#42AAA3] font-medium text-[#A4E1FC]">Event</a>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mx-2 text-white" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7" />
+                                </svg>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-[#42AAA3] font-medium text-[#A4E1FC]">Event Single
+                                    View</a>
                             </li>
                         </ol>
                     </div>
@@ -300,211 +346,173 @@
 
         </div>
 
-        <section class="w-full py-12 bg-white">
-            <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-4">
-
-                <!-- LEFT: PRODUCT IMAGE SLIDER -->
-                <div>
-
-                    <!-- Main Product Slider -->
-                    <div class="swiper mainSlider mb-4">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="../../assets/images/static_imgs/productPage/product-img-large.png"
-                                    class="w-full rounded-xl shadow p-4 bg-gray-50" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="../../assets/images/static_imgs/productPage/product-img-large.png"
-                                    class="w-full rounded-xl shadow p-4 bg-gray-50" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="../../assets/images/static_imgs/productPage/product-img-large.png"
-                                    class="w-full rounded-xl shadow p-4 bg-gray-50" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="../../assets/images/static_imgs/productPage/product-img-large.png"
-                                    class="w-full rounded-xl shadow p-4 bg-gray-50" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="../../assets/images/static_imgs/productPage/product-img-large.png"
-                                    class="w-full rounded-xl shadow p-4 bg-gray-50" />
-                            </div>
-                        </div>
-                        <div class="swiper-button-next main-next"></div>
-                        <div class="swiper-button-prev main-prev"></div>
-                    </div>
-
-                    <!-- Thumbnail Slider -->
-                    <div class="swiper thumbSlider">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide w-20">
-                                <img src="../../assets/images/static_imgs/productPage/product-img-small-01.png" class="rounded-lg cursor-pointer border-2 border-gray-200 p-1 w-28 h-28" />
-                            </div>
-                            <div class="swiper-slide w-20">
-                                <img src="../../assets/images/static_imgs/productPage/product-img-small-01.png" class="rounded-lg cursor-pointer border-2 border-gray-200 p-1 w-28 h-28" />
-                            </div>
-                            <div class="swiper-slide w-20">
-                                <img src="../../assets/images/static_imgs/productPage/product-img-small-01.png" class="rounded-lg cursor-pointer border-2 border-gray-200 p-1 w-28 h-28" />
-                            </div>
-                            <div class="swiper-slide w-20">
-                                <img src="../../assets/images/static_imgs/productPage/product-img-small-01.png" class="rounded-lg cursor-pointer border-2 border-gray-200 p-1 w-28 h-28" />
-                            </div>
-                            <div class="swiper-slide w-20">
-                                <img src="../../assets/images/static_imgs/productPage/product-img-small-01.png" class="rounded-lg cursor-pointer border-2 border-gray-200 p-1 w-28 h-28" />
-                            </div>
-                        </div>
-
-                        <!-- Navigation Arrows for Thumbs -->
-                        <div class="swiper-button-next thumb-next"></div>
-                        <div class="swiper-button-prev thumb-prev"></div>
-                    </div>
-
-                </div>
-
-                <!-- RIGHT: PRODUCT DETAILS -->
-                <div>
-
-                    <!-- Heading -->
-                    <h1 class="text-3xl md:text-4xl font-bold mb-2 text-[#0984C6] leading-12">Male External Catheter
-                        (Penile Sheath)</h1>
-
-                    <!-- Price -->
-                    <p class="text-2xl font-semibold text-[#42AAA3] mb-3">$120.00</p>
-
-                    <!-- Rating -->
-                    <div class="flex items-center mb-4">
-                        <span class="text-yellow-400 text-xl">★★★★★</span>
-                        <span class="ml-2 text-gray-600">(28 Reviews)</span>
-                    </div>
-
-                    <!-- Short Description -->
-                    <p class="text-gray-700 mb-6">
-                        This is a professional and high-quality product designed for durability, accuracy,
-                        and smooth performance. Ideal for industry use and customer applications.
-                    </p>
-
-                    <!-- Tabs -->
-                    <div class="border-b mb-6">
-                        <ul class="flex gap-6 text-gray-700 font-medium cursor-pointer">
-                            <li class="tabBtn active text-[#42AAA3]" data-tab="specification">Specification</li>
-                            <li class="tabBtn" data-tab="features">Features</li>
-                            <li class="tabBtn" data-tab="colour">Colour</li>
-                            <li class="tabBtn" data-tab="availability">Availability</li>
-                        </ul>
-                    </div>
-
-                    <!-- Tab Content -->
-                    <div id="specification" class="tabContent block">
-                        <p class="text-gray-600">• High-quality build<br>• Precision engineered<br>• Long-lasting
-                            performance
+        <section class="relative w-full py-20 pb-30">
+            <div class="w-7xl relative mx-auto flex justify-end">
+                <div class="w-5xl border bg-[#EFEFEF] border-gray-300 px-10 rounded-2xl flex justify-end py-30">
+                    <div class="w-full md:w-[620px]">
+                        <p class="text-xl mb-4 text-gray-500 font-medium">What is Lorem Lipsum</p>
+                        <h4 class="text-2xl sm:text-2xl md:text-4xl font-semibold mb-8 leading-tigh text-gray-600">
+                            Lorem ipsum dolor sit amet consectetur adipisicing.
+                        </h4>
+                        <p class="text-base mb-6 max-w-2xl text-gray-500">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam eveniet eum itaque fugiat
+                            minus placeat aperiam laboriosam, mollitia numquam illum.
                         </p>
-                    </div>
-
-                    <div id="features" class="tabContent hidden">
-                        <p class="text-gray-600">• Smart automatic functions<br>• Lightweight<br>• Energy Efficient</p>
-                    </div>
-
-                    <div id="colour" class="tabContent hidden">
-                        <p class="text-gray-600">Available in Blue, White, Black and Grey.</p>
-                    </div>
-
-                    <div id="availability" class="tabContent hidden">
-                        <p class="text-gray-600">In Stock. Delivery within 3-5 working days.</p>
-                    </div>
-
-                    <!-- Buttons -->
-                    <div class="flex gap-4 mt-8">
                         <button
-                            class="px-6 py-3 bg-[#42AAA3] text-white rounded-lg font-semibold hover:bg-teal-600 transition">
-                            Get Quote
-                        </button>
-                        <button
-                            class="px-6 py-3 border border-[#42AAA3] text-[#42AAA3] rounded-lg font-semibold hover:bg-[#42AAA3] hover:text-white transition">
-                            Enquire Now
+                            class="bg-[#42AAA3] hover:bg-[#36958E] text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 w-fit">
+                            Get In Touch
                         </button>
                     </div>
 
                 </div>
-
+                <div
+                    class="rounded-2xl overflow-hidden absolute left-0 top-[10%] border-2 border-[#78ccf4] h-full w-xl">
+                    <img src="../../assets/images/static_imgs//EventPage/Event-Sec-bg.png"
+                        class="w-full h-full object-cover" />
+                </div>
             </div>
         </section>
 
+        <!-- Image Gallery Section -->
+        <section class="py-16">
+            <div class="max-w-7xl mx-auto px-6 text-center">
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-10">Our Image Gallery</h2>
+        
+                <!-- Gallery Grid -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+        
+                    <!-- Image 1 -->
+                    <a data-fancybox="gallery" href="../../assets/images/static_imgs/EventPage/Latest-image-002.png" data-caption="Beautiful Landscape 1">
+                        <img src="../../assets/images/static_imgs/EventPage/Latest-image-002.png" alt="Gallery Image 1"
+                            class="w-full h-56 object-cover rounded-lg shadow-md hover:opacity-80 transition duration-300">
+                    </a>
+        
+                    <!-- Image 2 -->
+                    <a data-fancybox="gallery" href="../../assets/images/static_imgs/EventPage/Latest-image-01.png"
+                        data-caption="Beautiful Landscape 2">
+                        <img src="../../assets/images/static_imgs/EventPage/Latest-image-01.png" alt="Gallery Image 2"
+                            class="w-full h-56 object-cover rounded-lg shadow-md hover:opacity-80 transition duration-300">
+                    </a>
+        
+                    <!-- Image 3 -->
+                    <a data-fancybox="gallery" href="../../assets/images/static_imgs/EventPage/Latest-image-002.png"
+                        data-caption="Beautiful Landscape 1">
+                        <img src="../../assets/images/static_imgs/EventPage/Latest-image-002.png" alt="Gallery Image 1"
+                            class="w-full h-56 object-cover rounded-lg shadow-md hover:opacity-80 transition duration-300">
+                    </a>
+        
+                    <!-- Image 4 -->
+                <a data-fancybox="gallery" href="../../assets/images/static_imgs/EventPage/Latest-image-01.png"
+                    data-caption="Beautiful Landscape 2">
+                    <img src="../../assets/images/static_imgs/EventPage/Latest-image-01.png" alt="Gallery Image 2"
+                        class="w-full h-56 object-cover rounded-lg shadow-md hover:opacity-80 transition duration-300">
+                </a>
+        
+                    <!-- Image 5 -->
+                    <a data-fancybox="gallery" href="../../assets/images/static_imgs/EventPage/Latest-image-002.png"
+                        data-caption="Beautiful Landscape 1">
+                        <img src="../../assets/images/static_imgs/EventPage/Latest-image-002.png" alt="Gallery Image 1"
+                            class="w-full h-56 object-cover rounded-lg shadow-md hover:opacity-80 transition duration-300">
+                    </a>
+        
+                    <!-- Image 6 -->
+                    <a data-fancybox="gallery" href="../../assets/images/static_imgs/EventPage/Latest-image-01.png"
+                        data-caption="Beautiful Landscape 2">
+                        <img src="../../assets/images/static_imgs/EventPage/Latest-image-01.png" alt="Gallery Image 2"
+                            class="w-full h-56 object-cover rounded-lg shadow-md hover:opacity-80 transition duration-300">
+                    </a>
+        
+                </div>
+            </div>
+        </section>
 
-        <section class="w-full py-14 bg-white">
-            <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 commonArrow relative">
+        <!-- Related or upcoming evens slider -->
+        <section class="relative bg-cover bg-center bg-no-repeat"
+            style="background-image: url('../../assets/images/static_imgs/EventPage/latest-event-bg.png');">
+            <!-- Overlay -->
+            <!-- <div class="absolute inset-0 bg-black/50"></div> -->
 
-                <!-- Heading -->
-                <h2
-                    class="text-3xl md:text-4xl font-semibold text-gray-600 mb-8 inline-block border-b-2 border-[#8cbde3] ">
-                    Related Products</h2>
+            <!-- Content -->
+            <div class="relative max-w-7xl mx-auto px-6 py-30 text-white">
+                <!-- Row 1: Heading + Button -->
+                <p class="text-[#AEE6FD] text-xl mb-2 font-semibold">Related Events</p>
+                <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-20">
+                    <h4 class="text-2xl md:text-4xl font-semibold text-center md:text-left leading-12">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, voluptatem.
+                    </h4>
 
-                <!-- Swiper Container -->
-                <div class="swiper relatedProductsSlider">
+                </div>
+            </div>
 
-                    <div class="swiper-wrapper">
-
-                        <!-- Product Card -->
-                        <div class="swiper-slide">
-                            <div class="bg-white border-[#E7E7E7] p-4 border transition">
-                                <img src="../../assets/images/static_imgs/productPage/related-product.png" class="w-full rounded-lg" />
-                                <h3 class="mt-3 text-lg font-medium text-gray-800">Product Name 1</h3>
+            <!-- Swiper (Row 2) -->
+            <div class="absolute left-0 right-0 -bottom-50">
+                <div class="max-w-7xl mx-auto px-6 latestEventSlider">
+                    <div class="swiper eventSwiper">
+                        <div class="swiper-wrapper">
+                            <!-- Slide 1 -->
+                            <div class="swiper-slide">
+                                <div class="bg-[#04457D] rounded-xl overflow-hidden p-2">
+                                    <div class="relative">
+                                        <img src="../../assets/images/static_imgs/EventPage/Latest-image-002.png"
+                                            alt="Product 4"
+                                            class="w-full h-62 object-cover border-2 border-[#0DB3B1] rounded-xl">
+                                    </div>
+                                    <h3 class="text-white font-semibold text-lg m-4">Product 4</h3>
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="bg-white border-[#E7E7E7] p-4 border transition">
-                                <img src="../../assets/images/static_imgs/productPage/related-product.png-02.png" class="w-full rounded-lg" />
-                                <h3 class="mt-3 text-lg font-medium text-gray-800">Product Name 2</h3>
+                            <!-- Slide 2 -->
+                            <div class="swiper-slide">
+                                <div class="bg-[#04457D] rounded-xl overflow-hidden p-2">
+                                    <div class="relative">
+                                        <img src="../../assets/images/static_imgs/EventPage/Latest-image-002.png"
+                                            alt="Product 4"
+                                            class="w-full h-62 object-cover border-2 border-[#0DB3B1] rounded-xl">
+                                    </div>
+                                    <h3 class="text-white font-semibold text-lg m-4">Product 4</h3>
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="bg-white border-[#E7E7E7] p-4 border transition">
-                                <img src="../../assets/images/static_imgs/productPage/related-product.png-02.png" class="w-full rounded-lg" />
-                                <h3 class="mt-3 text-lg font-medium text-gray-800">Product Name 3</h3>
+                            <!-- Slide 3 -->
+                            <div class="swiper-slide">
+                                <div class="bg-[#04457D] rounded-xl overflow-hidden p-2">
+                                    <div class="relative">
+                                        <img src="../../assets/images/static_imgs/EventPage/Latest-image-002.png"
+                                            alt="Product 4"
+                                            class="w-full h-62 object-cover border-2 border-[#0DB3B1] rounded-xl">
+                                    </div>
+                                    <h3 class="text-white font-semibold text-lg m-4">Product 4</h3>
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="bg-white border-[#E7E7E7] p-4 border transition">
-                                <img src="../../assets/images/static_imgs/productPage/related-product.png" class="w-full rounded-lg" />
-                                <h3 class="mt-3 text-lg font-medium text-gray-800">Product Name 4</h3>
+                            <!-- Slide 4 -->
+                            <div class="swiper-slide">
+                                <div class="bg-[#04457D] rounded-xl overflow-hidden p-2">
+                                    <div class="relative">
+                                        <img src="../../assets/images/static_imgs/EventPage/Latest-image-002.png"
+                                            alt="Product 4"
+                                            class="w-full h-62 object-cover border-2 border-[#0DB3B1] rounded-xl">
+                                        <!-- <div class="p-4 text-center card-content">
+                                        <h3 class="text-white font-semibold text-lg">Product 4</h3>
+                                    </div> -->
+                                    </div>
+                                    <h3 class="text-white font-semibold text-lg m-4">Product 4</h3>
+                                </div>
                             </div>
+                            <!-- Add more slides as needed -->
                         </div>
-                        <div class="swiper-slide">
-                            <div class="bg-white border-[#E7E7E7] p-4 border transition">
-                                <img src="../../assets/images/static_imgs/productPage/related-product.png" class="w-full rounded-lg" />
-                                <h3 class="mt-3 text-lg font-medium text-gray-800">Product Name 4</h3>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="bg-white border-[#E7E7E7] p-4 border transition">
-                                <img src="../../assets/images/static_imgs/productPage/related-product.png" class="w-full rounded-lg" />
-                                <h3 class="mt-3 text-lg font-medium text-gray-800">Product Name 4</h3>
-                            </div>
-                        </div>
-
-                        <!-- Add more items if needed -->
-
                     </div>
-
                 </div>
-
-                <!-- Swiper Navigation Buttons -->
-                <div class="absolute top-1/2 -translate-y-1/2 -left-10 z-10">
-                    <div class="swiper-button-prev custom-arrow"></div>
-                </div>
-                <div class="absolute top-1/2 -translate-y-1/2 -right-10 z-10">
-                    <div class="swiper-button-next custom-arrow"></div>
-                </div>
-
             </div>
         </section>
+
+        <!-- Extra space below to show overlap -->
+        <div class="p-32"></div>
+
+
+
+
 
 
 
         <!-- Footer Section -->
-
         <footer class="bg-[#083866] text-gray-300 pt-16 pb-8 px-6 md:px-12">
 
             <!-- Row 1: Logo + Links -->
@@ -606,55 +614,30 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"
         integrity="sha512-6BTOlkauINO65nLhXhthZMtepgJSghyimIalb+crKRPhvhmsCdnIuGcVbR5/aQY2A+260iC1OPy1oCdB6pSSwQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- Fancybox JS -->
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
 
     <script>
-
-        var swiper = new Swiper(".relatedProductsSlider", {
+        const swiper = new Swiper(".eventSwiper", {
             slidesPerView: 1,
-            spaceBetween: 20,
+            spaceBetween: 30,
             loop: true,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
+            autoplay: { delay: 2500, disableOnInteraction: false },
             breakpoints: {
                 640: { slidesPerView: 2 },
-                1024: { slidesPerView: 4 }
-            }
-        });
-        var thumbSlider = new Swiper(".thumbSlider", {
-            slidesPerView: 4,
-            spaceBetween: 10,
-            navigation: {
-                nextEl: ".thumb-next",
-                prevEl: ".thumb-prev",
+                1024: { slidesPerView: 3 },
+                1280: { slidesPerView: 4 },
             },
         });
-
-        var mainSlider = new Swiper(".mainSlider", {
-            spaceBetween: 10,
-            navigation: {
-                nextEl: ".main-next",
-                prevEl: ".main-prev",
-            },
-            thumbs: {
-                swiper: thumbSlider,
-            },
-        });
-
-        const tabBtns = document.querySelectorAll(".tabBtn");
-        const tabContents = document.querySelectorAll(".tabContent");
-
-        tabBtns.forEach(btn => {
-            btn.addEventListener("click", () => {
-
-                tabBtns.forEach(b => b.classList.remove("active", "text-[#42AAA3]"));
-                btn.classList.add("active", "text-[#42AAA3]");
-
-                tabContents.forEach(content => content.classList.add("hidden"));
-                document.getElementById(btn.dataset.tab).classList.remove("hidden");
+         // Initialize Fancybox (optional custom settings)
+            Fancybox.bind("[data-fancybox='gallery']", {
+                Thumbs: {
+                    autoStart: true,
+                },
+                Toolbar: {
+                    display: ["zoom", "slideshow", "fullscreen", "download", "thumbs", "close"],
+                },
             });
-        });
     </script>
 
 </body>
