@@ -1,0 +1,47 @@
+/*  Slider arrow */
+
+.commonArrow .swiper-button-prev,
+.commonArrow .swiper-button-next {
+    color: #42aaa3;
+    opacity: .6;
+    transition: all .3s ease-in-out;
+}
+
+.commonArrow .swiper-button-prev:hover,
+.commonArrow .swiper-button-next:hover {
+    opacity: 1;
+}
+
+.commonArrow .swiper-button-prev::after,
+.commonArrow .swiper-button-next::after {
+    font-size: 20px;
+}
+.mainSlider .swiper-button-prev,
+.mainSlider .swiper-button-next {
+    color: #fefefe;
+    background-color: #0985C3;
+    width: 28px;
+    height: 28px;
+    border-radius: 100%;
+    transition: all .3s ease-in-out;
+}
+
+.mainSlider .swiper-button-prev::after,
+.mainSlider .swiper-button-next::after {
+    font-size: 10px;
+}
+.thumbSlider .swiper-button-prev,
+.thumbSlider .swiper-button-next {
+    color: #555555;
+}
+.thumbSlider .swiper-button-prev {
+    left: -5px;
+}
+.thumbSlider .swiper-button-next {
+    right: -5px;
+}
+
+.thumbSlider .swiper-button-prev::after,
+.thumbSlider .swiper-button-next::after {
+    font-size: 12px;
+}
