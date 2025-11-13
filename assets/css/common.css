@@ -45,3 +45,23 @@
 .thumbSlider .swiper-button-next::after {
     font-size: 12px;
 }
+
+.fade-in {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: all 0.3s ease-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.overlay-hidden {
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+}
+
+.overlay-visible {
+    opacity: 1;
+}

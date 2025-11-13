@@ -429,6 +429,59 @@
             </div>
         </section>
 
+        <section class="max-w-7xl mx-auto px-6 py-12">
+            <!-- Tabs Header -->
+            <div class="flex border-b border-gray-200 mb-6">
+                <button id="tab-description"
+                    class="tab-button text-[#42AAA3] font-semibold py-2 px-6 border-b-2 border-transparent hover:text-[#42AAA3] focus:outline-none active-tab"
+                    onclick="showTab('description')">
+                    Description
+                </button>
+                <button id="tab-review"
+                    class="tab-button text-gray-600 font-semibold py-2 px-6 border-b-2 border-transparent hover:text-[#42AAA3] focus:outline-none"
+                    onclick="showTab('review')">
+                    Review
+                </button>
+            </div>
+        
+            <!-- Tabs Content -->
+            <div id="tab-content">
+                <!-- Description Content -->
+                <div id="description" class="tab-content block">
+                    <h3 class="text-2xl font-semibold mb-3 text-gray-900">Product Description</h3>
+                    <p class="text-gray-600 leading-relaxed mb-3">
+                        This product is designed to deliver high performance and durability. Crafted with premium materials, it
+                        ensures comfort and reliability for everyday use.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        Whether you’re using it for professional tasks or personal projects, this item provides unmatched
+                        quality and design aesthetics that elevate your experience.
+                    </p>
+                </div>
+        
+                <!-- Review Content -->
+                <div id="review" class="tab-content hidden">
+                    <h3 class="text-2xl font-semibold mb-3 text-gray-900">Customer Reviews</h3>
+                    <div class="space-y-4">
+                        <div class="bg-gray-50 p-4 rounded-lg border">
+                            <h4 class="font-semibold text-gray-800">John Doe</h4>
+                            <p class="text-sm text-gray-500 mb-1">⭐⭐⭐⭐☆</p>
+                            <p class="text-gray-600">
+                                Excellent product! The quality exceeded my expectations. Definitely worth the purchase.
+                            </p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg border">
+                            <h4 class="font-semibold text-gray-800">Sarah Smith</h4>
+                            <p class="text-sm text-gray-500 mb-1">⭐⭐⭐⭐⭐</p>
+                            <p class="text-gray-600">
+                                Loved it! Great packaging and timely delivery. Highly recommend to everyone.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
         <section class="w-full py-14 bg-white">
             <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 commonArrow relative">
@@ -655,6 +708,28 @@
                 document.getElementById(btn.dataset.tab).classList.remove("hidden");
             });
         });
+
+        // tab functionality JS
+
+        function showTab(tabName) {
+                // Hide all tab contents
+                document.querySelectorAll(".tab-content").forEach(el => el.classList.add("hidden"));
+
+                // Show selected tab
+                document.getElementById(tabName).classList.remove("hidden");
+
+                // Remove active style from all buttons
+                document.querySelectorAll(".tab-button").forEach(btn => {
+                    btn.classList.remove("border-[#42AAA3]", "text-[#42AAA3]");
+                    btn.classList.add("text-[gray-600]");
+                });
+
+                // Add active style to clicked button
+                document.getElementById("tab-" + tabName).classList.add("border-[#42AAA3]", "text-[#42AAA3]");
+            }
+
+            // Set default active tab
+            showTab("description");
     </script>
 
 </body>

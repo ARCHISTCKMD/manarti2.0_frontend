@@ -4,19 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manarti Events</title>
+    <title>Manarti Contact</title>
     <link href="../../assets/css/custom.css" rel="stylesheet">
     <link href="../output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!-- Fancybox CSS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
 </head>
 
 <body>
-    <div class="eventPageWrapper">
+    <div class="contactWrapper">
         <!-- Navbar -->
         <div class="headerSec">
             <div class="section">
@@ -253,7 +251,8 @@
                                 <a href="#" class="block text-[#174E83] font-normal text-[17px] relative">Catalogue</a>
                                 <a href="#" class="block text-[#174E83] font-normal text-[17px] relative">Contact</a>
                                 <!-- Search Icon -->
-                                <button class="text-gray-600 hover:text-blue-600 text-xl focus:outline-none">
+                                <button id="openPopupBtn"
+                                    class="text-gray-600 hover:text-[#174E83] text-xl focus:outline-none cursor-pointer transition-all hover:border border-[#174E83] rounded flex justify-center items-center h-8 w-8">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
                                         viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -302,8 +301,8 @@
         <div class="smallBanner h-54 pt-18 bg-cover"
             style="background-image: url(../../assets/images/static_imgs/productPage/innerpage-small-banner.png);">
             <!-- <div class="flex justify-center items-center h-full w-full">
-                <h2 class="text-2xl md:text-5xl font-semibold text-[#fff]">Events</h2>
-            </div> -->
+                        <h2 class="text-2xl md:text-5xl font-semibold text-[#fff]">Events</h2>
+                    </div> -->
             <div class="w-full md:w-7xl mx-auto flex h-full justify-start items-center">
                 <nav class="bg-transparent border border-[#A4E1FC] py-2 inline-block rounded" aria-label="Breadcrumb">
                     <div class="max-w-7xl mx-auto px-6">
@@ -326,18 +325,7 @@
 
                             <!-- Intermediate Page -->
                             <li>
-                                <a href="#" class="hover:text-[#42AAA3] font-medium text-[#A4E1FC]">Event</a>
-                            </li>
-                            <li>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mx-2 text-white" fill="none"
-                                    viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M9 5l7 7-7 7" />
-                                </svg>
-                            </li>
-                            <li>
-                                <a href="#" class="hover:text-[#42AAA3] font-medium text-[#A4E1FC]">Event Single
-                                    View</a>
+                                <a href="#" class="hover:text-[#42AAA3] font-medium text-[#A4E1FC]">Contact</a>
                             </li>
                         </ol>
                     </div>
@@ -346,199 +334,8 @@
 
         </div>
 
-        <section class="relative w-full py-20 pb-30">
-            <div class="w-7xl relative mx-auto flex justify-end">
-                <div class="w-5xl border bg-[#EFEFEF] border-gray-300 px-10 rounded-2xl flex justify-end py-30">
-                    <div class="w-full md:w-[620px]">
-                        <p class="text-xl mb-4 text-gray-500 font-medium">What is Lorem Lipsum</p>
-                        <h4 class="text-2xl sm:text-2xl md:text-4xl font-semibold mb-8 leading-tigh text-gray-600">
-                            Lorem ipsum dolor sit amet consectetur adipisicing.
-                        </h4>
-                        <p class="text-base mb-6 max-w-2xl text-gray-500">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam eveniet eum itaque fugiat
-                            minus placeat aperiam laboriosam, mollitia numquam illum.
-                        </p>
-                        <button
-                            class="bg-[#42AAA3] hover:bg-[#36958E] text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 w-fit">
-                            Get In Touch
-                        </button>
-                    </div>
-
-                </div>
-                <div
-                    class="rounded-2xl overflow-hidden absolute left-0 top-[10%] border-2 border-[#78ccf4] h-full w-xl">
-                    <img src="../../assets/images/static_imgs//EventPage/Event-Sec-bg.png"
-                        class="w-full h-full object-cover" />
-                </div>
-            </div>
-        </section>
-
-        <!-- Image Gallery Section -->
-        <section class="py-16">
-            <div class="max-w-7xl mx-auto px-6 text-center">
-                <h2 class="pb-3 text-3xl sm:text-4xl font-bold text-gray-900 mb-10 inline-block border-b-2 border-[#8cbde3] ">Catalogue Events</h2>
-        
-                <!-- Gallery Grid -->
-                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
-        
-                    <!-- Image 1 -->
-                     <div class="bg-[#36958E] p-2 rounded">
-                    <a data-fancybox="gallery" href="../../assets/images/static_imgs/EventPage/Latest-image-002.png" data-caption="Beautiful Landscape 1">
-                        <img src="../../assets/images/static_imgs/EventPage/Latest-image-002.png" alt="Gallery Image 1"
-                            class="w-full h-56 object-cover rounded-lg shadow-md hover:opacity-80 transition duration-300">
-                    </a>
-                    </div>
-        
-                    <!-- Image 2 -->
-                    <div class="bg-[#36958E] p-2 rounded">
-                    <a data-fancybox="gallery" href="../../assets/images/static_imgs/EventPage/Latest-image-01.png"
-                        data-caption="Beautiful Landscape 2">
-                        <img src="../../assets/images/static_imgs/EventPage/Latest-image-01.png" alt="Gallery Image 2"
-                            class="w-full h-56 object-cover rounded-lg shadow-md hover:opacity-80 transition duration-300">
-                    </a>
-                    </div>
-        
-                    <!-- Image 3 -->
-                    <div class="bg-[#36958E] p-2 rounded">
-                    <a data-fancybox="gallery" href="../../assets/images/static_imgs/EventPage/Latest-image-002.png"
-                        data-caption="Beautiful Landscape 1">
-                        <img src="../../assets/images/static_imgs/EventPage/Latest-image-002.png" alt="Gallery Image 1"
-                            class="w-full h-56 object-cover rounded-lg shadow-md hover:opacity-80 transition duration-300">
-                    </a>
-                    </div>
-        
-                    <!-- Image 4 -->
-                    <div class="bg-[#36958E] p-2 rounded">
-                <a data-fancybox="gallery" href="../../assets/images/static_imgs/EventPage/Latest-image-01.png"
-                    data-caption="Beautiful Landscape 2">
-                    <img src="../../assets/images/static_imgs/EventPage/Latest-image-01.png" alt="Gallery Image 2"
-                        class="w-full h-56 object-cover rounded-lg shadow-md hover:opacity-80 transition duration-300">
-                </a>
-                </div>
-        
-                    <!-- Image 5 -->
-                    <div class="bg-[#36958E] p-2 rounded">
-                    <a data-fancybox="gallery" href="../../assets/images/static_imgs/EventPage/Latest-image-002.png"
-                        data-caption="Beautiful Landscape 1">
-                        <img src="../../assets/images/static_imgs/EventPage/Latest-image-002.png" alt="Gallery Image 1"
-                            class="w-full h-56 object-cover rounded-lg shadow-md hover:opacity-80 transition duration-300">
-                    </a>
-                    </div>
-        
-                    <!-- Image 6 -->
-                    <div class="bg-[#36958E] p-2 rounded">
-                    <a data-fancybox="gallery" href="../../assets/images/static_imgs/EventPage/Latest-image-01.png"
-                        data-caption="Beautiful Landscape 2">
-                        <img src="../../assets/images/static_imgs/EventPage/Latest-image-01.png" alt="Gallery Image 2"
-                            class="w-full h-56 object-cover rounded-lg shadow-md hover:opacity-80 transition duration-300">
-                    </a>
-                    </div>
-                    <div class="bg-[#36958E] p-2 rounded">
-                    <a data-fancybox="gallery" href="../../assets/images/static_imgs/EventPage/Latest-image-01.png"
-                        data-caption="Beautiful Landscape 2">
-                        <img src="../../assets/images/static_imgs/EventPage/Latest-image-01.png" alt="Gallery Image 2"
-                            class="w-full h-56 object-cover rounded-lg shadow-md hover:opacity-80 transition duration-300">
-                    </a>
-                    </div>
-                    <div class="bg-[#36958E] p-2 rounded">
-                    <a data-fancybox="gallery" href="../../assets/images/static_imgs/EventPage/Latest-image-01.png"
-                        data-caption="Beautiful Landscape 2">
-                        <img src="../../assets/images/static_imgs/EventPage/Latest-image-01.png" alt="Gallery Image 2"
-                            class="w-full h-56 object-cover rounded-lg shadow-md hover:opacity-80 transition duration-300">
-                    </a>
-                    </div>
-        
-                </div>
-            </div>
-        </section>
-
-        <!-- Related or upcoming evens slider -->
-        <section class="relative bg-cover bg-center bg-no-repeat"
-            style="background-image: url('../../assets/images/static_imgs/EventPage/latest-event-bg.png');">
-            <!-- Overlay -->
-            <!-- <div class="absolute inset-0 bg-black/50"></div> -->
-
-            <!-- Content -->
-            <div class="relative max-w-7xl mx-auto px-6 py-30 text-white">
-                <!-- Row 1: Heading + Button -->
-                <p class="text-[#AEE6FD] text-xl mb-2 font-semibold">Related Events</p>
-                <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-20">
-                    <h4 class="text-2xl md:text-4xl font-semibold text-center md:text-left leading-12">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, voluptatem.
-                    </h4>
-
-                </div>
-            </div>
-
-            <!-- Swiper (Row 2) -->
-            <div class="absolute left-0 right-0 -bottom-50">
-                <div class="max-w-7xl mx-auto px-6 latestEventSlider">
-                    <div class="swiper eventSwiper">
-                        <div class="swiper-wrapper">
-                            <!-- Slide 1 -->
-                            <div class="swiper-slide">
-                                <div class="bg-[#04457D] rounded-xl overflow-hidden p-2">
-                                    <div class="relative">
-                                        <img src="../../assets/images/static_imgs/EventPage/Latest-image-002.png"
-                                            alt="Product 4"
-                                            class="w-full h-62 object-cover border-2 border-[#0DB3B1] rounded-xl">
-                                    </div>
-                                    <h3 class="text-white font-semibold text-lg m-4">Product 4</h3>
-                                </div>
-                            </div>
-                            <!-- Slide 2 -->
-                            <div class="swiper-slide">
-                                <div class="bg-[#04457D] rounded-xl overflow-hidden p-2">
-                                    <div class="relative">
-                                        <img src="../../assets/images/static_imgs/EventPage/Latest-image-002.png"
-                                            alt="Product 4"
-                                            class="w-full h-62 object-cover border-2 border-[#0DB3B1] rounded-xl">
-                                    </div>
-                                    <h3 class="text-white font-semibold text-lg m-4">Product 4</h3>
-                                </div>
-                            </div>
-                            <!-- Slide 3 -->
-                            <div class="swiper-slide">
-                                <div class="bg-[#04457D] rounded-xl overflow-hidden p-2">
-                                    <div class="relative">
-                                        <img src="../../assets/images/static_imgs/EventPage/Latest-image-002.png"
-                                            alt="Product 4"
-                                            class="w-full h-62 object-cover border-2 border-[#0DB3B1] rounded-xl">
-                                    </div>
-                                    <h3 class="text-white font-semibold text-lg m-4">Product 4</h3>
-                                </div>
-                            </div>
-                            <!-- Slide 4 -->
-                            <div class="swiper-slide">
-                                <div class="bg-[#04457D] rounded-xl overflow-hidden p-2">
-                                    <div class="relative">
-                                        <img src="../../assets/images/static_imgs/EventPage/Latest-image-002.png"
-                                            alt="Product 4"
-                                            class="w-full h-62 object-cover border-2 border-[#0DB3B1] rounded-xl">
-                                        <!-- <div class="p-4 text-center card-content">
-                                        <h3 class="text-white font-semibold text-lg">Product 4</h3>
-                                    </div> -->
-                                    </div>
-                                    <h3 class="text-white font-semibold text-lg m-4">Product 4</h3>
-                                </div>
-                            </div>
-                            <!-- Add more slides as needed -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Extra space below to show overlap -->
-        <div class="p-32"></div>
 
 
-
-
-
-
-
-        <!-- Footer Section -->
         <footer class="bg-[#083866] text-gray-300 pt-16 pb-8 px-6 md:px-12">
 
             <!-- Row 1: Logo + Links -->
@@ -635,36 +432,6 @@
 
         </footer>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"
-        integrity="sha512-6BTOlkauINO65nLhXhthZMtepgJSghyimIalb+crKRPhvhmsCdnIuGcVbR5/aQY2A+260iC1OPy1oCdB6pSSwQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <!-- Fancybox JS -->
-        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
-
-    <script>
-        const swiper = new Swiper(".eventSwiper", {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            loop: true,
-            autoplay: { delay: 2500, disableOnInteraction: false },
-            breakpoints: {
-                640: { slidesPerView: 2 },
-                1024: { slidesPerView: 3 },
-                1280: { slidesPerView: 4 },
-            },
-        });
-         // Initialize Fancybox (optional custom settings)
-            Fancybox.bind("[data-fancybox='gallery']", {
-                Thumbs: {
-                    autoStart: true,
-                },
-                Toolbar: {
-                    display: ["zoom", "slideshow", "fullscreen", "download", "thumbs", "close"],
-                },
-            });
-    </script>
 
 </body>
 

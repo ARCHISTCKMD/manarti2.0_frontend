@@ -247,7 +247,7 @@
                                 <a href="#" class="block text-[#174E83] font-normal text-[17px] relative">Catalogue</a>
                                 <a href="#" class="block text-[#174E83] font-normal text-[17px] relative">Contact</a>
                                 <!-- Search Icon -->
-                                <button class="text-gray-600 hover:text-blue-600 text-xl focus:outline-none">
+                                <button id="openPopupBtn" class="text-gray-600 hover:text-[#174E83] text-xl focus:outline-none cursor-pointer transition-all hover:border border-[#174E83] rounded flex justify-center items-center h-8 w-8">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
                                         viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -3001,6 +3001,37 @@
         </footer>
     </div>
 
+    <!-- SEARCH POPUPS -->
+
+    <div id="popupModal" class="fixed inset-0 bg-black/50 hidden items-center justify-center z-50">
+        <div class="bg-[#83AEE1] shadow-lg w-11/12 max-w-xl p-6 relative px-20">
+    
+            <!-- Close Button -->
+            <button id="closePopupBtn" class="absolute top-3 right-3 text-gray-400 hover:text-gray-600 bg-white p-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+    
+            <!-- Popup Content -->
+            <h2 class="text-xl font-semibold text-gray-800 mb-4 text-center">Search</h2>
+    
+            <!-- Search Input -->
+            <div class="flex items-center border border-gray-300 rounded-xl overflow-hidden shadow bg-white">
+                <input type="text" placeholder="Type to search..." class="flex-grow px-4 py-3 outline-none text-gray-700">
+                <button class=" text-gray-500 px-4 py-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-4.35-4.35M10 18a8 8 0 100-16 8 8 0 000 16z" />
+                    </svg>
+                </button>
+            </div>
+    
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"
         integrity="sha512-6BTOlkauINO65nLhXhthZMtepgJSghyimIalb+crKRPhvhmsCdnIuGcVbR5/aQY2A+260iC1OPy1oCdB6pSSwQ=="
@@ -3092,29 +3123,29 @@
             });
         });
 
-        // highlight countries in map
+       // Search Popuo js
 
-        // const highlights = {
-        //         "India": "#22c55e",
-        //         "Russia": "#ef4444",
-        //         "Australia": "#3b82f6",
-        //         "Indonesia": "#3b82f6",
-        //         "Sudan": "#3b82f6",
-        //         "Kenya": "#3b82f6",
-        //         "Tajikistan": "#3b82f6",
-        //         "Namibia": "#3b82f6",
-        //         "South Africa": "#3b82f6",
-        //         "Brazil": "#3b82f6",
-        //         "United Arab Amirates": "#3b82f6",
-        //     };
+        const openBtn = document.getElementById('openPopupBtn');
+            const closeBtn = document.getElementById('closePopupBtn');
+            const popup = document.getElementById('popupModal');
 
-        //     document.querySelectorAll(".map-container svg path").forEach((c) => {
-        //         const name = c.dataset.name;
-        //         console.log("cshf", c?.name)
-        //         if (highlights[name]) {
-        //             c.style.fill = highlights[name];
-        //         }
-        //     });
+            openBtn.addEventListener('click', () => {
+                popup.classList.remove('hidden');
+                popup.classList.add('flex');
+            });
+
+            closeBtn.addEventListener('click', () => {
+                popup.classList.add('hidden');
+                popup.classList.remove('flex');
+            });
+
+            // Close when clicking outside
+            popup.addEventListener('click', (e) => {
+                if (e.target === popup) {
+                    popup.classList.add('hidden');
+                    popup.classList.remove('flex');
+                }
+            });
     </script>
 </body>
 
