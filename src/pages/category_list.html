@@ -461,7 +461,7 @@
                             <h3 class="text-gray-600 font-medium text-lg mb-1 ">Medical-sutures</h3>
                             <div class="flex justify-between items-center gap-2">
                                 <button
-                                    class="enqireBtn border rounded border-[#42AAA3] w-full p-2 cursor-pointer text-[#42AAA3] hover:text-white transition-all relative overflow-hidden"><span>Enquire
+                                    class="openPopupBtn enqireBtn border rounded border-[#42AAA3] w-full p-2 cursor-pointer text-[#42AAA3] hover:text-white transition-all relative overflow-hidden"><span>Enquire
                                         Now</span></button>
                             </div>
                         </div>
@@ -764,7 +764,7 @@
 
     <!-- Enquiry Popup -->
 
-    <div id="popupOverlay" class="hidden fixed inset-0 bg-black/50 bg-opacity-20 flex items-center justify-center z-50">
+    <div id="popupOverlay" class="hidden fixed inset-0 bg-black/50 bg-opacity-20 items-center justify-center z-50">
 
         <!-- Popup Box -->
         <div id="popupBox"
@@ -808,19 +808,19 @@
                             <div class="form-input">
                                 <label class="text-sm text-gray-300">Your Name</label>
                                 <input type="text" placeholder="Name"
-                                class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-[#0E84C2]" />
+                                    class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-[#0E84C2]" />
                             </div>
                             <div class="form-input">
                                 <label class="text-sm text-gray-300">Your Email</label>
-                            <input type="email" placeholder="Email"
-                                class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-[#0E84C2]" />
-                                </div>
+                                <input type="email" placeholder="Email"
+                                    class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-[#0E84C2]" />
+                            </div>
                         </div>
                         <div class="form-input">
                             <label class="text-sm text-gray-300">Message</label>
-                        <textarea rows="3" placeholder="Write..."
-                            class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-[#0E84C2]"></textarea>
-                            </div>
+                            <textarea rows="3" placeholder="Write..."
+                                class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-[#0E84C2]"></textarea>
+                        </div>
 
                         <button type="submit"
                             class="w-full bg-[#0E84C2] text-white py-2 rounded-lg hover:[bg-[#0E84C2]] transition cursor-pointer">Send
@@ -854,34 +854,35 @@
         // ENQUIRY POPUP
 
         const openButtons = document.querySelectorAll('.openPopupBtn');
-            const overlay = document.getElementById('popupOverlay');
-            const popupBox = document.getElementById('popupBox');
-            const closePopup = document.getElementById('closePopup');
+        const overlay = document.getElementById('popupOverlay');
+        const popupBox = document.getElementById('popupBox');
+        const closePopup = document.getElementById('closePopup');
 
-            // Open popup on any button click
-            openButtons.forEach(button => {
-                button.addEventListener('click', () => {
-                    overlay.classList.remove('hidden');
-                    setTimeout(() => {
-                        popupBox.classList.remove('scale-95', 'opacity-0');
-                        popupBox.classList.add('scale-100', 'opacity-100');
-                    }, 10);
-                });
+        // Open popup on any button click
+        openButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                overlay.classList.remove('hidden');
+                overlay.classList.add('flex');
+                setTimeout(() => {
+                    popupBox.classList.remove('scale-95', 'opacity-0');
+                    popupBox.classList.add('scale-100', 'opacity-100');
+                }, 10);
             });
+        });
 
-            // Close popup function
-            const closePopupFunc = () => {
-                popupBox.classList.remove('scale-100', 'opacity-100');
-                popupBox.classList.add('scale-95', 'opacity-0');
-                setTimeout(() => overlay.classList.add('hidden'), 300);
-            };
+        // Close popup function
+        const closePopupFunc = () => {
+            popupBox.classList.remove('scale-100', 'opacity-100');
+            popupBox.classList.add('scale-95', 'opacity-0');
+            setTimeout(() => overlay.classList.add('hidden'), 300);
+        };
 
-            closePopup.addEventListener('click', closePopupFunc);
+        closePopup.addEventListener('click', closePopupFunc);
 
-            // Close popup when clicking outside the box
-            overlay.addEventListener('click', (e) => {
-                if (e.target === overlay) closePopupFunc();
-            });
+        // Close popup when clicking outside the box
+        overlay.addEventListener('click', (e) => {
+            if (e.target === overlay) closePopupFunc();
+        });
     </script>
 
 </body>

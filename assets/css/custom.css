@@ -498,3 +498,17 @@ body {
     background-image: linear-gradient(0deg, #0E5293, transparent);
     z-index: 2;
 }
+
+/* Catalogue page css */
+
+.catalogue_banner .item::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #039ABE;
+    opacity: .2;
+    z-index: 1;
+}

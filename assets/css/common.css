@@ -65,3 +65,13 @@
 .overlay-visible {
     opacity: 1;
 }
+
+.customScrollbar::-webkit-scrollbar {
+    width: 5px;
+}
+
+.customScrollbar::-webkit-scrollbar-thumb {
+    background: #174E83;
+    border-radius: 12px;
+    /* gray-700 */
+}
