@@ -87,7 +87,7 @@ body {
 }
 
 .bannerBtn:hover .btnBg {
-    width: 164px;
+    width: 100%;
     background-color: #fff;
 }
 
@@ -283,19 +283,14 @@ body {
     font-size: 20px;
 }
 
-.map-container svg {
-    width: 100% !important;
-    height: 100% !important;
-}
-
 .map-container svg path {
-    fill: #ececec;
+    /* fill: #ececec; */
     stroke: #dcbfff;
     transition: 100ms;
 }
 
 .map-container svg path:hover {
-    fill: #f72c2c;
+    fill: #083866;
     stroke: #f72c2c;
 }
 

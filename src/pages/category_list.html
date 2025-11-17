@@ -304,7 +304,8 @@
             <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4">
 
                 <!-- LEFT SIDE MENU (25%) -->
-                <div class="border border-[#E7E7E7] p-4 md:col-span-1 relatedCategoryWrapper">
+                 <div class="md:col-span-1 pr-2 border border-[#E7E7E7]">
+                <div class="p-4 relatedCategoryWrapper max-h-[485px] overflow-y-scroll customScrollbar">
 
                     <h3 class="text-xl font-semibold mb-4 text-[#4967AD]">Related Categories</h3>
 
@@ -471,21 +472,38 @@
 
                     </ul>
                 </div>
+                </div>
 
                 <!-- RIGHT SIDE BANNER (75%) -->
-                <div class="md:col-span-3 border border-[#E7E7E7] border-l-0">
-                    <div class="w-full h-[320px] bg-cover"
+                <div class="md:col-span-3 border border-[#E7E7E7] border-l-0 flex flex-col">
+                    <div class="w-full bg-cover bg-no-repeat h-full flex justify-start items-center max-h-[300px]"
                         style="background-image: url(../../assets/images/static_imgs/CategriesPage/long-banner.png);">
+                        <div class="px-6 text-white md:w-3/4 w-full py-4 bg-linear-to-r from-[#07194e40] to-transparent">
+                            <h4 class="text-white font-semibold md:text-4xl text:3xl mb-2">Medical Desposables</h4>
+                            <p class="text-gray-50 font-light text-base text-shadow">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, tempora! Cupiditate nostrum rem sunt quod recusandae. Quisquam fugit blanditiis cumque dignissimos deserunt repellat quasi hic, enim animi odio atque culpa eos dolorem omnis sequi esse, veritatis ut dolorum minus quas! </p>
+                        </div>
                     </div>
-                    <div class="flex justify-around items-center p-6 gap-6">
-                        <div>
-                            <img src="../../assets/images/static_imgs/CategriesPage/banner-image-small-01.png" />
+                    <div class="flex justify-around items-center px-2 py-4 gap-4 h-full">
+                        <div class="h-full relative">
+                            <img src="../../assets/images/static_imgs/CategriesPage/banner-image-small-01.png"  class="h-full"/>
+                            <div class="w-full card-content absolute bottom-0 px-2 py-2 bg-[#ffffff50]">
+                                <p class="text-base font-medium text-gray-800">Medical Sutures</p>
+                                <a href="#" class="text-[#1082A6] text-sm group hover:text-[#42AAA3] transition-all">View <i class="fa-solid fa-arrow-right text-[#1082A6] text-sm font-extralight group-hover:translate-x-1 transition-all ease-in-out duration-200 group-hover:text-[#42AAA3]"></i></a>
+                            </div>
                         </div>
-                        <div>
-                            <img src="../../assets/images/static_imgs/CategriesPage/banner-image-small-02.png" />
+                        <div class="h-full relative">
+                            <img src="../../assets/images/static_imgs/CategriesPage/banner-image-small-02.png"  class="h-full" />
+                            <div class="w-full card-content absolute bottom-0 px-2 py-2 bg-[#ffffff50]">
+                                <p class="text-base font-medium text-gray-800">Medical Sutures</p>
+                                <a href="#" class="text-[#1082A6] text-sm group hover:text-[#42AAA3] transition-all">View <i class="fa-solid fa-arrow-right text-[#1082A6] text-sm font-extralight group-hover:translate-x-1 transition-all ease-in-out duration-200 group-hover:text-[#42AAA3]"></i></a>
+                            </div>
                         </div>
-                        <div>
-                            <img src="../../assets/images/static_imgs/CategriesPage/banner-image-small-03.png" />
+                        <div class="h-full relative">
+                            <img src="../../assets/images/static_imgs/CategriesPage/banner-image-small-03.png"  class="h-full" />
+                            <div class="w-full card-content absolute bottom-0 px-2 py-2 bg-[#ffffff50]">
+                                <p class="text-base font-medium text-gray-800">Medical Sutures</p>
+                                <a href="#" class="text-[#1082A6] text-sm group hover:text-[#42AAA3] transition-all">View <i class="fa-solid fa-arrow-right text-[#1082A6] text-sm font-extralight group-hover:translate-x-1 transition-all ease-in-out duration-200 group-hover:text-[#42AAA3]"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -509,9 +527,9 @@
                     <!-- Product Card -->
                     <div class="bg-white border-[#E7E7E7] p-4 border transition item">
                         <a href="#" title="View Product"
-                            class="ctgProdImg relative bg-white overflow-hidden mb-2 block">
+                            class="ctgProdImg relative bg-white overflow-hidden mb-2 block h-[270px] w-full p-2">
                             <img src="../../assets/images/static_imgs/CategriesPage/banner-image-small-01.png"
-                                alt="Product" class="mx-auto transition-all duration-500 rounded">
+                                alt="Product" class="mx-auto transition-all duration-300 rounded w-full h-full object-cover">
                             <div class="bg-[#0889C3] p-2 rounded-full hidden absolute z-3 left-[50%] viewProd"><i
                                     class="fa-solid fa-eye text-white"></i></div>
                         </a>
@@ -527,9 +545,9 @@
 
                     <div class="bg-white border-[#E7E7E7] p-4 border transition item">
                         <a href="#" title="View Product"
-                            class="ctgProdImg relative bg-white overflow-hidden mb-2 block">
+                            class="ctgProdImg relative bg-white overflow-hidden mb-2 block h-[270px] w-full p-2">
                             <img src="../../assets/images/static_imgs/CategriesPage/banner-image-small-01.png"
-                                alt="Product" class="mx-auto transition-all duration-500 rounded">
+                                alt="Product" class="mx-auto transition-all duration-300 rounded w-full h-full object-cover">
                             <div class="bg-[#0889C3] p-2 rounded-full hidden absolute z-3 left-[50%] viewProd"><i
                                     class="fa-solid fa-eye text-white"></i></div>
                         </a>
@@ -544,9 +562,9 @@
                     </div>
                     <div class="bg-white border-[#E7E7E7] p-4 border transition item">
                         <a href="#" title="View Product"
-                            class="ctgProdImg relative bg-white overflow-hidden mb-2 block">
+                            class="ctgProdImg relative bg-white overflow-hidden mb-2 block h-[270px] w-full p-2">
                             <img src="../../assets/images/static_imgs/CategriesPage/banner-image-small-01.png"
-                                alt="Product" class="mx-auto transition-all duration-500 rounded">
+                                alt="Product" class="mx-auto transition-all duration-300 rounded w-full h-full object-cover">
                             <div class="bg-[#0889C3] p-2 rounded-full hidden absolute z-3 left-[50%] viewProd"><i
                                     class="fa-solid fa-eye text-white"></i></div>
                         </a>
@@ -561,9 +579,9 @@
                     </div>
                     <div class="bg-white border-[#E7E7E7] p-4 border transition item">
                         <a href="#" title="View Product"
-                            class="ctgProdImg relative bg-white overflow-hidden mb-2 block">
+                            class="ctgProdImg relative bg-white overflow-hidden mb-2 block h-[270px] w-full p-2">
                             <img src="../../assets/images/static_imgs/CategriesPage/banner-image-small-01.png"
-                                alt="Product" class="mx-auto transition-all duration-500 rounded">
+                                alt="Product" class="mx-auto transition-all duration-300 rounded w-full h-full object-cover">
                             <div class="bg-[#0889C3] p-2 rounded-full hidden absolute z-3 left-[50%] viewProd"><i
                                     class="fa-solid fa-eye text-white"></i></div>
                         </a>
@@ -578,9 +596,9 @@
                     </div>
                     <div class="bg-white border-[#E7E7E7] p-4 border transition item">
                         <a href="#" title="View Product"
-                            class="ctgProdImg relative bg-white overflow-hidden mb-2 block">
+                            class="ctgProdImg relative bg-white overflow-hidden mb-2 block h-[270px] w-full p-2">
                             <img src="../../assets/images/static_imgs/CategriesPage/banner-image-small-01.png"
-                                alt="Product" class="mx-auto transition-all duration-500 rounded">
+                                alt="Product" class="mx-auto transition-all duration-300 rounded w-full h-full object-cover">
                             <div class="bg-[#0889C3] p-2 rounded-full hidden absolute z-3 left-[50%] viewProd"><i
                                     class="fa-solid fa-eye text-white"></i></div>
                         </a>
@@ -595,9 +613,9 @@
                     </div>
                     <div class="bg-white border-[#E7E7E7] p-4 border transition item">
                         <a href="#" title="View Product"
-                            class="ctgProdImg relative bg-white overflow-hidden mb-2 block">
+                            class="ctgProdImg relative bg-white overflow-hidden mb-2 block h-[270px] w-full p-2">
                             <img src="../../assets/images/static_imgs/CategriesPage/banner-image-small-01.png"
-                                alt="Product" class="mx-auto transition-all duration-500 rounded">
+                                alt="Product" class="mx-auto transition-all duration-300 rounded w-full h-full object-cover">
                             <div class="bg-[#0889C3] p-2 rounded-full hidden absolute z-3 left-[50%] viewProd"><i
                                     class="fa-solid fa-eye text-white"></i></div>
                         </a>
@@ -612,9 +630,9 @@
                     </div>
                     <div class="bg-white border-[#E7E7E7] p-4 border transition item">
                         <a href="#" title="View Product"
-                            class="ctgProdImg relative bg-white overflow-hidden mb-2 block">
+                            class="ctgProdImg relative bg-white overflow-hidden mb-2 block h-[270px] w-full p-2">
                             <img src="../../assets/images/static_imgs/CategriesPage/banner-image-small-01.png"
-                                alt="Product" class="mx-auto transition-all duration-500 rounded">
+                                alt="Product" class="mx-auto transition-all duration-300 rounded w-full h-full object-cover">
                             <div class="bg-[#0889C3] p-2 rounded-full hidden absolute z-3 left-[50%] viewProd"><i
                                     class="fa-solid fa-eye text-white"></i></div>
                         </a>
@@ -629,9 +647,9 @@
                     </div>
                     <div class="bg-white border-[#E7E7E7] p-4 border transition item">
                         <a href="#" title="View Product"
-                            class="ctgProdImg relative bg-white overflow-hidden mb-2 block">
+                            class="ctgProdImg relative bg-white overflow-hidden mb-2 block h-[270px] w-full p-2">
                             <img src="../../assets/images/static_imgs/CategriesPage/banner-image-small-01.png"
-                                alt="Product" class="mx-auto transition-all duration-500 rounded">
+                                alt="Product" class="mx-auto transition-all duration-300 rounded w-full h-full object-cover">
                             <div class="bg-[#0889C3] p-2 rounded-full hidden absolute z-3 left-[50%] viewProd"><i
                                     class="fa-solid fa-eye text-white"></i></div>
                         </a>
@@ -649,11 +667,11 @@
 
                 <!-- Pagination -->
                 <div class="flex justify-center items-center gap-3 mt-8">
-                    <button class="px-4 py-2 bg-gray-200 text-gray-600 rounded hover:bg-gray-300">Prev</button>
-                    <button class="px-4 py-2 bg-[#42AAA3] text-white rounded">1</button>
-                    <button class="px-4 py-2 bg-gray-200 text-gray-600 rounded hover:bg-gray-300">2</button>
-                    <button class="px-4 py-2 bg-gray-200 text-gray-600 rounded hover:bg-gray-300">3</button>
-                    <button class="px-4 py-2 bg-gray-200 text-gray-600 rounded hover:bg-gray-300">Next</button>
+                    <a href="#" class="px-4 py-2 bg-gray-200 text-gray-600 rounded hover:bg-gray-300">Prev</a>
+                    <a href="#" class="px-4 py-2 bg-[#42AAA3] text-white rounded">1</a>
+                    <a href="#" class="px-4 py-2 bg-gray-200 text-gray-600 rounded hover:bg-gray-300">2</a>
+                    <a href="#" class="px-4 py-2 bg-gray-200 text-gray-600 rounded hover:bg-gray-300">3</a>
+                    <a href="#" class="px-4 py-2 bg-gray-200 text-gray-600 rounded hover:bg-gray-300">Next</a>
                 </div>
 
             </div>
@@ -677,49 +695,49 @@
 
                         <!-- Product Card -->
                         <div class="swiper-slide">
-                            <div class="bg-white border-[#E7E7E7] p-4 border transition">
+                            <a href="#" class="border-[#E7E7E7] p-4 border transition relative bg-white overflow-hidden mb-2 block h-[270px] w-full group">
                                 <img src="../../assets/images/static_imgs/CategriesPage/related-product-01.png"
                                     class="w-full rounded-lg" />
-                                <h3 class="mt-3 text-lg font-medium text-gray-800">Product Name 1</h3>
-                            </div>
+                                <h3 class="mt-3 text-lg font-medium text-gray-800 group-hover:text-[#42AAA3]">Product Name 1</h3>
+                            </a>
                         </div>
 
                         <div class="swiper-slide">
-                            <div class="bg-white border-[#E7E7E7] p-4 border transition">
+                            <a href="#" class="border-[#E7E7E7] p-4 border transition relative bg-white overflow-hidden mb-2 block h-[270px] w-full group">
                                 <img src="../../assets/images/static_imgs/CategriesPage/related-product-02.png"
                                     class="w-full rounded-lg" />
-                                <h3 class="mt-3 text-lg font-medium text-gray-800">Product Name 2</h3>
-                            </div>
+                                <h3 class="mt-3 text-lg font-medium text-gray-800 group-hover:text-[#42AAA3]">Product Name 2</h3>
+                            </a>
                         </div>
 
                         <div class="swiper-slide">
-                            <div class="bg-white border-[#E7E7E7] p-4 border transition">
+                            <a href="#" class="border-[#E7E7E7] p-4 border transition relative bg-white overflow-hidden mb-2 block h-[270px] w-full group">
                                 <img src="../../assets/images/static_imgs/CategriesPage/related-product-03.png"
                                     class="w-full rounded-lg" />
-                                <h3 class="mt-3 text-lg font-medium text-gray-800">Product Name 3</h3>
-                            </div>
+                                <h3 class="mt-3 text-lg font-medium text-gray-800 group-hover:text-[#42AAA3]">Product Name 3</h3>
+                            </a>
                         </div>
 
                         <div class="swiper-slide">
-                            <div class="bg-white border-[#E7E7E7] p-4 border transition">
+                            <a href="#" class="border-[#E7E7E7] p-4 border transition relative bg-white overflow-hidden mb-2 block h-[270px] w-full group">
                                 <img src="../../assets/images/static_imgs/CategriesPage/related-product-04.png"
                                     class="w-full rounded-lg" />
-                                <h3 class="mt-3 text-lg font-medium text-gray-800">Product Name 4</h3>
-                            </div>
+                                <h3 class="mt-3 text-lg font-medium text-gray-800 group-hover:text-[#42AAA3]">Product Name 4</h3>
+                            </a>
                         </div>
                         <div class="swiper-slide">
-                            <div class="bg-white border-[#E7E7E7] p-4 border transition">
+                            <a href="#" class="border-[#E7E7E7] p-4 border transition relative bg-white overflow-hidden mb-2 block h-[270px] w-full group">
                                 <img src="../../assets/images/static_imgs/CategriesPage/related-product-01.png"
                                     class="w-full rounded-lg" />
-                                <h3 class="mt-3 text-lg font-medium text-gray-800">Product Name 4</h3>
-                            </div>
+                                <h3 class="mt-3 text-lg font-medium text-gray-800 group-hover:text-[#42AAA3]">Product Name 4</h3>
+                            </a>
                         </div>
                         <div class="swiper-slide">
-                            <div class="bg-white border-[#E7E7E7] p-4 border transition">
+                            <a href="#" class="border-[#E7E7E7] p-4 border transition relative bg-white overflow-hidden mb-2 block h-[270px] w-full group">
                                 <img src="../../assets/images/static_imgs/CategriesPage/related-product-02.png"
                                     class="w-full rounded-lg" />
-                                <h3 class="mt-3 text-lg font-medium text-gray-800">Product Name 4</h3>
-                            </div>
+                                <h3 class="mt-3 text-lg font-medium text-gray-800 group-hover:text-[#42AAA3]">Product Name 4</h3>
+                            </a>
                         </div>
 
                         <!-- Add more items if needed -->
@@ -880,17 +898,23 @@
                     </div>
 
                     <form class="space-y-4">
+                        <div class="form-input">
+                            <label class="text-sm text-gray-300">Your Full Name</label>
+                            <input type="text" placeholder="Name"
+                                class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-[#0E84C2]" />
+                        </div>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <div class="form-input">
-                                <label class="text-sm text-gray-300">Your Name</label>
-                                <input type="text" placeholder="Name"
-                                    class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-[#0E84C2]" />
-                            </div>
                             <div class="form-input">
                                 <label class="text-sm text-gray-300">Your Email</label>
                                 <input type="email" placeholder="Email"
                                     class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-[#0E84C2]" />
                             </div>
+                            <div class="form-input">
+                                <label class="text-sm text-gray-300">Your Phone</label>
+                                <input type="text" placeholder="Phone"
+                                    class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-[#0E84C2]" />
+                            </div>
+                            
                         </div>
                         <div class="form-input">
                             <label class="text-sm text-gray-300">Message</label>
@@ -908,6 +932,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../../assets/js/common.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"
         integrity="sha512-6BTOlkauINO65nLhXhthZMtepgJSghyimIalb+crKRPhvhmsCdnIuGcVbR5/aQY2A+260iC1OPy1oCdB6pSSwQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -925,39 +950,6 @@
                 640: { slidesPerView: 2 },
                 1024: { slidesPerView: 4 }
             }
-        });
-
-        // ENQUIRY POPUP
-
-        const openButtons = document.querySelectorAll('.openPopupBtn');
-        const overlay = document.getElementById('popupOverlay');
-        const popupBox = document.getElementById('popupBox');
-        const closePopup = document.getElementById('closePopup');
-
-        // Open popup on any button click
-        openButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                overlay.classList.remove('hidden');
-                overlay.classList.add('flex');
-                setTimeout(() => {
-                    popupBox.classList.remove('scale-95', 'opacity-0');
-                    popupBox.classList.add('scale-100', 'opacity-100');
-                }, 10);
-            });
-        });
-
-        // Close popup function
-        const closePopupFunc = () => {
-            popupBox.classList.remove('scale-100', 'opacity-100');
-            popupBox.classList.add('scale-95', 'opacity-0');
-            setTimeout(() => overlay.classList.add('hidden'), 300);
-        };
-
-        closePopup.addEventListener('click', closePopupFunc);
-
-        // Close popup when clicking outside the box
-        overlay.addEventListener('click', (e) => {
-            if (e.target === overlay) closePopupFunc();
         });
 
         // sidebar dropdown toggle
