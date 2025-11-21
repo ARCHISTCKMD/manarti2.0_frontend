@@ -235,6 +235,7 @@ body {
     bottom: -60%;
     left: 50%;
     transform: translateX(-50%);
+    width: 100%;
 }
 
 .ourCaregorySec .categorySliderSec .sliderDesc {
@@ -281,6 +282,11 @@ body {
 .categorySliderSec .swiper-button-prev::after,
 .categorySliderSec .swiper-button-next::after {
     font-size: 20px;
+}
+
+.map-container svg {
+    width: 100%;
+    height: 400px;
 }
 
 .map-container svg path {
@@ -455,18 +461,22 @@ body {
     z-index: 1;
     transition: all ease .3s;
 }
+
 .similarProds .ctgProdImg:hover::before {
     opacity: .2;
 }
+
 .similarProds .ctgProdImg:hover img {
     transform: scale(1.3);
 }
+
 .similarProds .ctgProdImg .viewProd {
     top: 0;
     opacity: 0;
     transition: all ease .3s;
-    
+
 }
+
 .similarProds .ctgProdImg:hover .viewProd {
     transform: translate(-50%, -50%);
     height: 50px;
@@ -506,4 +516,67 @@ body {
     background-color: #039ABE;
     opacity: .2;
     z-index: 1;
+}
+
+
+@media(max-width:600px) {
+    .section {
+        padding: 0 1rem;
+    }
+
+    .bannerSec {
+        height: 420px;
+        border-radius: 0 0 50px 50px;
+        margin-bottom: 350px;
+    }
+
+    .featureSec {
+        top: 88%;
+        bottom: auto;
+        width: 90%;
+    }
+
+    .aboutSec .leftImg {
+        width: 100%;
+        height: 100%;
+    }
+
+    .aboutSec .leftImg .card-content {
+        padding: 80px 15px 20px;
+    }
+
+    .aboutSec .leftImg .card-content h4 {
+        margin-bottom: 15px;
+    }
+
+    .ourMissionVision .smallImg img {
+        border: 6px solid #ecfefe;
+    }
+        .ourMissionVision {
+            padding: 20px 0;
+        }
+
+    .ourCaregorySec .categorySliderSec {
+        width: 100%;
+        bottom: auto;
+        left: 5%;
+        top: 70%;
+        transform: translateX(-5%);
+    }
+
+    .ourCaregorySec .categorySliderSec .sliderDesc {
+        width: 200px;
+        bottom: -10%;
+        right: 5%;
+        transform: translateY(-50%);
+        background-color: #1D78B1;
+        border-radius: 12px;
+        padding: 10px
+    }
+
+    .map-container svg {
+        width: 100%;
+        height: 250px;
+    }
+
 }

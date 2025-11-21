@@ -16,6 +16,7 @@
 .commonArrow .swiper-button-next::after {
     font-size: 20px;
 }
+
 .mainSlider .swiper-button-prev,
 .mainSlider .swiper-button-next {
     color: #fefefe;
@@ -30,13 +31,16 @@
 .mainSlider .swiper-button-next::after {
     font-size: 10px;
 }
+
 .thumbSlider .swiper-button-prev,
 .thumbSlider .swiper-button-next {
     color: #555555;
 }
+
 .thumbSlider .swiper-button-prev {
     left: -5px;
 }
+
 .thumbSlider .swiper-button-next {
     right: -5px;
 }
@@ -71,7 +75,23 @@
 }
 
 .customScrollbar::-webkit-scrollbar-thumb {
-    background: #174E83;
+    background: #0985C4;
     border-radius: 12px;
     /* gray-700 */
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate(50deg);
+    }
+
+    100% {
+        transform: rotate(30deg);
+    }
+}
+
+.pendulum-img {
+    transform: rotate(45deg);
+    transform-origin: bottom center;
+    animation: swing .8s ease-in-out infinite alternate;
 }
