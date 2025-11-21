@@ -528,12 +528,14 @@ body {
         height: 420px;
         border-radius: 0 0 50px 50px;
         margin-bottom: 350px;
+        background-position: left;
     }
 
+
     .featureSec {
-        top: 88%;
+        top: 83%;
         bottom: auto;
-        width: 90%;
+        width: 95%;
     }
 
     .aboutSec .leftImg {
@@ -552,9 +554,10 @@ body {
     .ourMissionVision .smallImg img {
         border: 6px solid #ecfefe;
     }
-        .ourMissionVision {
-            padding: 20px 0;
-        }
+
+    .ourMissionVision {
+        padding: 20px 0;
+    }
 
     .ourCaregorySec .categorySliderSec {
         width: 96%;
@@ -579,4 +582,41 @@ body {
         height: 250px;
     }
 
+    .trendingProdSec .card-content {
+        padding: 85px 10px 20px;
+    }
+
+    .swiper.topSellingSwiper {
+        padding-top: 80px;
+    }
+
+}
+
+@media(max-width:420px) and (min-width:360px) {
+    .section {
+        padding: 0 .8rem;
+    }
+
+    .aboutSec {
+
+        padding: 30px 0;
+    }
+
+    .aboutSec .leftImg .card-content h4::before {
+        width: 6px;
+    }
+
+    .aboutSec .leftImg .card-content h4 {
+        padding-left: 15px;
+        margin-bottom: 10px;
+    }
+        .ourMissionVision .smallImg{
+            right: -2%;
+        }
+                .ourMissionVision.visionSec .smallImg {
+                    left: -2%;
+                }
+                                .ourMissionVision{
+                                    padding: 10px 0;
+                                }
 }
