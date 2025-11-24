@@ -560,7 +560,7 @@ body {
     }
 
     .ourCaregorySec .categorySliderSec {
-        width: 96%;
+        width: 100%;
         bottom: auto;
         left: 5%;
         top: 70%;
@@ -589,12 +589,19 @@ body {
     .swiper.topSellingSwiper {
         padding-top: 80px;
     }
+    #popupBox {
+        height: 90%;
+        overflow-y: scroll;
+    }
 
 }
 
-@media(max-width:420px) and (min-width:360px) {
+@media(max-width:420px) and (min-width:350px) {
     .section {
         padding: 0 .8rem;
+    }
+    .bannerSec{
+        margin-bottom: 370px;
     }
 
     .aboutSec {
@@ -610,13 +617,23 @@ body {
         padding-left: 15px;
         margin-bottom: 10px;
     }
-        .ourMissionVision .smallImg{
-            right: -2%;
-        }
-                .ourMissionVision.visionSec .smallImg {
-                    left: -2%;
-                }
-                                .ourMissionVision{
-                                    padding: 10px 0;
-                                }
+
+    .ourMissionVision .smallImg {
+        right: -2%;
+    }
+
+    .ourMissionVision.visionSec .smallImg {
+        left: -2%;
+    }
+
+    .ourMissionVision {
+        padding: 10px 0;
+    }
+
+    .videoSec .iframeWrapper::before {
+        height: 98%;
+        width: 98%;
+        top: 16px;
+        left: -12px;
+    }
 }
