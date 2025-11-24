@@ -189,7 +189,7 @@ body {
 
 .aboutSec .sideLine {
     max-height: 100%;
-    height: 403px;
+    height: -webkit-fill-available;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -518,10 +518,56 @@ body {
     z-index: 1;
 }
 
+@media(max-width:1280px) {
 
-@media(max-width:600px) {
+}
+
+@media(max-width:1024px) {
     .section {
-        padding: 0 1rem;
+        padding: 0 2rem;
+    }
+
+    .bannerSec {
+        height: 80vh;
+        margin-bottom: 240px;
+    }
+
+    .featureSec {
+        width: 90%;
+        bottom: -44%;
+    }
+
+    .aboutSec .leftImg {
+        height: 510px;
+        width: 100%;
+    }
+
+    .aboutSec .leftImg .card-content {
+        padding: 100px 15px 20px;
+    }
+
+    .ourMissionVision {
+        padding: 30px 0;
+    }
+
+    .ourMissionVision .smallImg img {
+        border: 8px solid #ecfefe;
+    }
+
+    .locationSec .card-content {
+        padding: 30px 15px 0;
+    }
+
+    .swiper.topSellingSwiper {
+        padding-top: 110px;
+    }
+
+}
+
+
+@media(max-width:640px) {
+    .section {
+        padding: 0 1.5rem;
     }
 
     .bannerSec {
@@ -563,7 +609,7 @@ body {
         width: 100%;
         bottom: auto;
         left: 5%;
-        top: 70%;
+        top: 60%;
         transform: translateX(-5%);
     }
 
@@ -589,6 +635,18 @@ body {
     .swiper.topSellingSwiper {
         padding-top: 80px;
     }
+
+    .videoSec {
+        margin-bottom: 280px;
+    }
+
+    .videoSec .iframeWrapper::before {
+        top: 20px;
+        left: -15px;
+        width: 98%;
+        height: 98%;
+    }
+
     #popupBox {
         height: 90%;
         overflow-y: scroll;
@@ -600,7 +658,8 @@ body {
     .section {
         padding: 0 .8rem;
     }
-    .bannerSec{
+
+    .bannerSec {
         margin-bottom: 370px;
     }
 
@@ -628,6 +687,10 @@ body {
 
     .ourMissionVision {
         padding: 10px 0;
+    }
+
+    .videoSec {
+        margin-bottom: 200px;
     }
 
     .videoSec .iframeWrapper::before {
