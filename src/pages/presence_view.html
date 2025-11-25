@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manarti Events</title>
+    <title>Manarti Exports</title>
     <link href="../../assets/css/custom.css" rel="stylesheet">
     <link href="../../assets/css/common.css" rel="stylesheet">
     <link href="../output.css" rel="stylesheet">
@@ -12,34 +12,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Fancybox CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
 </head>
 
 <body>
-    <div class="eventPageWrapper relative">
+    <div class="mainWrapper">
         <!-- Navbar -->
         <div class="headerSec">
             <div class="section">
                 <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
-                    <div class="mx-auto px-4 sm:px-6 lg:px-28">
+                    <div class="mx-auto px-4 sm:px-6 xl:px-28 lg:px-20 md:px-8">
                         <div class="flex justify-between items-center h-17">
-
                             <!-- Logo -->
                             <div class="flex items-center w-60">
                                 <img src="../../assets/images/static_imgs/MANARTI-LOGO.png" alt="Logo"
-                                    class="w-auto mr-2">
+                                    class="w-auto mr-2 md:w-[170px] lg:w-full">
                             </div>
 
                             <!-- Menu (Desktop) -->
-                            <ul class="hidden md:flex space-x-8 gap-x-[40px] items-center menuLinks">
+                            <ul
+                                class="hidden md:flex lg:space-x-8 md:space-x-6 lg:gap-x-[40px] md:gap-x-[20px] items-center menuLinks">
                                 <li class="relative group"><a href="#"
-                                        class="text-[#174E83] font-normal text-[17px] relative">Home</a>
-
+                                        class="text-[#174E83] font-normal lg:text-[17px] md:text-sm relative">Home</a>
                                 </li>
                                 <li class="relative group">
-                                    <a href="#" class="block text-[#174E83] font-normal text-[17px] relative">Info <i
-                                            class="fa-solid fa-angle-down text-xs"></i></a>
+                                    <a href="#"
+                                        class="block text-[#174E83] font-normal lg:text-[17px] md:text-sm relative">Info
+                                        <i class="fa-solid fa-angle-down text-xs"></i></a>
                                     <div
                                         class="absolute left-0 top-8 mt-2 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all dropdownMenus">
                                         <ul class="py-3 w-50">
@@ -63,12 +61,13 @@
                                 </li>
 
                                 <li class="relative group">
-                                    <a href="#" class="block text-[#174E83] font-normal text-[17px] relative">Product <i
-                                            class="fa-solid fa-angle-down text-xs"></i></a>
+                                    <a href="#"
+                                        class="block text-[#174E83] font-normal lg:text-[17px] md:text-sm relative">Product
+                                        <i class="fa-solid fa-angle-down text-xs"></i></a>
                                     <!-- FULL SCREEN MEGA MENU -->
                                     <div
                                         class="fixed left-0 top-[60px] w-screen bg-white shadow-2xl border-t border-gray-200
-                                                    opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 dropdownMenus">
+                                            opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 dropdownMenus">
 
                                         <div class="px-10 py-8 grid grid-cols-4 gap-4 max-w-8xl mx-auto">
                                             <div class="border-r border-gray-200">
@@ -79,69 +78,72 @@
                                                     <h4 class="font-semibold text-lg text-[#42AAA3]">Top
                                                         Categories Of Equipment</h4>
                                                     <p class="text-gray-500 text-sm mt-1">Contrary to popular belief,
-                                                        Lorem
-                                                        Ipsum is not simply random text. It has roots in a piece of
-                                                        classical
-                                                    </p>
+                                                        Lorem Ipsum is not simply random text. It has roots in a piece
+                                                        of classical</p>
                                                 </div>
                                             </div>
 
                                             <div class="col-span-3">
-                                                <!-- Category 1 -->
-                                                <div class="flex justify-between px-10 pb-6">
-                                                    <div class="w-2xs">
+
+                                                <div
+                                                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 megaMenus max-h-[70vh] overflow-y-scroll customScrollbar">
+                                                    <!-- Card 1 -->
+                                                    <div class="w-2xs border-r-1 border-gray-100">
                                                         <h4 class="font-medium text-gray-700 text-lg mb-4 relative">
                                                             Surgical Equipments
                                                         </h4>
                                                         <ul class="space-y-2 text-gray-600 ml-1">
                                                             <li class="mb-1"><a
                                                                     class="hover:text-gray-800 text-sm hover:underline transition-all"
-                                                                    href="#">Medical Sutures</a></li>
+                                                                    href="#">Medical
+                                                                    Sutures</a></li>
                                                             <li class="mb-1"><a
                                                                     class="hover:text-gray-800 text-sm hover:underline transition-all"
-                                                                    href="#">Surgical Instruments</a></li>
+                                                                    href="#">Surgical
+                                                                    Instruments</a></li>
                                                             <li class="mb-1"><a
                                                                     class="hover:text-gray-800 text-sm hover:underline transition-all"
-                                                                    href="#">Hollowware</a></li>
+                                                                    href="#">Hollowware</a>
+                                                            </li>
                                                             <li class="mb-1"><a
                                                                     class="hover:text-gray-800 text-sm hover:underline transition-all"
-                                                                    href="#">Sterilizers</a></li>
+                                                                    href="#">Sterilizers</a>
+                                                            </li>
                                                         </ul>
                                                     </div>
 
-                                                    <div class="w-px bg-gray-100 h-40 mt-10"></div>
-
-                                                    <!-- Category 2 -->
-                                                    <div class="w-2xs">
+                                                    <div class="w-2xs border-r-1 border-gray-100">
                                                         <h4 class="font-medium text-gray-700 text-lg mb-4 relative">
                                                             Medical Disposables
                                                         </h4>
                                                         <ul class="space-y-2 text-gray-600 ml-1">
                                                             <li class="mb-1"><a
                                                                     class="hover:text-gray-800 text-sm hover:underline transition-all"
-                                                                    href="#">Urology</a></li>
+                                                                    href="#">Urology</a>
+                                                            </li>
                                                             <li class="mb-1"><a
                                                                     class="hover:text-gray-800 text-sm hover:underline transition-all"
-                                                                    href="#">Gastro Entrology</a></li>
+                                                                    href="#">Gastro
+                                                                    Entrology</a></li>
                                                             <li class="mb-1"><a
                                                                     class="hover:text-gray-800 text-sm hover:underline transition-all"
-                                                                    href="#">Oncology</a></li>
+                                                                    href="#">Oncology</a>
+                                                            </li>
                                                             <li class="mb-1"><a
                                                                     class="hover:text-gray-800 text-sm hover:underline transition-all"
-                                                                    href="#">Gynecology</a></li>
+                                                                    href="#">Gynecology</a>
+                                                            </li>
                                                             <li class="mb-1"><a
                                                                     class="hover:text-gray-800 text-sm hover:underline transition-all"
-                                                                    href="#">Anesthesia</a></li>
+                                                                    href="#">Anesthesia</a>
+                                                            </li>
                                                             <li class="mb-1"><a
                                                                     class="hover:text-gray-800 text-sm hover:underline transition-all"
-                                                                    href="#">Transfusion</a></li>
+                                                                    href="#">Transfusion</a>
+                                                            </li>
                                                         </ul>
                                                     </div>
 
-
-                                                    <div class="w-px bg-gray-100 h-40 mt-10"></div>
-
-                                                    <!-- Category 3 -->
                                                     <div class="w-2xs">
                                                         <h4 class="font-medium text-gray-700 text-lg mb-4 relative">
                                                             Hospital Dressings
@@ -156,69 +158,68 @@
                                                             <li><a class="hover:text-gray-800 text-sm hover:underline transition-all"
                                                                     href="#">Dressing Tape</a></li>
                                                             <li><a class="hover:text-gray-800 text-sm hover:underline transition-all"
-                                                                    href="#">Uniforms And Linen</a></li>
+                                                                    href="#">Uniforms And Linen</a>
+                                                            </li>
                                                             <li><a class="hover:text-gray-800 text-sm hover:underline transition-all"
                                                                     href="#">General Dressing</a></li>
                                                         </ul>
                                                     </div>
-                                                </div>
-
-                                                <div class="flex justify-between px-10 pb-4">
-                                                    <div class="w-2xs">
+                                                    <div class="w-2xs border-r-1 border-gray-100">
                                                         <h4 class="font-medium text-gray-700 text-lg mb-4 relative">
                                                             Rehabilitation And <br />Physiotherapy
                                                         </h4>
                                                         <ul class="space-y-2 text-gray-600 ml-1">
                                                             <li class="mb-1"><a
                                                                     class="hover:text-gray-800 text-sm hover:underline transition-all"
-                                                                    href="#">Medical Sutures</a></li>
+                                                                    href="#">Medical
+                                                                    Sutures</a></li>
                                                             <li class="mb-1"><a
                                                                     class="hover:text-gray-800 text-sm hover:underline transition-all"
-                                                                    href="#">Surgical Instruments</a>
+                                                                    href="#">Surgical
+                                                                    Instruments</a>
                                                             </li>
                                                             <li class="mb-1"><a
                                                                     class="hover:text-gray-800 text-sm hover:underline transition-all"
-                                                                    href="#">Hollowware</a></li>
+                                                                    href="#">Hollowware</a>
+                                                            </li>
                                                             <li class="mb-1"><a
                                                                     class="hover:text-gray-800 text-sm hover:underline transition-all"
-                                                                    href="#">Sterilizers</a></li>
+                                                                    href="#">Sterilizers</a>
+                                                            </li>
                                                         </ul>
                                                     </div>
-
-                                                    <div class="w-px bg-gray-100 h-40 mt-10"></div>
-
-
-                                                    <!-- Category 2 -->
-                                                    <div class="w-2xs">
+                                                    <div class="w-2xs border-r-1 border-gray-100">
                                                         <h4 class="font-medium text-gray-700 text-lg mb-4 relative">
                                                             Hospital Furniture
                                                         </h4>
                                                         <ul class="space-y-2 text-gray-600 ml-1">
                                                             <li class="mb-1"><a
                                                                     class="hover:text-gray-800 text-sm hover:underline transition-all"
-                                                                    href="#">Urology</a></li>
+                                                                    href="#">Urology</a>
+                                                            </li>
                                                             <li class="mb-1"><a
                                                                     class="hover:text-gray-800 text-sm hover:underline transition-all"
-                                                                    href="#">Gastro Entrology</a></li>
+                                                                    href="#">Gastro
+                                                                    Entrology</a></li>
                                                             <li class="mb-1"><a
                                                                     class="hover:text-gray-800 text-sm hover:underline transition-all"
-                                                                    href="#">Oncology</a></li>
+                                                                    href="#">Oncology</a>
+                                                            </li>
                                                             <li class="mb-1"><a
                                                                     class="hover:text-gray-800 text-sm hover:underline transition-all"
-                                                                    href="#">Gynecology</a></li>
+                                                                    href="#">Gynecology</a>
+                                                            </li>
                                                             <li class="mb-1"><a
                                                                     class="hover:text-gray-800 text-sm hover:underline transition-all"
-                                                                    href="#">Anesthesia</a></li>
+                                                                    href="#">Anesthesia</a>
+                                                            </li>
                                                             <li class="mb-1"><a
                                                                     class="hover:text-gray-800 text-sm hover:underline transition-all"
-                                                                    href="#">Transfusion</a></li>
+                                                                    href="#">Transfusion</a>
+                                                            </li>
                                                         </ul>
                                                     </div>
 
-
-                                                    <div class="w-px bg-gray-100 h-40 mt-10"></div>
-
-                                                    <!-- Category 3 -->
                                                     <div class="w-2xs">
                                                         <h4 class="font-medium text-gray-700 text-lg mb-4 relative">
                                                             Medical Equipment
@@ -226,35 +227,122 @@
                                                         <ul class="space-y-2 text-gray-600 ml-1">
                                                             <li class="mb-1"><a
                                                                     class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                                    href="#">Bandages</a>
+                                                            </li>
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                                    href="#">Medical
+                                                                    Swabs</a></li>
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                                    href="#">Medical
+                                                                    Cotton</a></li>
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                                    href="#">Dressing
+                                                                    Tape</a></li>
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                                    href="#">Uniforms And
+                                                                    Linen</a>
+                                                            </li>
+                                                            <li><a class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                                    href="#">General Dressing</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="w-2xs border-r-1 border-gray-100">
+                                                        <h4 class="font-medium text-gray-700 text-lg mb-4 relative">
+                                                            Surgical Equipments
+                                                        </h4>
+                                                        <ul class="space-y-2 text-gray-600 ml-1">
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                                    href="#">Medical
+                                                                    Sutures</a></li>
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                                    href="#">Surgical
+                                                                    Instruments</a></li>
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                                    href="#">Hollowware</a>
+                                                            </li>
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                                    href="#">Sterilizers</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+
+                                                    <div class="w-2xs border-r-1 border-gray-100">
+                                                        <h4 class="font-medium text-gray-700 text-lg mb-4 relative">
+                                                            Medical Disposables
+                                                        </h4>
+                                                        <ul class="space-y-2 text-gray-600 ml-1">
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                                    href="#">Urology</a>
+                                                            </li>
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                                    href="#">Gastro
+                                                                    Entrology</a></li>
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                                    href="#">Oncology</a>
+                                                            </li>
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                                    href="#">Gynecology</a>
+                                                            </li>
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                                    href="#">Anesthesia</a>
+                                                            </li>
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                                    href="#">Transfusion</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+
+                                                    <div class="w-2xs">
+                                                        <h4 class="font-medium text-gray-700 text-lg mb-4 relative">
+                                                            Hospital Dressings
+                                                        </h4>
+                                                        <ul class="space-y-2 text-gray-600 ml-1">
+                                                            <li><a class="hover:text-gray-800 text-sm hover:underline transition-all"
                                                                     href="#">Bandages</a></li>
-                                                            <li class="mb-1"><a
-                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                            <li><a class="hover:text-gray-800 text-sm hover:underline transition-all"
                                                                     href="#">Medical Swabs</a></li>
-                                                            <li class="mb-1"><a
-                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                            <li><a class="hover:text-gray-800 text-sm hover:underline transition-all"
                                                                     href="#">Medical Cotton</a></li>
-                                                            <li class="mb-1"><a
-                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                            <li><a class="hover:text-gray-800 text-sm hover:underline transition-all"
                                                                     href="#">Dressing Tape</a></li>
-                                                            <li class="mb-1"><a
-                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                            <li><a class="hover:text-gray-800 text-sm hover:underline transition-all"
                                                                     href="#">Uniforms And Linen</a>
                                                             </li>
                                                             <li><a class="hover:text-gray-800 text-sm hover:underline transition-all"
                                                                     href="#">General Dressing</a></li>
                                                         </ul>
                                                     </div>
+                                                    <!-- <div class="w-px bg-gray-100 h-40 mt-10"></div> -->
+
+
                                                 </div>
                                             </div>
-
                                         </div>
                                     </div>
                                 </li>
-                                <a href="#" class="block text-[#174E83] font-normal text-[17px] relative">Event</a>
-                                <a href="#" class="block text-[#174E83] font-normal text-[17px] relative">Catalogue</a>
-                                <a href="#" class="block text-[#174E83] font-normal text-[17px] relative">Contact</a>
+                                <a href="#"
+                                    class="block text-[#174E83] font-normal lg:text-[17px] md:text-sm relative">Event</a>
+                                <a href="#"
+                                    class="block text-[#174E83] font-normal lg:text-[17px] md:text-sm relative">Catalogue</a>
+                                <a href="#"
+                                    class="block text-[#174E83] font-normal lg:text-[17px] md:text-sm relative">Contact</a>
                                 <!-- Search Icon -->
-                                <button class="text-gray-600 hover:text-blue-600 text-xl focus:outline-none">
+                                <button id="openSearchPopup"
+                                    class="text-gray-600 hover:text-[#174E83] text-xl focus:outline-none cursor-pointer transition-all hover:border border-[#174E83] rounded flex justify-center items-center h-8 w-8">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
                                         viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -302,9 +390,6 @@
 
         <div class="smallBanner h-54 pt-18 bg-cover"
             style="background-image: url(../../assets/images/static_imgs/productPage/innerpage-small-banner.png);">
-            <!-- <div class="flex justify-center items-center h-full w-full">
-                <h2 class="text-2xl md:text-5xl font-semibold text-[#fff]">Events</h2>
-            </div> -->
             <div class="w-full md:w-7xl mx-auto flex h-full justify-start items-center">
                 <nav class="bg-transparent border border-[#A4E1FC] py-2 inline-block rounded" aria-label="Breadcrumb">
                     <div class="max-w-7xl mx-auto px-6">
@@ -327,18 +412,7 @@
 
                             <!-- Intermediate Page -->
                             <li>
-                                <a href="#" class="hover:text-[#42AAA3] font-medium text-[#A4E1FC]">Event</a>
-                            </li>
-                            <li>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mx-2 text-white" fill="none"
-                                    viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M9 5l7 7-7 7" />
-                                </svg>
-                            </li>
-                            <li>
-                                <a href="#" class="hover:text-[#42AAA3] font-medium text-[#A4E1FC]">Event Single
-                                    View</a>
+                                <a href="#" class="hover:text-[#42AAA3] font-medium text-[#A4E1FC]">Our Presence</a>
                             </li>
                         </ol>
                     </div>
@@ -347,232 +421,236 @@
 
         </div>
 
-        <section class="relative w-full py-20 pb-20">
-            <div class="w-7xl relative mx-auto flex justify-end">
-                <div class="w-5xl border bg-[#EFEFEF] border-gray-300 px-10 rounded-2xl flex justify-end py-30">
-                    <div class="w-full md:w-[620px]">
-                        <p class="text-xl mb-4 text-gray-500 font-medium">What is Lorem Lipsum</p>
-                        <h4 class="text-2xl sm:text-2xl md:text-4xl font-semibold mb-8 leading-tigh text-gray-600">
-                            Lorem ipsum dolor sit amet consectetur adipisicing.
-                        </h4>
-                        <p class="text-base mb-6 max-w-2xl text-gray-500">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam eveniet eum itaque fugiat
-                            minus placeat aperiam laboriosam, mollitia numquam illum.
-                        </p>
-                        <button
-                            class="bg-[#42AAA3] hover:bg-[#36958E] text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 w-fit">
-                            Get In Touch
-                        </button>
-                    </div>
+        <section class="bg-gray-50 py-16">
+            <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-4 md:gap-4">
 
+                <!-- Right Image -->
+                <div class="flex-1 flex justify-start md:justify-start md:w-2/5">
+                    <img src="../../assets/images/static_imgs/our_presence_assests/Australia.-02.png" alt="Business Strategy"
+                        class="rounded-2xl w-full max-w-xl object-cover" />
                 </div>
-                <div
-                    class="rounded-2xl overflow-hidden absolute left-0 top-[10%] border-2 border-[#78ccf4] h-full w-xl">
-                    <img src="../../assets/images/static_imgs//EventPage/Event-Sec-bg.png"
-                        class="w-full h-full object-cover" />
-                </div>
-            </div>
-            <div class="max-w-7xl mx-auto px-6 text-center pt-24">
-                <!-- <h2 class="pb-3 text-3xl sm:text-4xl font-bold text-gray-900 mb-10 inline-block border-b-2 border-[#8cbde3] ">Catalogue Events</h2> -->
-
-                <!-- Gallery Grid -->
-                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 auto-rows-[200px]">
-
-                    <!-- Image 1 -->
-                    <div class="bg-[#b5b5b5] p-1 rounded col-span-1 sm:col-span-2 row-span-2">
-                        <a data-fancybox="gallery" title="01"
-                            href="../../assets/images/static_imgs/EventPage/Latest-image-002.png"
-                            data-caption="Beautiful Landscape 1">
-                            <img src="../../assets/images/static_imgs/EventPage/Latest-image-002.png"
-                                alt="Gallery Image 1"
-                                class="w-full h-full object-cover rounded-lg shadow-md hover:opacity-80 transition duration-300">
-                        </a>
-                    </div>
-
-                    <!-- Image 2 -->
-                    <div class="bg-[#b5b5b5] p-1 rounded">
-                        <a data-fancybox="gallery" title="02"
-                            href="../../assets/images/static_imgs/EventPage/Latest-image-01.png"
-                            data-caption="Beautiful Landscape 2">
-                            <img src="../../assets/images/static_imgs/EventPage/Latest-image-01.png"
-                                alt="Gallery Image 2"
-                                class="w-full h-full object-cover rounded-lg shadow-md hover:opacity-80 transition duration-300">
-                        </a>
-                    </div>
-
-                    <!-- Image 3 -->
-                    <div class="bg-[#b5b5b5] p-1 rounded row-span-2">
-                        <a data-fancybox="gallery" title="03"
-                            href="../../assets/images/static_imgs/EventPage/Latest-image-002.png"
-                            data-caption="Beautiful Landscape 1">
-                            <img src="../../assets/images/static_imgs/EventPage/Latest-image-002.png"
-                                alt="Gallery Image 1"
-                                class="w-full h-full object-cover rounded-lg shadow-md hover:opacity-80 transition duration-300">
-                        </a>
-                    </div>
-
-                    <!-- Image 4 -->
-                    <div class="bg-[#b5b5b5] p-1 rounded row-span-2">
-                        <a data-fancybox="gallery" title="04"
-                            href="../../assets/images/static_imgs/EventPage/Latest-image-01.png"
-                            data-caption="Beautiful Landscape 2">
-                            <img src="../../assets/images/static_imgs/EventPage/Latest-image-01.png"
-                                alt="Gallery Image 2"
-                                class="w-full h-full object-cover rounded-lg shadow-md hover:opacity-80 transition duration-300">
-                        </a>
-                    </div>
-
-                    <!-- Image 5 -->
-                    <div class="bg-[#b5b5b5] p-1 rounded col-span-1 sm:col-span-2">
-                        <a data-fancybox="gallery" title="05"
-                            href="../../assets/images/static_imgs/EventPage/Latest-image-002.png"
-                            data-caption="Beautiful Landscape 1">
-                            <img src="../../assets/images/static_imgs/EventPage/Latest-image-002.png"
-                                alt="Gallery Image 1"
-                                class="w-full h-full object-cover rounded-lg shadow-md hover:opacity-80 transition duration-300">
-                        </a>
-                    </div>
-
-                    <!-- Image 6 -->
-                    <div class="bg-[#b5b5b5] p-1 rounded">
-                        <a data-fancybox="gallery" title="06"
-                            href="../../assets/images/static_imgs/EventPage/Latest-image-01.png"
-                            data-caption="Beautiful Landscape 2">
-                            <img src="../../assets/images/static_imgs/EventPage/Latest-image-01.png"
-                                alt="Gallery Image 2"
-                                class="w-full h-full object-cover rounded-lg shadow-md hover:opacity-80 transition duration-300">
-                        </a>
-                    </div>
-                    <!-- <div class="bg-[#36958E] p-2 rounded">
-                                <a data-fancybox="gallery" title="07" href="../../assets/images/static_imgs/EventPage/Latest-image-01.png"
-                                    data-caption="Beautiful Landscape 2">
-                                    <img src="../../assets/images/static_imgs/EventPage/Latest-image-01.png" alt="Gallery Image 2"
-                                        class="w-full h-full object-cover rounded-lg shadow-md hover:opacity-80 transition duration-300">
-                                </a>
-                                </div>
-                                <div class="bg-[#36958E] p-2 rounded">
-                                <a data-fancybox="gallery" title="08" href="../../assets/images/static_imgs/EventPage/Latest-image-01.png"
-                                    data-caption="Beautiful Landscape 2">
-                                    <img src="../../assets/images/static_imgs/EventPage/Latest-image-01.png" alt="Gallery Image 2"
-                                        class="w-full h-full object-cover rounded-lg shadow-md hover:opacity-80 transition duration-300">
-                                </a>
-                                </div> -->
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Image Gallery Section -->
-        <section class="py-0">
-
-        </section>
-
-        <!-- Related or upcoming evens slider -->
-        <section class="relative bg-cover bg-center bg-no-repeat"
-            style="background-image: url('../../assets/images/static_imgs/EventPage/latest-event-bg.png');">
-            <!-- Overlay -->
-            <!-- <div class="absolute inset-0 bg-black/50"></div> -->
-
-            <!-- Content -->
-            <div class="relative max-w-7xl mx-auto px-6 pb-30 text-white pt-10">
-                <!-- Row 1: Heading + Button -->
-                <p class="text-[#AEE6FD] text-xl mb-2 font-semibold">Related Events</p>
-                <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-20">
-                    <h4 class="text-2xl md:text-4xl font-semibold text-center md:text-left leading-12">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, voluptatem.
+        
+                <!-- Left Content -->
+                <div class="flex-1 md:w-3/5">
+                    <p class="text-lg mb-2 text-gray-400 font-normal">What is Lorem Iipsum</p>
+                    <h4 class="text-3xl md:text-3xl font-semibold text-gray-600 leading-snug mb-4">
+                        More Than 20+ Years <br /> with Innovative Solutions
                     </h4>
-
-                </div>
-            </div>
-
-            <!-- Swiper (Row 2) -->
-            <div class="absolute left-0 right-0 -bottom-50">
-                <div class="max-w-7xl mx-auto px-6 latestEventSlider">
-                    <div class="swiper eventSwiper">
-                        <div class="swiper-wrapper">
-                            <!-- Slide 1 -->
-                            <div class="swiper-slide">
-                                <div class="bg-[#04457D] rounded-xl overflow-hidden p-2">
-                                    <div class="relative">
-                                        <img src="../../assets/images/static_imgs/EventPage/Latest-image-002.png"
-                                            alt="Product 4"
-                                            class="w-full h-62 object-cover border-2 border-[#0DB3B1] rounded-xl">
-                                    </div>
-                                    <h3 class="text-white font-semibold text-lg m-4">Product 4</h3>
-                                </div>
-                            </div>
-                            <!-- Slide 2 -->
-                            <div class="swiper-slide">
-                                <div class="bg-[#04457D] rounded-xl overflow-hidden p-2">
-                                    <div class="relative">
-                                        <img src="../../assets/images/static_imgs/EventPage/Latest-image-002.png"
-                                            alt="Product 4"
-                                            class="w-full h-62 object-cover border-2 border-[#0DB3B1] rounded-xl">
-                                    </div>
-                                    <h3 class="text-white font-semibold text-lg m-4">Product 4</h3>
-                                </div>
-                            </div>
-                            <!-- Slide 3 -->
-                            <div class="swiper-slide">
-                                <div class="bg-[#04457D] rounded-xl overflow-hidden p-2">
-                                    <div class="relative">
-                                        <img src="../../assets/images/static_imgs/EventPage/Latest-image-002.png"
-                                            alt="Product 4"
-                                            class="w-full h-62 object-cover border-2 border-[#0DB3B1] rounded-xl">
-                                    </div>
-                                    <h3 class="text-white font-semibold text-lg m-4">Product 4</h3>
-                                </div>
-                            </div>
-                            <!-- Slide 4 -->
-                            <div class="swiper-slide">
-                                <div class="bg-[#04457D] rounded-xl overflow-hidden p-2">
-                                    <div class="relative">
-                                        <img src="../../assets/images/static_imgs/EventPage/Latest-image-002.png"
-                                            alt="Product 4"
-                                            class="w-full h-62 object-cover border-2 border-[#0DB3B1] rounded-xl">
-                                        <!-- <div class="p-4 text-center card-content">
-                                        <h3 class="text-white font-semibold text-lg">Product 4</h3>
-                                    </div> -->
-                                    </div>
-                                    <h3 class="text-white font-semibold text-lg m-4">Product 4</h3>
-                                </div>
-                            </div>
-                            <!-- Add more slides as needed -->
+                    <p class="text-gray-500 md:mb-4 mb-3 max-w-xl">
+                        We provide modern, scalable, and smart digital solutions designed to elevate your business and deliver
+                        outstanding customer experiences.
+                    </p>
+        
+                    <!-- Features Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+                        <!-- Feature 1 -->
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-600 mb-1">Smart Strategy</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Build a roadmap for success with data-driven insights and clear execution.
+                            </p>
+                        </div>
+                        <!-- Feature 2 -->
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-600 mb-1">Creative Design</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Bring your vision to life with designs that inspire and engage your audience.
+                            </p>
                         </div>
                     </div>
+                    <!-- Button -->
+                    <button
+                        class="bg-[#0889C3] hover:bg-[#36958E] text-white px-6 py-3 rounded-lg font-light transition-all duration-300 text-base border border-gray-200">
+                        Get in touch
+                    </button>
                 </div>
+        
             </div>
         </section>
 
-        <!-- Extra space below to show overlap -->
-        <div class="p-32"></div>
+        <section class="w-full py-14 bg-white">
+            <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 commonArrow relative">
 
-        <!-- Footer Section -->
-        <footer class="bg-[#083866] text-gray-300 pt-16 pb-8 px-6 md:px-12">
+                <!-- Heading -->
+                <h2
+                    class="text-3xl md:text-4xl font-semibold text-gray-600 mb-8 inline-block border-b-2 border-[#8cbde3] ">
+                    Market Place / Our Presence</h2>
+
+                <!-- Swiper Container -->
+                <div class="swiper relatedProductsSlider">
+
+                    <div class="swiper-wrapper">
+
+                        <!-- Product Card -->
+                        <div class="swiper-slide">
+                            <div class="bg-white item border-2 border-[#E4E4E4] rounded-xl overflow-hidden group">
+                                <a href="#" title="View Product" class="relative bg-white overflow-hidden block">
+                                    <img src="../../assets/images/static_imgs/our_presence_assests/Australia.png" alt="Product"
+                                        class="mx-auto transition-all duration-500 w-full h-58 object-cover overflow-hidden group-hover:scale-[1.3]">
+                                    <div class="p-3 absolute z-3 left-0 bottom-0 pb-4">
+                                        <p class="mt-3 text-lg font-medium text-gray-700 inline-block group-hover:text-white">
+                                            Dubai
+                                        </p>
+                                    </div>
+                                </a>
+                                <div class="p-4">
+                                    <h4 class="text-gray-700 font-medium text-xl mb-2">Hospital Dressing & Medical Equipment</h4>
+                                    <p class="text-gray-500 mb-3">It is a long established fact that a reader will be distracted by the readable
+                                        content of
+                                        a page when looking at its
+                                        layout.</p>
+                                    <button class="bg-linear-to-r from-[#0890C0] to-[#07AAB7] py-2 px-4 rounded-full text-white cursor-pointer">Read
+                                        More</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="bg-white item border-2 border-[#E4E4E4] rounded-xl overflow-hidden group">
+                                <a href="#" title="View Product" class="relative bg-white overflow-hidden block">
+                                    <img src="../../assets/images/static_imgs/our_presence_assests/Brazil-02.png" alt="Product"
+                                        class="mx-auto transition-all duration-500 w-full h-58 object-cover overflow-hidden group-hover:scale-[1.3]">
+                                    <div class="p-3 absolute z-3 left-0 bottom-0 pb-4">
+                                        <p class="mt-3 text-lg font-medium text-gray-700 inline-block group-hover:text-white">
+                                            Dubai
+                                        </p>
+                                    </div>
+                                </a>
+                                <div class="p-4">
+                                    <h4 class="text-gray-700 font-medium text-xl mb-2">Hospital Dressing & Medical Equipment</h4>
+                                    <p class="text-gray-500 mb-3">It is a long established fact that a reader will be distracted by the readable
+                                        content of
+                                        a page when looking at its
+                                        layout.</p>
+                                    <button class="bg-linear-to-r from-[#0890C0] to-[#07AAB7] py-2 px-4 rounded-full text-white cursor-pointer">Read
+                                        More</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="bg-white item border-2 border-[#E4E4E4] rounded-xl overflow-hidden group">
+                                <a href="#" title="View Product" class="relative bg-white overflow-hidden block">
+                                    <img src="../../assets/images/static_imgs/our_presence_assests/Brazil.png" alt="Product"
+                                        class="mx-auto transition-all duration-500 w-full h-58 object-cover overflow-hidden group-hover:scale-[1.3]">
+                                    <div class="p-3 absolute z-3 left-0 bottom-0 pb-4">
+                                        <p class="mt-3 text-lg font-medium text-gray-700 inline-block group-hover:text-white">
+                                            Dubai
+                                        </p>
+                                    </div>
+                                </a>
+                                <div class="p-4">
+                                    <h4 class="text-gray-700 font-medium text-xl mb-2">Hospital Dressing & Medical Equipment</h4>
+                                    <p class="text-gray-500 mb-3">It is a long established fact that a reader will be distracted by the readable
+                                        content of
+                                        a page when looking at its
+                                        layout.</p>
+                                    <button class="bg-linear-to-r from-[#0890C0] to-[#07AAB7] py-2 px-4 rounded-full text-white cursor-pointer">Read
+                                        More</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="bg-white item border-2 border-[#E4E4E4] rounded-xl overflow-hidden group">
+                                <a href="#" title="View Product" class="relative bg-white overflow-hidden block">
+                                    <img src="../../assets/images/static_imgs/our_presence_assests/Duabi-02.png" alt="Product"
+                                        class="mx-auto transition-all duration-500 w-full h-58 object-cover overflow-hidden group-hover:scale-[1.3]">
+                                    <div class="p-3 absolute z-3 left-0 bottom-0 pb-4">
+                                        <p class="mt-3 text-lg font-medium text-gray-700 inline-block group-hover:text-white">
+                                            Dubai
+                                        </p>
+                                    </div>
+                                </a>
+                                <div class="p-4">
+                                    <h4 class="text-gray-700 font-medium text-xl mb-2">Hospital Dressing & Medical Equipment</h4>
+                                    <p class="text-gray-500 mb-3">It is a long established fact that a reader will be distracted by the readable
+                                        content of
+                                        a page when looking at its
+                                        layout.</p>
+                                    <button class="bg-linear-to-r from-[#0890C0] to-[#07AAB7] py-2 px-4 rounded-full text-white cursor-pointer">Read
+                                        More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-white item border-2 border-[#E4E4E4] rounded-xl overflow-hidden group">
+                                <a href="#" title="View Product" class="relative bg-white overflow-hidden block">
+                                    <img src="../../assets/images/static_imgs/our_presence_assests/Dubai-01.png" alt="Product"
+                                        class="mx-auto transition-all duration-500 w-full h-58 object-cover overflow-hidden group-hover:scale-[1.3]">
+                                    <div class="p-3 absolute z-3 left-0 bottom-0 pb-4">
+                                        <p class="mt-3 text-lg font-medium text-gray-700 inline-block group-hover:text-white">
+                                            Dubai
+                                        </p>
+                                    </div>
+                                </a>
+                                <div class="p-4">
+                                    <h4 class="text-gray-700 font-medium text-xl mb-2">Hospital Dressing & Medical Equipment</h4>
+                                    <p class="text-gray-500 mb-3">It is a long established fact that a reader will be distracted by the readable
+                                        content of
+                                        a page when looking at its
+                                        layout.</p>
+                                    <button class="bg-linear-to-r from-[#0890C0] to-[#07AAB7] py-2 px-4 rounded-full text-white cursor-pointer">Read
+                                        More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-white item border-2 border-[#E4E4E4] rounded-xl overflow-hidden group">
+                                <a href="#" title="View Product" class="relative bg-white overflow-hidden block">
+                                    <img src="../../assets/images/static_imgs/our_presence_assests/Ghana.png" alt="Product"
+                                        class="mx-auto transition-all duration-500 w-full h-58 object-cover overflow-hidden group-hover:scale-[1.3]">
+                                    <div class="p-3 absolute z-3 left-0 bottom-0 pb-4">
+                                        <p class="mt-3 text-lg font-medium text-gray-700 inline-block group-hover:text-white">
+                                            Dubai
+                                        </p>
+                                    </div>
+                                </a>
+                                <div class="p-4">
+                                    <h4 class="text-gray-700 font-medium text-xl mb-2">Hospital Dressing & Medical Equipment</h4>
+                                    <p class="text-gray-500 mb-3">It is a long established fact that a reader will be distracted by the readable
+                                        content of
+                                        a page when looking at its
+                                        layout.</p>
+                                    <button class="bg-linear-to-r from-[#0890C0] to-[#07AAB7] py-2 px-4 rounded-full text-white cursor-pointer">Read
+                                        More</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Add more items if needed -->
+
+                    </div>
+
+                </div>
+
+                <!-- Swiper Navigation Buttons -->
+                <div class="absolute top-1/2 -translate-y-1/2 -left-10 z-10">
+                    <div class="swiper-button-prev custom-arrow"></div>
+                </div>
+                <div class="absolute top-1/2 -translate-y-1/2 -right-10 z-10">
+                    <div class="swiper-button-next custom-arrow"></div>
+                </div>
+
+            </div>
+        </section>
+
+        <footer class="bg-[#083866] text-gray-300 lg:pt-16 md:pt-10 pt-6 lg:pb-8 pb-4 px-4 lg:px-12 md:px-6">
 
             <!-- Row 1: Logo + Links -->
-            <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-gray-500">
+            <div
+                class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 lg:gap-10 gap-4 md:pb-12 pb-6 border-b border-gray-500">
 
-                <!-- Column 1: Logo + Descript  ion -->
-                <div class="">
-                    <h2 class="text-2xl font-bold text-white mb-3"><img
-                            src="../../assets/images/static_imgs/MANARTI-LOGO.WHITE.png" /></h2>
+                <!-- Column 1: Logo + Description -->
+                <div>
+                    <h4 class=" text-white lg:mb-3 mb-2"><img
+                            src="../../assets/images/static_imgs/MANARTI-LOGO.WHITE.png" class="w-auto md:w-[170px]" />
+                    </h4>
                     <p class="text-gray-400 text-sm leading-relaxed">
                         Manarti Exports is a specialized medical disposables, systems, devices and hospital equipment
                         provider offering a wide
                         range of products.
                     </p>
-                    <div class="pt-4">
-                    <form class="max-w-xl mx-auto flex flex-col sm:flex-row items-center gap-3 bg-white rounded-md">
-                        <input type="email" placeholder="Enter your email address"
-                            class="w-full px-4 py-3 rounded-md text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500" />
-
-                        <button type="submit"
-                            class="w-full sm:w-auto bg-[#42AAA3] hover:bg-[#23726d] text-white px-2 py-3 rounded-tr-md rounded-br-md font-medium transition cursor-pointer">
-                            Subscribe
-                        </button>
-                    </form>
-                    </div>
                 </div>
 
 
@@ -613,7 +691,8 @@
                         <li class="flex justify-start items-center gap-4 mb-4"><i
                                 class="fa-solid fa-location-dot text-lg"></i>
                             <a href="#" class="hover:text-white transition">114/115, First Floor, Vishwadeep Tower,
-                                District 
+                                District
+                                Centre, Janak Puri, New Delhi-110058 (INDIA)</a>
                         </li>
                         <li class="flex justify-start items-center gap-4 mb-4"><i
                                 class="fa-solid fa-envelope text-lg"></i><a href="#"
@@ -626,7 +705,8 @@
             </div>
 
             <!-- Row 2: Social Icons -->
-            <div class="max-w-7xl mx-auto flex justify-between gap-4 items-center border-b border-gray-500 py-4">
+            <div
+                class="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between lg:gap-4 md:gap-2 items-center border-b border-gray-500 lg:py-4 md:py-2">
                 <div class="text-center text-gray-400 text-sm">
                     © 2025 Manarti Exports. All rights reserved.
                 </div>
@@ -643,7 +723,7 @@
                     <a href="#" class="text-gray-400 hover:text-white transition text-xl"><i
                             class="fab fa-youtube"></i></a>
                 </div>
-                <div class="footerBottomLinks flex justify-between items-center gap-4">
+                <div class="footerBottomLinks flex justify-between items-center md:gap-4 gap-2">
                     <div class="text-sm underline hover:text-white"><a href="#">Terms & Conditions</a></div>
                     <div class="text-sm underline hover:text-white"><a href="#">Privacy Policy</a></div>
                     <div class="text-sm underline hover:text-white"><a href="#">Cookies Policy</a></div>
@@ -704,49 +784,25 @@
             </div>
         </div>
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"
         integrity="sha512-6BTOlkauINO65nLhXhthZMtepgJSghyimIalb+crKRPhvhmsCdnIuGcVbR5/aQY2A+260iC1OPy1oCdB6pSSwQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- Fancybox JS -->
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
-
     <script>
-        const swiper = new Swiper(".eventSwiper", {
+        var swiper = new Swiper(".relatedProductsSlider", {
             slidesPerView: 1,
-            spaceBetween: 30,
+            spaceBetween: 20,
             loop: true,
-            autoplay: { delay: 2500, disableOnInteraction: false },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
             breakpoints: {
                 640: { slidesPerView: 2 },
-                1024: { slidesPerView: 3 },
-                1280: { slidesPerView: 4 },
-            },
-        });
-        // Initialize Fancybox (optional custom settings)
-        Fancybox.bind("[data-fancybox='gallery']", {
-            Thumbs: {
-                autoStart: true,
-            },
-            Toolbar: {
-                display: ["zoom", "slideshow", "fullscreen", "download", "thumbs", "close"],
-            },
+                1024: { slidesPerView: 4 }
+            }
         });
 
-        // Show popup 2.5 seconds after page load
-        setTimeout(() => {
-            const popup = document.getElementById("cookiePopup");
-            popup.classList.remove("hidden");
-            setTimeout(() => popup.classList.remove("opacity-0"), 50);
-        }, 1000);
-
-        // Hide popup on button click
-        document.getElementById("acceptCookies").addEventListener("click", () => {
-            const popup = document.getElementById("cookiePopup");
-            popup.classList.add("opacity-0");
-            setTimeout(() => popup.classList.add("hidden"), 500);
-        });
     </script>
 
 </body>
