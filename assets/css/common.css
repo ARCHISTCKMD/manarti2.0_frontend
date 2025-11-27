@@ -95,3 +95,11 @@
     transform-origin: bottom center;
     animation: swing .8s ease-in-out infinite alternate;
 }
+
+@media (max-width: 900px) {
+
+    .commonArrow .swiper-button-prev::after, .commonArrow .swiper-button-next::after {
+        font-size: 14px;
+    }
+    
+}
