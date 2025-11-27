@@ -784,6 +784,9 @@
   .w-\[90\%\] {
     width: 90%;
   }
+  .w-\[94\%\] {
+    width: 94%;
+  }
   .w-\[95\%\] {
     width: 95%;
   }
@@ -3551,6 +3554,12 @@
     @media (width >= 64rem) {
       font-size: var(--text-2xl);
       line-height: var(--tw-leading, var(--text-2xl--line-height));
+    }
+  }
+  .lg\:text-3xl {
+    @media (width >= 64rem) {
+      font-size: var(--text-3xl);
+      line-height: var(--tw-leading, var(--text-3xl--line-height));
     }
   }
   .lg\:text-4xl {
