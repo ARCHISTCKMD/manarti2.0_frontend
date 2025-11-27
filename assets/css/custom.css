@@ -724,6 +724,9 @@ body {
     .section {
         padding: 0 .8rem;
     }
+    .site-logo {
+        width: 200px;
+    }
 
     .bannerSec {
         margin-bottom: 370px;
