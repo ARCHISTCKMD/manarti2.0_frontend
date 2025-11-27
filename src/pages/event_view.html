@@ -22,24 +22,23 @@
         <div class="headerSec">
             <div class="section">
                 <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
-                    <div class="mx-auto px-4 sm:px-6 lg:px-28">
-                        <div class="flex justify-between items-center h-17">
-
+                    <div class="mx-auto px-4 sm:px-6 2xl:px-28 xl:px-20 md:px-4">
+                        <div class="flex justify-between items-center lg:h-17 h-14">
                             <!-- Logo -->
                             <div class="flex items-center w-60">
                                 <img src="../../assets/images/static_imgs/MANARTI-LOGO.png" alt="Logo"
-                                    class="w-auto mr-2">
+                                    class="w-[auto] mr-2 lg:w-[200px] xl:w-full sm:w-[160px]">
                             </div>
-
+        
                             <!-- Menu (Desktop) -->
-                            <ul class="hidden md:flex space-x-8 gap-x-[40px] items-center menuLinks">
+                            <ul
+                                class="hidden md:flex lg:space-x-8 md:space-x-4 sm:space-x-4 xl:gap-x-[40px] lg:gap-x-[32px] md:gap-x-[20px] items-center menuLinks">
                                 <li class="relative group"><a href="#"
-                                        class="text-[#174E83] font-normal text-[17px] relative">Home</a>
-
+                                        class="text-[#174E83] font-normal lg:text-[17px] md:text-sm relative">Home</a>
                                 </li>
                                 <li class="relative group">
-                                    <a href="#" class="block text-[#174E83] font-normal text-[17px] relative">Info <i
-                                            class="fa-solid fa-angle-down text-xs"></i></a>
+                                    <a href="#" class="block text-[#174E83] font-normal lg:text-[17px] md:text-sm relative">Info
+                                        <i class="fa-solid fa-angle-down text-xs"></i></a>
                                     <div
                                         class="absolute left-0 top-8 mt-2 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all dropdownMenus">
                                         <ul class="py-3 w-50">
@@ -61,87 +60,91 @@
                                         </ul>
                                     </div>
                                 </li>
-
+        
                                 <li class="relative group">
-                                    <a href="#" class="block text-[#174E83] font-normal text-[17px] relative">Product <i
-                                            class="fa-solid fa-angle-down text-xs"></i></a>
+                                    <a href="#"
+                                        class="block text-[#174E83] font-normal lg:text-[17px] md:text-sm relative">Product
+                                        <i class="fa-solid fa-angle-down text-xs"></i></a>
                                     <!-- FULL SCREEN MEGA MENU -->
                                     <div
                                         class="fixed left-0 top-[60px] w-screen bg-white shadow-2xl border-t border-gray-200
-                                                    opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 dropdownMenus">
-
+                                                        opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 dropdownMenus">
+        
                                         <div class="px-10 py-8 grid grid-cols-4 gap-4 max-w-8xl mx-auto">
                                             <div class="border-r border-gray-200">
                                                 <img src="../../assets/images/static_imgs/TOP-PRODUCT.png"
                                                     alt="top product img" />
-
+        
                                                 <div class="mt-4">
                                                     <h4 class="font-semibold text-lg text-[#42AAA3]">Top
                                                         Categories Of Equipment</h4>
                                                     <p class="text-gray-500 text-sm mt-1">Contrary to popular belief,
-                                                        Lorem
-                                                        Ipsum is not simply random text. It has roots in a piece of
-                                                        classical
-                                                    </p>
+                                                        Lorem Ipsum is not simply random text. It has roots in a piece
+                                                        of classical</p>
                                                 </div>
                                             </div>
-
+        
                                             <div class="col-span-3">
-                                                <!-- Category 1 -->
-                                                <div class="flex justify-between px-10 pb-6">
-                                                    <div class="w-2xs">
+        
+                                                <div
+                                                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 megaMenus max-h-[70vh] overflow-y-scroll customScrollbar">
+                                                    <!-- Card 1 -->
+                                                    <div class="w-2xs border-r-1 border-gray-100">
                                                         <h4 class="font-medium text-gray-700 text-lg mb-4 relative">
                                                             Surgical Equipments
                                                         </h4>
                                                         <ul class="space-y-2 text-gray-600 ml-1">
                                                             <li class="mb-1"><a
                                                                     class="hover:text-gray-800 text-sm hover:underline transition-all"
-                                                                    href="#">Medical Sutures</a></li>
+                                                                    href="#">Medical
+                                                                    Sutures</a></li>
                                                             <li class="mb-1"><a
                                                                     class="hover:text-gray-800 text-sm hover:underline transition-all"
-                                                                    href="#">Surgical Instruments</a></li>
+                                                                    href="#">Surgical
+                                                                    Instruments</a></li>
                                                             <li class="mb-1"><a
                                                                     class="hover:text-gray-800 text-sm hover:underline transition-all"
-                                                                    href="#">Hollowware</a></li>
+                                                                    href="#">Hollowware</a>
+                                                            </li>
                                                             <li class="mb-1"><a
                                                                     class="hover:text-gray-800 text-sm hover:underline transition-all"
-                                                                    href="#">Sterilizers</a></li>
+                                                                    href="#">Sterilizers</a>
+                                                            </li>
                                                         </ul>
                                                     </div>
-
-                                                    <div class="w-px bg-gray-100 h-40 mt-10"></div>
-
-                                                    <!-- Category 2 -->
-                                                    <div class="w-2xs">
+        
+                                                    <div class="w-2xs border-r-1 border-gray-100">
                                                         <h4 class="font-medium text-gray-700 text-lg mb-4 relative">
                                                             Medical Disposables
                                                         </h4>
                                                         <ul class="space-y-2 text-gray-600 ml-1">
                                                             <li class="mb-1"><a
                                                                     class="hover:text-gray-800 text-sm hover:underline transition-all"
-                                                                    href="#">Urology</a></li>
+                                                                    href="#">Urology</a>
+                                                            </li>
                                                             <li class="mb-1"><a
                                                                     class="hover:text-gray-800 text-sm hover:underline transition-all"
-                                                                    href="#">Gastro Entrology</a></li>
+                                                                    href="#">Gastro
+                                                                    Entrology</a></li>
                                                             <li class="mb-1"><a
                                                                     class="hover:text-gray-800 text-sm hover:underline transition-all"
-                                                                    href="#">Oncology</a></li>
+                                                                    href="#">Oncology</a>
+                                                            </li>
                                                             <li class="mb-1"><a
                                                                     class="hover:text-gray-800 text-sm hover:underline transition-all"
-                                                                    href="#">Gynecology</a></li>
+                                                                    href="#">Gynecology</a>
+                                                            </li>
                                                             <li class="mb-1"><a
                                                                     class="hover:text-gray-800 text-sm hover:underline transition-all"
-                                                                    href="#">Anesthesia</a></li>
+                                                                    href="#">Anesthesia</a>
+                                                            </li>
                                                             <li class="mb-1"><a
                                                                     class="hover:text-gray-800 text-sm hover:underline transition-all"
-                                                                    href="#">Transfusion</a></li>
+                                                                    href="#">Transfusion</a>
+                                                            </li>
                                                         </ul>
                                                     </div>
-
-
-                                                    <div class="w-px bg-gray-100 h-40 mt-10"></div>
-
-                                                    <!-- Category 3 -->
+        
                                                     <div class="w-2xs">
                                                         <h4 class="font-medium text-gray-700 text-lg mb-4 relative">
                                                             Hospital Dressings
@@ -156,69 +159,68 @@
                                                             <li><a class="hover:text-gray-800 text-sm hover:underline transition-all"
                                                                     href="#">Dressing Tape</a></li>
                                                             <li><a class="hover:text-gray-800 text-sm hover:underline transition-all"
-                                                                    href="#">Uniforms And Linen</a></li>
+                                                                    href="#">Uniforms And Linen</a>
+                                                            </li>
                                                             <li><a class="hover:text-gray-800 text-sm hover:underline transition-all"
                                                                     href="#">General Dressing</a></li>
                                                         </ul>
                                                     </div>
-                                                </div>
-
-                                                <div class="flex justify-between px-10 pb-4">
-                                                    <div class="w-2xs">
+                                                    <div class="w-2xs border-r-1 border-gray-100">
                                                         <h4 class="font-medium text-gray-700 text-lg mb-4 relative">
                                                             Rehabilitation And <br />Physiotherapy
                                                         </h4>
                                                         <ul class="space-y-2 text-gray-600 ml-1">
                                                             <li class="mb-1"><a
                                                                     class="hover:text-gray-800 text-sm hover:underline transition-all"
-                                                                    href="#">Medical Sutures</a></li>
+                                                                    href="#">Medical
+                                                                    Sutures</a></li>
                                                             <li class="mb-1"><a
                                                                     class="hover:text-gray-800 text-sm hover:underline transition-all"
-                                                                    href="#">Surgical Instruments</a>
+                                                                    href="#">Surgical
+                                                                    Instruments</a>
                                                             </li>
                                                             <li class="mb-1"><a
                                                                     class="hover:text-gray-800 text-sm hover:underline transition-all"
-                                                                    href="#">Hollowware</a></li>
+                                                                    href="#">Hollowware</a>
+                                                            </li>
                                                             <li class="mb-1"><a
                                                                     class="hover:text-gray-800 text-sm hover:underline transition-all"
-                                                                    href="#">Sterilizers</a></li>
+                                                                    href="#">Sterilizers</a>
+                                                            </li>
                                                         </ul>
                                                     </div>
-
-                                                    <div class="w-px bg-gray-100 h-40 mt-10"></div>
-
-
-                                                    <!-- Category 2 -->
-                                                    <div class="w-2xs">
+                                                    <div class="w-2xs border-r-1 border-gray-100">
                                                         <h4 class="font-medium text-gray-700 text-lg mb-4 relative">
                                                             Hospital Furniture
                                                         </h4>
                                                         <ul class="space-y-2 text-gray-600 ml-1">
                                                             <li class="mb-1"><a
                                                                     class="hover:text-gray-800 text-sm hover:underline transition-all"
-                                                                    href="#">Urology</a></li>
+                                                                    href="#">Urology</a>
+                                                            </li>
                                                             <li class="mb-1"><a
                                                                     class="hover:text-gray-800 text-sm hover:underline transition-all"
-                                                                    href="#">Gastro Entrology</a></li>
+                                                                    href="#">Gastro
+                                                                    Entrology</a></li>
                                                             <li class="mb-1"><a
                                                                     class="hover:text-gray-800 text-sm hover:underline transition-all"
-                                                                    href="#">Oncology</a></li>
+                                                                    href="#">Oncology</a>
+                                                            </li>
                                                             <li class="mb-1"><a
                                                                     class="hover:text-gray-800 text-sm hover:underline transition-all"
-                                                                    href="#">Gynecology</a></li>
+                                                                    href="#">Gynecology</a>
+                                                            </li>
                                                             <li class="mb-1"><a
                                                                     class="hover:text-gray-800 text-sm hover:underline transition-all"
-                                                                    href="#">Anesthesia</a></li>
+                                                                    href="#">Anesthesia</a>
+                                                            </li>
                                                             <li class="mb-1"><a
                                                                     class="hover:text-gray-800 text-sm hover:underline transition-all"
-                                                                    href="#">Transfusion</a></li>
+                                                                    href="#">Transfusion</a>
+                                                            </li>
                                                         </ul>
                                                     </div>
-
-
-                                                    <div class="w-px bg-gray-100 h-40 mt-10"></div>
-
-                                                    <!-- Category 3 -->
+        
                                                     <div class="w-2xs">
                                                         <h4 class="font-medium text-gray-700 text-lg mb-4 relative">
                                                             Medical Equipment
@@ -226,57 +228,144 @@
                                                         <ul class="space-y-2 text-gray-600 ml-1">
                                                             <li class="mb-1"><a
                                                                     class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                                    href="#">Bandages</a>
+                                                            </li>
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                                    href="#">Medical
+                                                                    Swabs</a></li>
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                                    href="#">Medical
+                                                                    Cotton</a></li>
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                                    href="#">Dressing
+                                                                    Tape</a></li>
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                                    href="#">Uniforms And
+                                                                    Linen</a>
+                                                            </li>
+                                                            <li><a class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                                    href="#">General Dressing</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="w-2xs border-r-1 border-gray-100">
+                                                        <h4 class="font-medium text-gray-700 text-lg mb-4 relative">
+                                                            Surgical Equipments
+                                                        </h4>
+                                                        <ul class="space-y-2 text-gray-600 ml-1">
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                                    href="#">Medical
+                                                                    Sutures</a></li>
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                                    href="#">Surgical
+                                                                    Instruments</a></li>
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                                    href="#">Hollowware</a>
+                                                            </li>
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                                    href="#">Sterilizers</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+        
+                                                    <div class="w-2xs border-r-1 border-gray-100">
+                                                        <h4 class="font-medium text-gray-700 text-lg mb-4 relative">
+                                                            Medical Disposables
+                                                        </h4>
+                                                        <ul class="space-y-2 text-gray-600 ml-1">
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                                    href="#">Urology</a>
+                                                            </li>
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                                    href="#">Gastro
+                                                                    Entrology</a></li>
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                                    href="#">Oncology</a>
+                                                            </li>
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                                    href="#">Gynecology</a>
+                                                            </li>
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                                    href="#">Anesthesia</a>
+                                                            </li>
+                                                            <li class="mb-1"><a
+                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                                    href="#">Transfusion</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+        
+                                                    <div class="w-2xs">
+                                                        <h4 class="font-medium text-gray-700 text-lg mb-4 relative">
+                                                            Hospital Dressings
+                                                        </h4>
+                                                        <ul class="space-y-2 text-gray-600 ml-1">
+                                                            <li><a class="hover:text-gray-800 text-sm hover:underline transition-all"
                                                                     href="#">Bandages</a></li>
-                                                            <li class="mb-1"><a
-                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                            <li><a class="hover:text-gray-800 text-sm hover:underline transition-all"
                                                                     href="#">Medical Swabs</a></li>
-                                                            <li class="mb-1"><a
-                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                            <li><a class="hover:text-gray-800 text-sm hover:underline transition-all"
                                                                     href="#">Medical Cotton</a></li>
-                                                            <li class="mb-1"><a
-                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                            <li><a class="hover:text-gray-800 text-sm hover:underline transition-all"
                                                                     href="#">Dressing Tape</a></li>
-                                                            <li class="mb-1"><a
-                                                                    class="hover:text-gray-800 text-sm hover:underline transition-all"
+                                                            <li><a class="hover:text-gray-800 text-sm hover:underline transition-all"
                                                                     href="#">Uniforms And Linen</a>
                                                             </li>
                                                             <li><a class="hover:text-gray-800 text-sm hover:underline transition-all"
                                                                     href="#">General Dressing</a></li>
                                                         </ul>
                                                     </div>
+                                                    <!-- <div class="w-px bg-gray-100 h-40 mt-10"></div> -->
+        
+        
                                                 </div>
                                             </div>
-
                                         </div>
                                     </div>
                                 </li>
-                                <a href="#" class="block text-[#174E83] font-normal text-[17px] relative">Event</a>
-                                <a href="#" class="block text-[#174E83] font-normal text-[17px] relative">Catalogue</a>
-                                <a href="#" class="block text-[#174E83] font-normal text-[17px] relative">Contact</a>
+                                <a href="#"
+                                    class="block text-[#174E83] font-normal lg:text-[17px] md:text-sm relative">Event</a>
+                                <a href="#"
+                                    class="block text-[#174E83] font-normal lg:text-[17px] md:text-sm relative">Catalogue</a>
+                                <a href="#"
+                                    class="block text-[#174E83] font-normal lg:text-[17px] md:text-sm relative">Contact</a>
                                 <!-- Search Icon -->
-                                <button class="text-gray-600 hover:text-blue-600 text-xl focus:outline-none">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor">
+                                <button id="openSearchPopup"
+                                    class="text-gray-600 hover:text-[#174E83] text-xl focus:outline-none cursor-pointer transition-all hover:border border-[#174E83] rounded flex justify-center items-center h-8 w-8">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1110.5 3a7.5 7.5 0 016.15 13.65z" />
                                     </svg>
                                 </button>
                             </ul>
-
+        
                             <!-- Mobile Menu Button -->
                             <div class="md:hidden flex items-center">
                                 <button id="menu-btn" class="text-gray-700 hover:text-blue-600 focus:outline-none">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M4 6h16M4 12h16M4 18h16" />
                                     </svg>
                                 </button>
                             </div>
-
+        
                         </div>
                     </div>
-
+        
                     <!-- Mobile Menu -->
                     <div id="mobile-menu" class="hidden md:hidden bg-white shadow-inner">
                         <div class="px-4 py-3 space-y-2">
@@ -287,8 +376,8 @@
                             <a href="#" class="block text-gray-700 hover:text-blue-600 font-medium">Product</a>
                             <a href="#" class="block text-gray-700 hover:text-blue-600 font-medium">Contact</a>
                             <button class="text-gray-600 hover:text-blue-600 mt-2 flex items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none"
-                                    viewBox="0 0 24 24" stroke="currentColor">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1110.5 3a7.5 7.5 0 016.15 13.65z" />
                                 </svg>
@@ -300,14 +389,11 @@
             </div>
         </div>
 
-        <div class="smallBanner h-54 pt-18 bg-cover"
+        <div class="smallBanner lg:h-54 h-36 lg:pt-17 pt-14 bg-cover p-2 w-full"
             style="background-image: url(../../assets/images/static_imgs/productPage/innerpage-small-banner.png);">
-            <!-- <div class="flex justify-center items-center h-full w-full">
-                <h2 class="text-2xl md:text-5xl font-semibold text-[#fff]">Events</h2>
-            </div> -->
-            <div class="w-full md:w-7xl mx-auto flex h-full justify-start items-center">
+            <div class="w-full max-w-7xl mx-auto flex h-full justify-start items-center">
                 <nav class="bg-transparent border border-[#A4E1FC] py-2 inline-block rounded" aria-label="Breadcrumb">
-                    <div class="max-w-7xl mx-auto px-6">
+                    <div class="max-w-7xl mx-auto lg:px-6 px-2">
                         <ol class="flex flex-wrap items-center space-x-1 text-gray-500 text-sm">
                             <!-- Home -->
                             <li>
@@ -315,61 +401,63 @@
                                     Home
                                 </a>
                             </li>
-
+        
                             <!-- Separator -->
                             <li>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mx-2 text-white" fill="none"
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 md:mx-2 text-white" fill="none"
                                     viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M9 5l7 7-7 7" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                                 </svg>
                             </li>
-
+        
                             <!-- Intermediate Page -->
                             <li>
                                 <a href="#" class="hover:text-[#42AAA3] font-medium text-[#A4E1FC]">Event</a>
                             </li>
+                            <!-- Separator -->
                             <li>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mx-2 text-white" fill="none"
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 md:mx-2 text-white" fill="none"
                                     viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M9 5l7 7-7 7" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                                 </svg>
                             </li>
+        
+                            <!-- Intermediate Page -->
                             <li>
-                                <a href="#" class="hover:text-[#42AAA3] font-medium text-[#A4E1FC]">Event Single
-                                    View</a>
+                                <a href="#" class="hover:text-[#42AAA3] font-medium text-[#A4E1FC]">Event View</a>
                             </li>
                         </ol>
                     </div>
                 </nav>
             </div>
-
+        
         </div>
 
-        <section class="relative w-full py-20 pb-20">
-            <div class="w-7xl relative mx-auto flex justify-end">
-                <div class="w-5xl border bg-[#EFEFEF] border-gray-300 px-10 rounded-2xl flex justify-end py-30">
-                    <div class="w-full md:w-[620px]">
-                        <p class="text-xl mb-4 text-gray-500 font-medium">What is Lorem Lipsum</p>
-                        <h4 class="text-2xl sm:text-2xl md:text-4xl font-semibold mb-8 leading-tigh text-gray-600">
-                            Lorem ipsum dolor sit amet consectetur adipisicing.
+        <section class="relative w-full lg:py-20 py-10 sm:py-6 lg:pb-30 pb-10 px-2 lg:px-12">
+            <div class="max-w-7xl relative mx-auto flex justify-end lg:flex-row flex-col">
+                <div
+                    class="lg:max-w-5xl w-full border bg-[#EFEFEF] border-gray-300 lg:px-10 px-2 rounded-2xl flex justify-end lg:py-30 py-12">
+                    <div class="lg:w-[620px] w-full">
+                        <p class="lg:text-xl text-base lg:mb-4 mb-1 text-gray-500 font-medium">What is Lorem Lipsum</p>
+                        <h4 class="text-2xl sm:text-2xl md:text-4xl font-semibold lg:mb-8 mb-3 leading-tigh text-gray-600">
+                            Innovative Solutions for Modern business
                         </h4>
-                        <p class="text-base mb-6 max-w-2xl text-gray-500">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam eveniet eum itaque fugiat
-                            minus placeat aperiam laboriosam, mollitia numquam illum.
+                        <p class="text-base lg:mb-6 mb-2 max-w-2xl text-gray-500">
+                            Empower your brand with creative technology and design-driven strategies to stay ahead in
+                            the market. Empower your brand with creative technology and design-driven strategies to stay
+                            ahead in the market. Empower your brand with creative technology and design-driven
+                            strategies to stay ahead in the market.
                         </p>
                         <button
                             class="bg-[#42AAA3] hover:bg-[#36958E] text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 w-fit">
-                            Get In Touch
+                            View More
                         </button>
                     </div>
-
-                </div>
+            
+                </div>  
                 <div
-                    class="rounded-2xl overflow-hidden absolute left-0 top-[10%] border-2 border-[#78ccf4] h-full w-xl">
-                    <img src="../../assets/images/static_imgs//EventPage/Event-Sec-bg.png"
-                        class="w-full h-full object-cover" />
+                    class="rounded-2xl overflow-hidden lg:absolute lg:left-0 lg:top-[10%] border-2 border-[#78ccf4] lg:h-auto lg:w-lg xl:w-xl 2xl:w-2xl event_phone_img lg:-ml-10">
+                    <img src="../../assets/images/static_imgs//EventPage/Event-Sec-bg.png" class="w-full h-full object-cover" />
                 </div>
             </div>
             <div class="max-w-7xl mx-auto px-6 text-center pt-24">
@@ -468,25 +556,29 @@
         </section>
 
         <!-- Related or upcoming evens slider -->
+        <!-- Section -->
         <section class="relative bg-cover bg-center bg-no-repeat"
             style="background-image: url('../../assets/images/static_imgs/EventPage/latest-event-bg.png');">
             <!-- Overlay -->
             <!-- <div class="absolute inset-0 bg-black/50"></div> -->
-
+        
             <!-- Content -->
-            <div class="relative max-w-7xl mx-auto px-6 pb-30 text-white pt-10">
+            <div class="relative max-w-7xl mx-auto px-6 lg:py-30 py-12 text-white">
                 <!-- Row 1: Heading + Button -->
-                <p class="text-[#AEE6FD] text-xl mb-2 font-semibold">Related Events</p>
-                <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-20">
-                    <h4 class="text-2xl md:text-4xl font-semibold text-center md:text-left leading-12">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, voluptatem.
+                <p class="text-[#AEE6FD] text-xl lg:mb-2 mb-0 font-semibold lg:text-left text-center">Related Event</p>
+                <div class="flex flex-col md:flex-row items-left justify-between lg:gap-6 gap-2 pb-20">
+                    <h4 class="text-2xl md:text-4xl font-semibold text-center md:text-left lg:leading-12 leading-8">
+                        Our Latest Events Lorem Lipsum <br /><span class="text-[#AEE6FD]"> Lorem Lipsum</span>
                     </h4>
-
+                    <button
+                        class="bg-[#0889C3] hover:bg-[#36958E] text-white px-6 py-3 rounded-lg font-light transition-all duration-300 text-lg border border-gray-200 lg:block hidden">
+                        View More
+                    </button>
                 </div>
             </div>
-
+        
             <!-- Swiper (Row 2) -->
-            <div class="absolute left-0 right-0 -bottom-50">
+            <div class="absolute left-0 right-0 lg:-bottom-50 -bottom-54">
                 <div class="max-w-7xl mx-auto px-6 latestEventSlider">
                     <div class="swiper eventSwiper">
                         <div class="swiper-wrapper">
@@ -531,8 +623,8 @@
                                             alt="Product 4"
                                             class="w-full h-62 object-cover border-2 border-[#0DB3B1] rounded-xl">
                                         <!-- <div class="p-4 text-center card-content">
-                                        <h3 class="text-white font-semibold text-lg">Product 4</h3>
-                                    </div> -->
+                                                <h3 class="text-white font-semibold text-lg">Product 4</h3>
+                                            </div> -->
                                     </div>
                                     <h3 class="text-white font-semibold text-lg m-4">Product 4</h3>
                                 </div>
@@ -548,35 +640,27 @@
         <div class="p-32"></div>
 
         <!-- Footer Section -->
-        <footer class="bg-[#083866] text-gray-300 pt-16 pb-8 px-6 md:px-12">
-
+        
+        <footer class="bg-[#083866] text-gray-300 lg:pt-16 md:pt-10 pt-6 lg:pb-8 pb-4 px-4 lg:px-12 md:px-6">
+        
             <!-- Row 1: Logo + Links -->
-            <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-gray-500">
-
-                <!-- Column 1: Logo + Descript  ion -->
-                <div class="">
-                    <h2 class="text-2xl font-bold text-white mb-3"><img
-                            src="../../assets/images/static_imgs/MANARTI-LOGO.WHITE.png" /></h2>
+            <div
+                class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 lg:gap-10 gap-4 md:pb-12 pb-6 border-b border-gray-500">
+        
+                <!-- Column 1: Logo + Description -->
+                <div>
+                    <h4 class=" text-white lg:mb-3 mb-2"><img src="../../assets/images/static_imgs/MANARTI-LOGO.WHITE.png"
+                            class="w-auto md:w-[170px]" />
+                    </h4>
                     <p class="text-gray-400 text-sm leading-relaxed">
                         Manarti Exports is a specialized medical disposables, systems, devices and hospital equipment
                         provider offering a wide
                         range of products.
                     </p>
-                    <div class="pt-4">
-                    <form class="max-w-xl mx-auto flex flex-col sm:flex-row items-center gap-3 bg-white rounded-md">
-                        <input type="email" placeholder="Enter your email address"
-                            class="w-full px-4 py-3 rounded-md text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500" />
-
-                        <button type="submit"
-                            class="w-full sm:w-auto bg-[#42AAA3] hover:bg-[#23726d] text-white px-2 py-3 rounded-tr-md rounded-br-md font-medium transition cursor-pointer">
-                            Subscribe
-                        </button>
-                    </form>
-                    </div>
                 </div>
-
-
-
+        
+        
+        
                 <!-- Column 3: Resources -->
                 <div>
                     <h3 class="text-lg font-semibold text-white mb-4">Products</h3>
@@ -592,7 +676,7 @@
                         <li><a href="#" class="hover:text-white transition">Emergency Care</a></li>
                     </ul>
                 </div>
-
+        
                 <!-- Column 2: Quick Links -->
                 <div>
                     <h3 class="text-lg font-semibold text-white mb-4">Company</h3>
@@ -605,53 +689,46 @@
                         <li><a href="#" class="hover:text-white transition">Contact Us</a></li>
                     </ul>
                 </div>
-
+        
                 <!-- Column 4: Contact us -->
                 <div class="footerContact">
                     <h3 class="text-lg font-semibold text-white mb-4">Get in Touch</h3>
                     <ul class="space-y-2 text-sm">
-                        <li class="flex justify-start items-center gap-4 mb-4"><i
-                                class="fa-solid fa-location-dot text-lg"></i>
-                            <a href="#" class="hover:text-white transition">114/115, First Floor, Vishwadeep Tower,
-                                District 
-                        </li>
-                        <li class="flex justify-start items-center gap-4 mb-4"><i
-                                class="fa-solid fa-envelope text-lg"></i><a href="#"
-                                class="hover:text-white transition">manartiexports@gmail.com</a></li>
-                        <li class="flex justify-start items-center gap-4 mb-4"><i
-                                class="fa-solid fa-phone text-lg"></i><a href="#"
-                                class="hover:text-white transition">011-49404331</a></li>
+                        <li class="flex justify-start items-center gap-4 mb-4"><i class="fa-solid fa-location-dot text-lg"></i>
+                            <a href="#" class="hover:text-white transition">114/115, First Floor, Vishwadeep Tower, District
+                                Centre, Janak Puri, New Delhi-110058 (INDIA)</a></li>
+                        <li class="flex justify-start items-center gap-4 mb-4"><i class="fa-solid fa-envelope text-lg"></i><a
+                                href="#" class="hover:text-white transition">manartiexports@gmail.com</a></li>
+                        <li class="flex justify-start items-center gap-4 mb-4"><i class="fa-solid fa-phone text-lg"></i><a
+                                href="#" class="hover:text-white transition">011-49404331</a></li>
                     </ul>
                 </div>
             </div>
-
+        
             <!-- Row 2: Social Icons -->
-            <div class="max-w-7xl mx-auto flex justify-between gap-4 items-center border-b border-gray-500 py-4">
+            <div
+                class="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between lg:gap-4 md:gap-2 items-center border-b border-gray-500 lg:py-4 md:py-2">
                 <div class="text-center text-gray-400 text-sm">
                     © 2025 Manarti Exports. All rights reserved.
                 </div>
-
+        
                 <div class="flex justify-center gap-6">
                     <a href="#" class="text-gray-400 hover:text-white transition text-xl"><i
                             class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" class="text-gray-400 hover:text-white transition text-xl"><i
-                            class="fab fa-twitter"></i></a>
-                    <a href="#" class="text-gray-400 hover:text-white transition text-xl"><i
-                            class="fab fa-instagram"></i></a>
-                    <a href="#" class="text-gray-400 hover:text-white transition text-xl"><i
-                            class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="text-gray-400 hover:text-white transition text-xl"><i
-                            class="fab fa-youtube"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition text-xl"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition text-xl"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition text-xl"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition text-xl"><i class="fab fa-youtube"></i></a>
                 </div>
-                <div class="footerBottomLinks flex justify-between items-center gap-4">
+                <div class="footerBottomLinks flex justify-between items-center md:gap-4 gap-2">
                     <div class="text-sm underline hover:text-white"><a href="#">Terms & Conditions</a></div>
                     <div class="text-sm underline hover:text-white"><a href="#">Privacy Policy</a></div>
                     <div class="text-sm underline hover:text-white"><a href="#">Cookies Policy</a></div>
                 </div>
             </div>
-
+        
             <!-- Row 3: Copyright -->
-
+        
         </footer>
 
         <div class="fixed bottom-6 right-6 flex flex-col items-center space-y-4 z-50">
@@ -683,7 +760,7 @@
 
         <div id="cookiePopup"
             class="fixed bottom-0 left-0 w-full bg-gray-900 text-white py-4 px-6 hidden opacity-0 transition-opacity duration-500 z-50">
-            <div class="container mx-auto flex flex-col md:flex-row items-center justify-between w-7xl">
+            <div class="container mx-auto flex flex-col md:flex-row items-center justify-between max-w-7xl">
 
                 <p class="text-sm md:text-sm mb-2 md:mb-0 font-light">
                     We use cookies to improve your experience on our website. By using our site, you agree to our cookie

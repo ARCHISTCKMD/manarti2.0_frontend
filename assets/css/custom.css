@@ -574,6 +574,15 @@ body {
     .swiper.topSellingSwiper {
         padding-top: 110px;
     }
+        .event_phone_img {
+            height: 400px !important;
+            margin-top: -38px;
+            position: static;
+            width: 86%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
 }
 
@@ -707,16 +716,6 @@ body {
              overflow-y: scroll;
              padding: 20px 0;
              padding-left: 10px;
-         }
-
-         .event_phone_img {
-            height: 400px !important;
-                margin-top: -38px;
-                position: static;
-                width: 86%;
-                height: auto;
-                margin-left: auto;
-                margin-right: auto;
          }
 
 }
