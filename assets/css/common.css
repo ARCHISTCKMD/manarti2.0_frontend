@@ -80,6 +80,22 @@
     /* gray-700 */
 }
 
+.swiper-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width: 12px;
+    height: 12px;
+    background: #1d78b1;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+    background: #1d78b1;
+}
+
 @keyframes swing {
     0% {
         transform: rotate(50deg);
@@ -98,8 +114,9 @@
 
 @media (max-width: 900px) {
 
-    .commonArrow .swiper-button-prev::after, .commonArrow .swiper-button-next::after {
+    .commonArrow .swiper-button-prev::after,
+    .commonArrow .swiper-button-next::after {
         font-size: 14px;
     }
-    
+
 }

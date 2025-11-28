@@ -3351,16 +3351,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"
         integrity="sha512-6BTOlkauINO65nLhXhthZMtepgJSghyimIalb+crKRPhvhmsCdnIuGcVbR5/aQY2A+260iC1OPy1oCdB6pSSwQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/animejs/dist/bundles/anime.umd.min.js"></script>
+        <script>
+            const { animate } = anime;
+        </script>
     <script>
-
         const swiper = new Swiper(".categorySwiper", {
             // slidesPerView: 3,
             spaceBetween: 70,
             loop: true,
-            // autoplay: {
-            //     delay: 1500,
-            //     disableOnInteraction: false,
-            // },
+            autoplay: {
+                delay: 1500,
+                disableOnInteraction: false,
+            },
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
@@ -3411,10 +3414,10 @@
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
-            // autoplay: {
-            //     delay: 4000,
-            //     disableOnInteraction: false,
-            // },
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
         });
 
         const toggles = document.querySelectorAll(".faq-toggle");
@@ -3423,13 +3426,22 @@
             toggle.addEventListener("click", () => {
                 const content = toggle.nextElementSibling;
                 const icon = toggle.querySelector("svg");
+                console.log(content, "content")
+
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                    // console.log("hello")
+                }
 
                 // Close other FAQs
                 document.querySelectorAll(".faq-content").forEach((el) => {
                     const parentDiv = el.parentNode;
                     if (el !== content) {
                         el.classList.add("hidden");
+                        // content.style.maxHeight = null;
                         parentDiv.classList.add("active");
+                        // parentDiv.style.maxHeight = content.scrollHeight + "px";
+                        // parentDiv.style.maxHeight = content.scrollHeight + "px";
                     }
 
                     parentDiv.classList.toggle("active");
