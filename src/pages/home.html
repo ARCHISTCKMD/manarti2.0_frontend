@@ -25,7 +25,7 @@
                             <!-- Logo -->
                             <div class="flex items-center w-60">
                                 <img src="../../assets/images/static_imgs/MANARTI-LOGO.png" alt="Logo"
-                                    class="w-[auto] mr-2 md:w-[170px] lg:w-full">
+                                    class="mr-2 w-[170px] lg:w-full">
                             </div>
 
                             <!-- Menu (Desktop) -->
@@ -372,18 +372,17 @@
                     </div>
 
                     <!-- Mobile Menu -->
-                    <div id="mobile-menu"
-                        class="hidden md:hidden bg-white shadow-inner p-2">
-                        <div class="px-4 py-3 space-y-2">
+                    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-inner p-2">
+                        <div class="lg:px-4 py-3 space-y-2 px-2">
                             <ul class="space-x-4">
-                                <li class="relative mb-2"><a href="#"
+                                <li class="relative mb-3"><a href="#"
                                         class="text-[#174E83] font-normal text-base relative">Home</a>
                                 </li>
-                                <li class="relative group mb-2">
-                                    <a href="#" class="text-[#174E83] font-normal text-base relative">Info
-                                        <i class="fa-solid fa-angle-down text-xs"></i></a>
+                                <li class="relative group mb-3 mobileMainMenu">
+                                    <span class="text-[#174E83] font-normal text-base relative">Info
+                                        <i class="fa-solid fa-angle-down text-xs"></i></span>
                                     <div
-                                        class="hidden pl-4 mt-2 shadow-lg rounded-lg opacity-0 group-hover:opacity-100 group-hover:block transition-all dropdownOpen">
+                                        class="shadow-lg rounded-lg transition-all mobileDropdownOpen max-h-0 overflow-hidden duration-200">
                                         <ul class="py-3 w-full">
                                             <li><a href="#"
                                                     class="block px-4 py-2 hover:bg-gray-100 text-sm text-gray-600">About</a>
@@ -404,7 +403,7 @@
                                     </div>
                                 </li>
 
-                                <li class="relative group mb-2">
+                                <li class="relative group mb-3 mobileProductMenu">
                                     <a href="#"
                                         class="text-[#174E83] font-normal lg:text-[17px] md:text-sm relative">Product
                                         <i class="fa-solid fa-angle-down text-xs"></i></a>
@@ -665,24 +664,25 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="relative group mb-2"><a href="#"
+                                <li class="relative group mb-3"><a href="#"
                                         class="block text-[#174E83] font-normal lg:text-[17px] md:text-sm relative">Event</a>
                                 </li>
-                                <li class="relative group mb-2"><a href="#"
+                                <li class="relative group mb-3"><a href="#"
                                         class="block text-[#174E83] font-normal lg:text-[17px] md:text-sm relative">Catalogue</a>
                                 </li>
-                                <li class="relative group mb-2"><a href="#"
+                                <li class="relative group mb-3"><a href="#"
                                         class="block text-[#174E83] font-normal lg:text-[17px] md:text-sm relative">Contact</a>
                                 </li>
                             </ul>
-                            <button class="text-gray-600 hover:[#1168A3] mt-2 flex items-center">
-                                <svg xmlns="http:/3  /www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none"
+                            <div
+                                class="text-gray-600 hover:[#1168A3] mt-2 flex items-center w-full border border-gray-200 p-2 rounded-xl">
+                                <svg xmlns="http:/3  /www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none"
                                     viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1110.5 3a7.5 7.5 0 016.15 13.65z" />
                                 </svg>
-                                Search
-                            </button>
+                                <input name="search" id="searchProduct" type="text" placeholder="Search Product..." />
+                            </div>
                         </div>
                     </div>
                 </nav>
@@ -3273,16 +3273,18 @@
                 <div class="space-y-4">
 
                     <!-- FAQ 1 -->
-                    <div class="bg-[#1991CD] rounded-xl overflow-hidden faq-wrapper">
+                    <div class="rounded-xl overflow-hidden faq-wrapper group">
                         <button
-                            class="w-full flex justify-between items-center md:px-6 px-2 py-3 text-left text-sm font-normal text-gray-200 hover:bg-[#1991CD] hover:text-white faq-btn">
-                            <span>What services do you offer?</span>
-                            <svg class="icon w-4 h-4 text-white transition-transform duration-300" fill="none" 
-                                stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            class="w-full flex justify-between items-center md:px-4 px-2 py-3 text-left text-sm font-normal text-gray-700 group-hover:bg-[#1991CD] group-hover:cursor-pointer faq-btn">
+                            <span class="group-hover:text-white">What services do you
+                                offer?</span>
+                            <svg class="icon w-4 h-4 group-hover:text-white transition-transform duration-300"
+                                fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
-                        <div class="faq-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out md:px-6 px-2 text-white">
+                        <div
+                            class="faq-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out md:px-6 px-2 text-white">
                             We provide web design, development, branding, and digital marketing solutions to help
                             businesses
                             grow online.
@@ -3290,16 +3292,17 @@
                     </div>
 
                     <!-- FAQ 2 -->
-                    <div class="bg-[#1991CD] rounded-xl overflow-hidden faq-wrapper">
+                    <div class="rounded-xl overflow-hidden faq-wrapper">
                         <button
-                            class="w-full flex justify-between items-center md:px-6 px-2 py-3 text-left text-sm font-normal text-gray-200 hover:bg-[#1991CD] hover:text-white transition faq-btn">
+                            class="w-full flex justify-between items-center md:px-6 px-2 py-3 text-left text-sm font-normal text-gray-700 hover:bg-[#1991CD] hover:text-white transition faq-btn">
                             <span>How long does a project take to complete?</span>
                             <svg class="icon w-4 h-4 text-gray-500 transition-transform duration-300" fill="none"
                                 stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
-                        <div class="faq-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out md:px-6 px-2 text-white">
+                        <div
+                            class="faq-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out md:px-6 px-2 text-white">
                             Project timelines depend on the complexity and scope. Typically, a website project takes 3–6
                             weeks
                             from start to finish.
@@ -3309,14 +3312,15 @@
                     <!-- FAQ 3 -->
                     <div class="rounded-xl overflow-hidden faq-wrapper">
                         <button
-                            class="w-full flex justify-between items-center md:px-6 px-2 py-3 text-left text-sm font-normal text-gray-200 hover:bg-[#1991CD] hover:text-white transition faq-btn">
+                            class="w-full flex justify-between items-center md:px-6 px-2 py-3 text-left text-sm font-normal text-gray-700 hover:bg-[#1991CD] hover:text-white transition faq-btn">
                             <span>Do you provide ongoing support?</span>
                             <svg class="icon w-4 h-4 text-gray-500 transition-transform duration-300" fill="none"
                                 stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
-                        <div class="faq-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out md:px-6 px-2 text-white">
+                        <div
+                            class="faq-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out md:px-6 px-2 text-white">
                             Yes! We offer ongoing maintenance and support plans to ensure your website continues to run
                             smoothly
                             and securely.
@@ -3324,16 +3328,17 @@
                     </div>
 
                     <!-- FAQ 4 -->
-                    <div class="border border-gray-200 rounded-xl shadow-sm overflow-hidden faq-wrapper">
+                    <div class="rounded-xl overflow-hidden faq-wrapper">
                         <button
-                            class="w-full flex justify-between items-center md:px-6 px-2 py-3 text-left text-sm font-normal text-gray-200 hover:bg-[#1991CD] hover:text-white transition faq-btn">
+                            class="w-full flex justify-between items-center md:px-6 px-2 py-3 text-left text-sm font-normal text-gray-700 hover:bg-[#1991CD] hover:text-white transition faq-btn">
                             <span>Can you customize existing websites?</span>
                             <svg class="icon w-4 h-4 text-gray-500 transition-transform duration-300" fill="none"
                                 stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
-                        <div class="faq-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out md:px-6 px-2 text-white">
+                        <div
+                            class="faq-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out md:px-6 px-2 text-white">
                             Absolutely! We can redesign, optimize, and enhance your existing website to meet your new
                             goals and
                             standards.
@@ -3462,10 +3467,62 @@
         </div>
         <div class="fixed bottom-6 left-6 z-50">
 
+            <div class="bg-white shadow rounded-2xl px-4 w-sm py-3 chat_form">
+                <!-- <h5 class="text-xl text-gray-600 mb-3 font-medium">Customer Support</h5> -->
+                <div class="space-y-4">
+
+                    <!-- Name -->
+                    <div class="form-input">
+                        <label for="qcName" class="text-sm text-gray-300">Name *</label>
+                        <input type="text" id="qcName" placeholder="Enter your name"
+                            class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-[#0E84C2]"
+                            required />
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-input">
+                        <label for="qcEmail" class="text-sm text-gray-300">Email</label>
+                        <input type="email" id="qcEmail" placeholder="Enter your email"
+                            class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-[#0E84C2]" />
+                    </div>
+
+                    <!-- Contact Number -->
+                    <div class="form-input">
+                        <label for="qcPhone" class="text-sm text-gray-300">Contact Number (With Country Code) *</label>
+                        <input type="text" id="qcPhone" placeholder="+91 9876543210"
+                            class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-[#0E84C2]"
+                            required />
+                    </div>
+
+                    <!-- Country -->
+                    <div class="form-input">
+                        <label for="qcCountry" class="text-sm text-gray-300">Country *</label>
+                        <input type="text" id="qcCountry" placeholder="Enter your country"
+                            class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-[#0E84C2]"
+                            required />
+                    </div>
+
+                    <!-- Requirement in Brief -->
+                    <div class="form-input">
+                        <label for="qcRequirement" class="text-sm text-gray-300">Requirement in Brief *</label>
+                        <textarea id="qcRequirement" rows="3"
+                            placeholder="Example: Need 5,000 Suction Machines for Govt Tender – Kenya."
+                            class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-[#0E84C2]"
+                            required></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit"
+                        class="w-full bg-[#0E84C2] text-white py-2 rounded-lg hover:bg-[#0c6fa2] transition cursor-pointer">
+                        Submit
+                    </button>
+                </div>
+            </div>
+
             <!-- Chat icon -->
             <img src="../../assets/images/static_imgs/wave.png" class="w-10 pendulum-img" />
             <button
-                class="bg-[#42AAA3] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-[#2ea29a] transition-all duration-300 cursor-pointer">
+                class="bg-[#42AAA3] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-[#2ea29a] transition-all duration-300 cursor-pointer chatBtn">
                 <i class="fa-regular fa-comment text-2xl"></i>
             </button>
         </div>
@@ -3726,7 +3783,7 @@
             },
         });
 
-       const faqButtons = document.querySelectorAll(".faq-btn");
+        const faqButtons = document.querySelectorAll(".faq-btn");
 
         faqButtons.forEach(btn => {
             btn.addEventListener("click", () => {
@@ -3736,16 +3793,12 @@
                 if (content.style.maxHeight) {
                     // Close
                     content.style.maxHeight = null;
-                    content.classList.remove('py-4')
-                    content.classList.remove('mb-2')
                     content.classList.remove('active')
                     icon.style.transform = "rotate(0deg)";
                 } else {
                     // Close all others
                     document.querySelectorAll(".faq-content").forEach(c => {
                         c.style.maxHeight = null;
-                        c.classList.remove('py-4')
-                        c.classList.remove('mb-2')
                         c.classList.remove('active')
                     });
                     document.querySelectorAll(".icon").forEach(i => {
@@ -3753,10 +3806,8 @@
                     });
 
                     // Open current
-                    content.classList.add('py-4')
-                    content.classList.add('mb-2')
                     content.classList.add('active')
-                    content.style.maxHeight = content.scrollHeight + 15 +"px";
+                    content.style.maxHeight = content.scrollHeight + 15 + "px";
                     icon.style.transform = "rotate(180deg)";
                 }
             });
@@ -3823,6 +3874,25 @@
             e.classList.add('active');
             e.style.fill = '#083866';
         }
+        const mobilemenu = document.querySelector('.mobileMainMenu')
+        if (mobilemenu) {
+            const toggleBtn = mobilemenu.querySelector("span");
+            toggleBtn.addEventListener('click', (e) => {
+                mobilemenu.classList.toggle('active')
+                let dropdown = document.querySelector('.mobileDropdownOpen')
+                if (mobilemenu.classList.contains("active")) {
+                    dropdown.style.maxHeight = dropdown.scrollHeight + "px";
+                } else {
+                    dropdown.style.maxHeight = null;
+                }
+
+            })
+        }
+
+        // document.querySelector('.chatBtn').addEventListener('click', () => {
+        //     const chatForm = document.querySelector('.chat_form')
+        //     chatForm.classList.add('block')
+        // })
     </script>
 </body>
 

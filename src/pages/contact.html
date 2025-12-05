@@ -330,7 +330,147 @@
             </div>
 
         </div>
- 
+
+
+        <section class="bg-gray-50 py-12">
+            <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-2xl p-8">
+                <h2 class="lg:text-3xl text-xl font-bold text-gray-800 mb-1 text-center">Contact Us</h2>
+                <p class="text-sm text-gray-600 mb-6 text-center">Please fill the form below and our team will get back
+                    to you shortly.</p>
+
+                <form class="space-y-6 mt-4">
+
+                    <!-- Full Name -->
+                    <div>
+                        <label for="fullName" class="block text-sm font-medium text-gray-700 mb-1">Full Name *</label>
+                        <input id="fullName" type="text" required
+                            class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+
+                    <!-- Company/Organisation Name -->
+                    <div>
+                        <label for="companyName" class="block text-sm font-medium text-gray-700 mb-1">
+                            Company / Hospital / Organisation Name *
+                        </label>
+                        <input id="companyName" type="text" required
+                            class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+
+                    <!-- Email + Contact -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">
+                                Email Address (Official Domain Preferred) *
+                            </label>
+                            <input id="email" type="email" required
+                                class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+
+                        <div>
+                            <label for="contactNumber" class="block text-sm font-medium text-gray-700 mb-1">
+                                Contact Number (With Country Code) *
+                            </label>
+                            <input id="contactNumber" type="tel" required
+                                class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                    </div>
+
+                    <!-- Country -->
+                    <div>
+                        <label for="country" class="block text-sm font-medium text-gray-700 mb-1">Country of Operation
+                            *</label>
+                        <input id="country" type="text" required
+                            class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+
+                    <!-- Type of Requirement -->
+                    <div>
+                        <label for="requirementType" class="block text-sm font-medium text-gray-700 mb-1">Type of
+                            Requirement
+                            *</label>
+                        <select id="requirementType" required
+                            class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                            <option value="">Select an option</option>
+                            <option>International Business Inquiry</option>
+                            <option>Product / Pricing Inquiry</option>
+                            <option>Tender / Bulk Requirement</option>
+                            <option>OEM / Private Label</option>
+                            <option>Supplier Registration</option>
+                            <option>Partnership / Collaboration</option>
+                            <option>Accounts & Finance</option>
+                            <option>Logistics & Shipping</option>
+                            <option>Purchase Department</option>
+                            <option>HR & Recruitment</option>
+                            <option>General Support</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+
+                    <!-- Requirement Box -->
+                    <div>
+                        <label for="detailedReq" class="block text-sm font-medium text-gray-700 mb-1">
+                            Detailed Requirement / Product List
+                        </label>
+                        <textarea id="detailedReq" rows="5"
+                            placeholder="Please specify products, quantities, and delivery timeline."
+                            class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"></textarea>
+                    </div>
+
+                    <!-- File Upload -->
+                    <div>
+                        <label for="rfqFile" class="block text-sm font-medium text-gray-700 mb-1">Upload RFQ / Tender
+                            File</label>
+                        <input id="rfqFile" type="file" accept=".pdf,.xlsx,.xls,.csv,.doc,.docx"
+                            class="w-full p-3 border border-gray-300 rounded-lg bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                        <p class="text-xs text-gray-500 mt-1">PDFs, Excel Sheets, Technical Specs allowed.</p>
+                    </div>
+
+                    <!-- Communication Preference -->
+                    <div>
+                        <p class="block text-sm font-medium text-gray-700 mb-2">Mode of Communication Preference</p>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+                            <label for="commEmail" class="flex items-center gap-2 cursor-pointer">
+                                <input id="commEmail" name="communication" type="radio" value="Email"
+                                    class="h-4 w-4 text-blue-600 border-gray-300">
+                                <span class="text-gray-700 text-sm">Email</span>
+                            </label>
+
+                            <label for="commWhatsApp" class="flex items-center gap-2 cursor-pointer">
+                                <input id="commWhatsApp" name="communication" type="radio" value="WhatsApp"
+                                    class="h-4 w-4 text-blue-600 border-gray-300">
+                                <span class="text-gray-700 text-sm">WhatsApp</span>
+                            </label>
+
+                            <label for="commCall" class="flex items-center gap-2 cursor-pointer">
+                                <input id="commCall" name="communication" type="radio" value="Call"
+                                    class="h-4 w-4 text-blue-600 border-gray-300">
+                                <span class="text-gray-700 text-sm">Call</span>
+                            </label>
+
+                            <label for="commZoom" class="flex items-center gap-2 cursor-pointer">
+                                <input id="commZoom" name="communication" type="radio" value="Zoom"
+                                    class="h-4 w-4 text-blue-600 border-gray-300">
+                                <span class="text-gray-700 text-sm">Zoom</span>
+                            </label>
+
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div>
+                        <button type="submit"
+                            class="w-full md:w-auto px-8 py-3 bg-[#0E84C2] text-white rounded-lg hover:bg-[#006195] transition font-medium cursor-pointer">
+                            Submit Inquiry
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+
+
         <footer class="bg-[#083866] text-gray-300 pt-16 pb-8 px-6 md:px-12">
 
             <!-- Row 1: Logo + Links -->

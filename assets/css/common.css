@@ -96,6 +96,21 @@
     background: #1d78b1;
 }
 
+.faq-wrapper .faq-content.active {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+
+.faq-wrapper:has(.faq-content.active) .faq-btn {
+    background-color: #157EB3;
+    /* your active bg color */
+    color: white;
+}
+
+.faq-wrapper:has(.faq-content.active) .faq-btn svg {
+    color: white;
+}
+
 @keyframes swing {
     0% {
         transform: rotate(50deg);
@@ -116,6 +131,16 @@
 
     .commonArrow .swiper-button-prev::after,
     .commonArrow .swiper-button-next::after {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .faq-wrapper .faq-content.active {
+        padding: 8px;
+        margin-bottom: 5px;
         font-size: 14px;
     }
 

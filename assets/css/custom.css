@@ -403,15 +403,15 @@ body {
     color: #333;
 }
 
-.faq-wrapper svg:hover {
+/* .faq-wrapper svg:hover {
     cursor: pointer;
     color: #fff;
-}
+} */
 
-.faq-wrapper button:hover span,
+/* .faq-wrapper button:hover span,
 .faq-wrapper button:hover svg {
     color: #fff;
-}
+} */
 
 .faq-wrapper.active button,
 .faq-wrapper.active svg,
@@ -679,7 +679,7 @@ body {
          .mobileSidebarCategory {
              position: fixed;
              height: 100%;
-             width: 58%;
+             width: 70%;
              border: 2px solid #ddd;
              background-color: #fff;
              top: 0;
@@ -714,7 +714,7 @@ body {
          .phone_sidebar {
              max-height: 100%;
              overflow-y: scroll;
-             padding: 20px 0;
+             padding: 10px 0;
              padding-left: 10px;
          }
 
