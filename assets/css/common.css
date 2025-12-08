@@ -75,7 +75,7 @@
 }
 
 .customScrollbar::-webkit-scrollbar-thumb {
-    background: #0985C4;
+    background: #6faac84b;
     border-radius: 12px;
     /* gray-700 */
 }

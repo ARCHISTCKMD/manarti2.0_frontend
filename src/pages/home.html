@@ -3467,33 +3467,31 @@
         </div>
         <div class="fixed bottom-6 left-6 z-50">
 
-            <div class="bg-white shadow hidden rounded-2xl px-6 w-sm py-3 chat_form">
-                <div class="flex gap-2 items-center justify-start pt-2 mb-3">
+            <div class="bg-white shadow hidden rounded-2xl px-6 w-sm py-3 chat_form" id="quickChatFrom"
+                onclick="return formOpnCls(this,'quickChatFrom');">
+                <div class="flex gap-2 items-center justify-between pt-2 mb-3">
                     <h5 class="text-xl text-gray-600 font-medium">Quick Connect</h5>
-                    <img src="../../assets/images/static_imgs/wave.png" class="w-6" />
+                    <!-- <img src="../../assets/images/static_imgs/wave.png" class="w-6" /> -->
+                    <i class="fa-solid fa-xmark text-lg text-gray-500 hover:bg-gray-100 py-2 px-1 rounded cursor-pointer close_chat"
+                        id="qckChtClsBtn"></i>
+
                 </div>
                 <form class="space-y-4">
-
-                    <!-- Name -->
                     <div class="form-input">
                         <!-- <label for="qcName" class="text-sm text-gray-300">Name *</label> -->
                         <input type="text" id="qcName" placeholder="Name"
-                            class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-[#0E84C2]"
+                            class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-[#0E84C2] placeholder:text-sm"
                             required />
                     </div>
-
-                    <!-- Email -->
                     <div class="form-input">
                         <!-- <label for="qcEmail" class="text-sm text-gray-300">Email</label> -->
                         <input type="email" id="qcEmail" placeholder="Email"
-                            class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-[#0E84C2]" />
+                            class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-[#0E84C2] placeholder:text-sm" />
                     </div>
-
-                    <!-- Contact Number -->
                     <div class="form-input">
                         <!-- <label for="qcPhone" class="text-sm text-gray-300">Contact Number (With Country Code) *</label> -->
                         <input type="text" id="qcPhone" placeholder="Phone"
-                            class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-[#0E84C2]"
+                            class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-[#0E84C2] placeholder:text-sm"
                             required />
                     </div>
 
@@ -3501,7 +3499,7 @@
                     <div class="form-input">
                         <!-- <label for="qcCountry" class="text-sm text-gray-300">Country *</label> -->
                         <input type="text" id="qcCountry" placeholder="Enter your country"
-                            class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-[#0E84C2]"
+                            class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-[#0E84C2] placeholder:text-sm"
                             required />
                     </div>
 
@@ -3510,7 +3508,7 @@
                         <!-- <label for="qcRequirement" class="text-sm text-gray-300">Requirement in Brief *</label> -->
                         <textarea id="qcRequirement" rows="3"
                             placeholder="Requirement in Brief * - Example: Need 5,000 Suction Machines for Govt Tender – Kenya."
-                            class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-[#0E84C2]"
+                            class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-[#0E84C2] placeholder:text-sm"
                             required></textarea>
                     </div>
 
@@ -3525,7 +3523,8 @@
             <!-- Chat icon -->
             <img src="../../assets/images/static_imgs/wave.png" class="w-10 pendulum-img" />
             <button
-                class="bg-[#42AAA3] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-[#2ea29a] cursor-pointer chatBtn">
+                class="bg-[#42AAA3] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-[#2ea29a] cursor-pointer chatBtn"
+                onclick="return formOpnCls(this,'quickChatFrom');">
                 <i class="fa-regular fa-comment text-2xl transition-all duration-300"></i>
             </button>
         </div>
@@ -3848,7 +3847,6 @@
         // Highlight active countries
         activeCountries.forEach(id => {
             const country = document.getElementById(id);
-            console.log("id", country)
             if (country) {
                 country.classList.remove("fill-gray-300");
                 country.classList.add("fill-[#083866]"); // Highlight Color
@@ -3873,7 +3871,6 @@
 
 
         function addToolTip(e, area) {
-            console.log(e.id, area);
             e.classList.add('active');
             e.style.fill = '#083866';
         }
@@ -3892,11 +3889,17 @@
             })
         }
 
-        document.querySelector('.chatBtn').addEventListener('click', () => {
-            const chatForm = document.querySelector('.chat_form')
-            chatForm.classList.toggle('block')
-            chatForm.classList.toggle('hidden')
-        })
+
+
+
+        function formOpnCls(e, fromBody) {
+            const form = document.querySelector('#' + fromBody);
+            if (form) {
+                if (form.classList.contains("hidden")) {
+                     
+                }
+            }
+        }
     </script>
 </body>
 

@@ -1068,11 +1068,11 @@
 
         <!-- Popup Box -->
         <div id="popupBox"
-            class="bg-white rounded-xl shadow-lg w-[90%] md:w-[70%] lg:w-[60%] max-w-4xl transform scale-95 opacity-0 transition-all duration-300 ease-in-out border-gray-50">
+            class="bg-white rounded-xl shadow-lg w-[90%] md:w-[70%] lg:w-[60%] max-w-4xl transform scale-95 opacity-0 transition-all duration-300 ease-in-out border-gray-50 p-2">
             <div class="flex flex-col md:flex-row">
 
                 <!-- Left Side: Contact Info -->
-                <div
+                <!-- <div
                     class="bg-gradient-to-r from-[#0E84C2] to-[#0ABCBB] text-white md:w-2/5 p-8 rounded-t-xl lg:flex flex-col justify-center rounded-tr-4xl rounded-br-4xl hidden">
                     <h2 class="text-2xl font-bold mb-4">Get in Touch</h2>
                     <p class="text-blue-100 mb-6">We’d love to hear from you! Reach out anytime and we’ll get back to
@@ -1093,107 +1093,132 @@
                             <p>123 Main Street, New York, USA</p>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Right Side: Form -->
-                <div class="lg:p-8 p-4 md:w-3/5 overflow-y-auto max-h-[90vh] customScrollbar">
-                    <div class="flex justify-between items-center lg:mb-4 mb-2">
-                        <h3 class="text-xl font-semibold text-gray-800">Send a Message</h3>
+                <div class="lg:p-6 p-4 md:w-full overflow-y-auto max-h-[90vh] customScrollbar">
+                    <div class="flex justify-between items-center lg:mb-4 mb-2 border-b border-gray-200 pb-2">
+                        <h4 class="text-xl font-semibold text-gray-800">Medical-suturesss</h4>
                         <button id="closePopup"
-                            class="text-white text-3xl font-normal bg-[#0E84C2] px-2 rounded transition-all duration-300 cursor-pointer">&times;</button>
+                            class="text-gray-700 text-3xl font-normal bg-transparent px-2 rounded transition-all duration-300 cursor-pointer hover:bg-gray-100">&times;</button>
                     </div>
 
-                    <form class="space-y-4">
+                    <form class="space-y-6 pt-4">
                         <!-- Full Name -->
-                        <div class="form-input">
-                            <label class="text-sm text-gray-300">Full Name *</label>
-                            <input type="text" placeholder="Enter your full name" required
-                                class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-[#0E84C2]">
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:gap-8 gap-3">
+                            <div class="form-input">
+                                <label class="text-sm text-gray-600">Full Name *</label>
+                                <input type="text" placeholder="" required
+                                    class="w-full border-b border-gray-300 py-1 focus:outline-none focus:border-[#0E84C2] placeholder:text-sm placeholder:text-gray-400">
+                            </div>
+
+                            <div class="form-input">
+                                <label class="text-sm text-gray-600">Email Address *</label>
+                                <input type="email" placeholder="" required
+                                    class="w-full border-b border-gray-300 py-1 focus:outline-none focus:border-[#0E84C2] placeholder:text-sm placeholder:text-gray-400">
+                            </div>
                         </div>
 
-                        <!-- Company / Hospital Name -->
-                        <div class="form-input">
-                            <label class="text-sm text-gray-300">Company / Hospital Name *</label>
-                            <input type="text" placeholder="Enter Company or Hospital" required
-                                class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-[#0E84C2]">
-                        </div>
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:gap-4 gap-2">
-                            <!-- Email Address -->
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:gap-8 gap-3">
+                            <!-- Company / Hospital Name -->
                             <div class="form-input">
-                                <label class="text-sm text-gray-300">Email Address *</label>
-                                <input type="email" placeholder="Enter email address" required
-                                    class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-[#0E84C2]">
+                                <label class="text-sm text-gray-600">Company / Hospital Name *</label>
+                                <input type="text" placeholder="" required
+                                    class="w-full border-b border-gray-300 py-1 focus:outline-none focus:border-[#0E84C2] placeholder:text-sm placeholder:text-gray-400">
                             </div>
 
                             <!-- WhatsApp Number -->
                             <div class="form-input">
-                                <label class="text-sm text-gray-300">WhatsApp Number *</label>
+                                <label class="text-sm text-gray-600">WhatsApp Number *</label>
                                 <input type="text" placeholder="+91 98765 43210" required
-                                    class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-[#0E84C2]">
+                                    class="w-full border-b border-gray-300 py-1 focus:outline-none focus:border-[#0E84C2] placeholder:text-xs placeholder:text-gray-400">
                             </div>
                         </div>
 
-                        <!-- Country -->
-                        <div class="form-input">
-                            <label class="text-sm text-gray-300">Country *</label>
-                            <input type="text" placeholder="Enter your country" required
-                                class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-[#0E84C2]">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:gap-8 gap-3">
+                            <!-- Country -->
+                            <div class="form-input">
+                                <label class="text-sm text-gray-600">Country *</label>
+                                <input type="text" placeholder="" required
+                                    class="w-full border-b border-gray-300 py-1 focus:outline-none focus:border-[#0E84C2] placeholder:text-sm placeholder:text-gray-400">
+                            </div>
+
+                            <!-- Quantity Required -->
+                            <div class="form-input">
+                                <label class="text-sm text-gray-600">Quantity Required (Approx.) *</label>
+                                <input type="text" placeholder="Minimum order quantities" required
+                                    class="w-full border-b border-gray-300 py-1 focus:outline-none focus:border-[#0E84C2] placeholder:text-xs placeholder:text-gray-400">
+                            </div>
                         </div>
 
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:gap-8 gap-3">
+                            <!-- Intended Use -->
+                            <div class="form-input">
+                                <label class="text-sm text-gray-600">Intended Use *</label>
+                                <select required
+                                    class="w-full border-b border-gray-300 py-1 focus:outline-none focus:border-[#0E84C2] placeholder:text-xs placeholder:text-gray-400">
+                                    <option value="" disabled selected style="color:#9ca3af; font-size:12px;">Select an
+                                        option</option>
+                                    <option>Hospital Supply</option>
+                                    <option>Distribution</option>
+                                    <option>Government Tender</option>
+                                    <option>Private Tender</option>
+                                    <option>Private Requirement</option>
+                                    <option>NGO / Aid Project</option>
+                                </select>
+                            </div>
+
+                            <!-- Upload Requirement File (Optional) -->
+                            <div class="form-input flex justify-center flex-col items-center">
+                                <p class="mb-2 text-sm text-gray-600 w-full text-left">Upload Requirement</p>
+                                <label for="fileUpload"
+                                    class="flex items-center justify-center gap-2 px-5 py-3 bg-gray-200 text-gray-700 rounded-lg cursor-pointer hover:bg-[#0AB0B3] hover:text-white transition w-full">
+                                    <i class="fa-solid fa-upload"></i>
+                                    <span>Upload File</span>
+                                </label>
+
+                                <input id="fileUpload" type="file" class="hidden" />
+                            </div>
+                        </div>
+
+
+
                         <!-- Product Name (Auto Filler) -->
-                        <div class="form-input">
+                        <!-- <div class="form-input">
                             <label class="text-sm text-gray-300">Product Name (Auto Filler) *</label>
                             <input type="text" placeholder="Automatically filled product name" required
                                 class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-[#0E84C2]">
-                        </div>
+                        </div> -->
 
-                        <!-- Quantity Required -->
-                        <div class="form-input">
-                            <label class="text-sm text-gray-300">Quantity Required (Approx.) *</label>
-                            <input type="text" placeholder="Minimum order quantities or estimated usage" required
-                                class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-[#0E84C2]">
-                        </div>
 
-                        <!-- Intended Use -->
-                        <div class="form-input">
-                            <label class="text-sm text-gray-300">Intended Use *</label>
-                            <select required
-                                class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-[#0E84C2]">
-                                <option value="">Select an option</option>
-                                <option>Hospital Supply</option>
-                                <option>Distribution</option>
-                                <option>Government Tender</option>
-                                <option>Private Tender</option>
-                                <option>Private Requirement</option>
-                                <option>NGO / Aid Project</option>
-                            </select>
-                        </div>
 
-                        <!-- Upload Requirement File (Optional) -->
-                        <div class="form-input">
+
+
+                        <!-- <div class="form-input">
                             <label class="text-sm text-gray-300">Upload Requirement File (Optional)</label>
                             <input type="file" accept=".pdf,.xlsx,.xls,.csv,.doc,.docx,.png,.jpg,.jpeg"
                                 class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-[#0E84C2]">
                             <p class="text-xs text-gray-500 mt-1">Upload RFQ / Specs / Images</p>
-                        </div>
+                        </div> -->
+
 
                         <!-- Delivery Port -->
                         <div class="form-input">
-                            <label class="text-sm text-gray-300">Delivery Port / Airport (If known)</label>
+                            <label class="text-sm text-gray-600">Delivery Port / Airport (If known)</label>
                             <input type="text" placeholder="e.g., Mombasa Port, Dubai Airport, Dar es Salaam Port"
-                                class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-[#0E84C2]">
+                                class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-[#0E84C2] placeholder:text-xs placeholder:text-gray-400">
                         </div>
 
                         <!-- Additional Notes -->
                         <div class="form-input">
-                            <label class="text-sm text-gray-300">Additional Notes (Optional)</label>
+                            <label class="text-sm text-gray-600">Additional Notes (Optional)</label>
                             <textarea rows="4" placeholder="Write additional requirements or instructions"
-                                class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-[#0E84C2]"></textarea>
+                                class="w-full border-b border-gray-300 py-1 focus:outline-none focus:border-[#0E84C2] placeholder:text-xs placeholder:text-gray-400"></textarea>
                         </div>
-
-
                         <button type="submit"
-                            class="w-full bg-[#0E84C2] text-white py-2 rounded-lg hover:[bg-[#0E84C2]] transition cursor-pointer mt-4">Send
+                            class="bg-[#0E84C2] text-white rounded-lg hover:[bg-[#0E84C2]] transition cursor-pointer mt-4 py-3 px-6">Send
                             Message</button>
                     </form>
                 </div>
