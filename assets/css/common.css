@@ -75,9 +75,8 @@
 }
 
 .customScrollbar::-webkit-scrollbar-thumb {
-    background: #6faac84b;
+    background: #1599db;
     border-radius: 12px;
-    /* gray-700 */
 }
 
 .swiper-pagination {
@@ -109,6 +108,41 @@
 
 .faq-wrapper:has(.faq-content.active) .faq-btn svg {
     color: white;
+}
+
+/* Placeholder text style */
+.custom-datetime::placeholder {
+    color: #6B7280;
+    /* gray color */
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* Chrome, Edge, Safari */
+.custom-datetime::-webkit-datetime-edit {
+    color: #6B7280;
+    font-size: 14px;
+}
+
+/* When value is selected */
+.custom-datetime:focus::-webkit-datetime-edit {
+    color: #0E84C2;
+}
+
+/* Placeholder (first option) style */
+.custom-select {
+    color: #9CA3AF;
+}
+
+/* When user selects a real option */
+.custom-select:focus,
+.custom-select:valid {
+    color: #374151;
+}
+
+/* Make first option look like placeholder */
+.custom-select option:first-child {
+    color: #9CA3AF;
 }
 
 @keyframes swing {

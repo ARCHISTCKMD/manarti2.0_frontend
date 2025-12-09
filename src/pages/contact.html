@@ -332,150 +332,183 @@
         </div>
 
 
-        <section class="bg-gray-50 py-12">
-            <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-2xl p-8">
-                <h2 class="lg:text-3xl text-xl font-bold text-gray-800 mb-1 text-center">Contact Us</h2>
-                <p class="text-sm text-gray-600 mb-6 text-center">Please fill the form below and our team will get back
-                    to you shortly.</p>
+        <section class="bg-gray-50 py-12 shadow">
+            <h4 class="lg:text-3xl text-xl font-semibold text-gray-700 mb-1 text-center">Contact Us</h4>
+            <p class="text-sm text-gray-600 mb-6 text-center">Please fill the form below and our team will get
+                back
+                to you shortly.</p>
+            <div class="max-w-7xl mx-auto bg-white rounded-2xl p-8 flex justify-between lg:gap-10 gap-2">
 
-                <form class="space-y-6 mt-4">
+                <div class="w-4/6">
+                    <form action="#" name="" id="" method="post" class="space-y-6 mt-4 pr-2">
 
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <!-- Full Name -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- Full Name -->
+                            <div>
+                                <label for="fullName" class="block text-sm font-medium text-gray-700 mb-1">Full Name
+                                    *</label>
+                                <input id="fullName" name="fullName" type="text" required
+                                    class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+
+                            <!-- Company/Organisation Name -->
+                            <div>
+                                <label for="companyName" class="block text-sm font-medium text-gray-700 mb-1">
+                                    Company / Hospital / Organisation Name *
+                                </label>
+                                <input id="companyName" name="companyName" type="text" required
+                                    class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                        </div>
+
+                        <!-- Email + Contact -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">
+                                    Email Address (Official Domain Preferred) *
+                                </label>
+                                <input id="email" name="email" type="email" required
+                                    class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+
+                            <div>
+                                <label for="contactNumber" class="block text-sm font-medium text-gray-700 mb-1">
+                                    Contact Number (With Country Code) *
+                                </label>
+                                <input id="contactNumber" name="contactNumber" type="tel" required
+                                    class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- Country -->
+                            <div>
+                                <label for="country" class="block text-sm font-medium text-gray-700 mb-1">Country of
+                                    Operation
+                                    *</label>
+                                <input id="country" name="country" type="text" required
+                                    class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+
+                            <!-- Type of Requirement -->
+                            <div>
+                                <label for="requirementType" class="block text-sm font-medium text-gray-700 mb-1">Type
+                                    of
+                                    Requirement
+                                    *</label>
+                                <select id="requirementType" name="requirementType" required
+                                    class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                    <option value="">Select an option</option>
+                                    <option>International Business Inquiry</option>
+                                    <option>Product / Pricing Inquiry</option>
+                                    <option>Tender / Bulk Requirement</option>
+                                    <option>OEM / Private Label</option>
+                                    <option>Supplier Registration</option>
+                                    <option>Partnership / Collaboration</option>
+                                    <option>Accounts & Finance</option>
+                                    <option>Logistics & Shipping</option>
+                                    <option>Purchase Department</option>
+                                    <option>HR & Recruitment</option>
+                                    <option>General Support</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Requirement Box -->
                         <div>
-                            <label for="fullName" class="block text-sm font-medium text-gray-700 mb-1">Full Name *</label>
-                            <input id="fullName" type="text" required
-                                class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                            <label for="detailedReq" class="block text-sm font-medium text-gray-700 mb-1">
+                                Detailed Requirement / Product List
+                            </label>
+                            <textarea id="detailedReq" name="detailedReq" rows="5"
+                                placeholder="Please specify products, quantities, and delivery timeline."
+                                class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"></textarea>
                         </div>
-                    
-                        <!-- Company/Organisation Name -->
+
+                        <!-- File Upload -->
                         <div>
-                            <label for="companyName" class="block text-sm font-medium text-gray-700 mb-1">
-                                Company / Hospital / Organisation Name *
-                            </label>
-                            <input id="companyName" type="text" required
-                                class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                            <label for="rfqFile" class="block text-sm font-medium text-gray-700 mb-1">Upload RFQ /
+                                Tender
+                                File</label>
+                            <input id="rfqFile" name="rfqFile" type="file" accept=".pdf,.xlsx,.xls,.csv,.doc,.docx"
+                                class="w-full p-3 border border-gray-300 rounded-lg bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                            <p class="text-xs text-gray-500 mt-1">PDFs, Excel Sheets, Technical Specs allowed.</p>
                         </div>
-                    </div>
 
-                    <!-- Email + Contact -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Communication Preference -->
                         <div>
-                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">
-                                Email Address (Official Domain Preferred) *
-                            </label>
-                            <input id="email" type="email" required
-                                class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                            <p class="block text-sm font-medium text-gray-700 mb-2">Mode of Communication Preference</p>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+                                <label for="commEmail" class="flex items-center gap-2 cursor-pointer">
+                                    <input id="commEmail" name="communication" type="radio" value="Email"
+                                        class="h-4 w-4 text-blue-600 border-gray-300">
+                                    <span class="text-gray-700 text-sm">Email</span>
+                                </label>
+
+                                <label for="commWhatsApp" class="flex items-center gap-2 cursor-pointer">
+                                    <input id="commWhatsApp" name="communication" type="radio" value="WhatsApp"
+                                        class="h-4 w-4 text-blue-600 border-gray-300">
+                                    <span class="text-gray-700 text-sm">WhatsApp</span>
+                                </label>
+
+                                <label for="commCall" class="flex items-center gap-2 cursor-pointer">
+                                    <input id="commCall" name="communication" type="radio" value="Call"
+                                        class="h-4 w-4 text-blue-600 border-gray-300">
+                                    <span class="text-gray-700 text-sm">Call</span>
+                                </label>
+
+                                <label for="commZoom" class="flex items-center gap-2 cursor-pointer">
+                                    <input id="commZoom" name="communication" type="radio" value="Zoom"
+                                        class="h-4 w-4 text-blue-600 border-gray-300">
+                                    <span class="text-gray-700 text-sm">Zoom</span>
+                                </label>
+
+                            </div>
                         </div>
 
-                        <div>
-                            <label for="contactNumber" class="block text-sm font-medium text-gray-700 mb-1">
-                                Contact Number (With Country Code) *
-                            </label>
-                            <input id="contactNumber" type="tel" required
-                                class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
-                        </div>
-                    </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <!-- Country -->
-                        <div>
-                            <label for="country" class="block text-sm font-medium text-gray-700 mb-1">Country of Operation
-                                *</label>
-                            <input id="country" type="text" required
-                                class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                        <!-- Submit Button -->
+                        <div class="flex justify-end">
+                            <button type="submit"
+                                class="w-full md:w-auto px-8 py-3 bg-[#0E84C2] text-white rounded-lg hover:bg-[#006195] transition font-medium cursor-pointer">
+                                Submit
+                            </button>
                         </div>
 
-                        <!-- Type of Requirement -->
-                        <div>
-                            <label for="requirementType" class="block text-sm font-medium text-gray-700 mb-1">Type of
-                                Requirement
-                                *</label>
-                            <select id="requirementType" required
-                                class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
-                                <option value="">Select an option</option>
-                                <option>International Business Inquiry</option>
-                                <option>Product / Pricing Inquiry</option>
-                                <option>Tender / Bulk Requirement</option>
-                                <option>OEM / Private Label</option>
-                                <option>Supplier Registration</option>
-                                <option>Partnership / Collaboration</option>
-                                <option>Accounts & Finance</option>
-                                <option>Logistics & Shipping</option>
-                                <option>Purchase Department</option>
-                                <option>HR & Recruitment</option>
-                                <option>General Support</option>
-                                <option>Other</option>
-                            </select>
+                    </form>
+                </div>
+                <div class="w-2/6">
+                    <h4 class="lg:text-2xl text-xl font-semibold text-gray-700 text-center mb-4">Get In Touch</h4>
+                    <div class="flex flex-col gap-4">
+                        <div class="border border-gray-200 rounded p-4">
+                            <h5 class="text-xl text-[#083866] mb-2 font-medium">Office Address</h5>
+                            <span class="flex justify-start items-center gap-3 text-gray-600 text-base"><i
+                                    class="fa-solid fa-location-dot"></i> 114/115, First Floor, Vishwadeep Tower,
+                                District Centre, Janak Puri, New Delhi-110058 (INDIA)</span>
+                        </div>
+                        <div class="border border-gray-200 rounded p-4">
+                            <h5 class="text-xl text-[#083866] mb-2 font-medium">Call Us</h5>
+                            <span class="flex justify-start items-center gap-3 text-gray-600 text-base"><i
+                                    class="fa-solid fa-phone"></i> 011-49404331</span>
+                        </div>
+                        <div class="border border-gray-200 rounded p-4">
+                            <h5 class="text-xl text-[#083866] mb-2 font-medium">Email Support</h5>
+                            <span class="flex justify-start items-center gap-3 text-gray-600 text-base"><i
+                                    class="fa-solid fa-message"></i>info@manartiexports.com</span>
                         </div>
                     </div>
-
-                   
-
-                   
-
-                    <!-- Requirement Box -->
-                    <div>
-                        <label for="detailedReq" class="block text-sm font-medium text-gray-700 mb-1">
-                            Detailed Requirement / Product List
-                        </label>
-                        <textarea id="detailedReq" rows="5"
-                            placeholder="Please specify products, quantities, and delivery timeline."
-                            class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"></textarea>
-                    </div>
-
-                    <!-- File Upload -->
-                    <div>
-                        <label for="rfqFile" class="block text-sm font-medium text-gray-700 mb-1">Upload RFQ / Tender
-                            File</label>
-                        <input id="rfqFile" type="file" accept=".pdf,.xlsx,.xls,.csv,.doc,.docx"
-                            class="w-full p-3 border border-gray-300 rounded-lg bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
-                        <p class="text-xs text-gray-500 mt-1">PDFs, Excel Sheets, Technical Specs allowed.</p>
-                    </div>
-
-                    <!-- Communication Preference -->
-                    <div>
-                        <p class="block text-sm font-medium text-gray-700 mb-2">Mode of Communication Preference</p>
-
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-
-                            <label for="commEmail" class="flex items-center gap-2 cursor-pointer">
-                                <input id="commEmail" name="communication" type="radio" value="Email"
-                                    class="h-4 w-4 text-blue-600 border-gray-300">
-                                <span class="text-gray-700 text-sm">Email</span>
-                            </label>
-
-                            <label for="commWhatsApp" class="flex items-center gap-2 cursor-pointer">
-                                <input id="commWhatsApp" name="communication" type="radio" value="WhatsApp"
-                                    class="h-4 w-4 text-blue-600 border-gray-300">
-                                <span class="text-gray-700 text-sm">WhatsApp</span>
-                            </label>
-
-                            <label for="commCall" class="flex items-center gap-2 cursor-pointer">
-                                <input id="commCall" name="communication" type="radio" value="Call"
-                                    class="h-4 w-4 text-blue-600 border-gray-300">
-                                <span class="text-gray-700 text-sm">Call</span>
-                            </label>
-
-                            <label for="commZoom" class="flex items-center gap-2 cursor-pointer">
-                                <input id="commZoom" name="communication" type="radio" value="Zoom"
-                                    class="h-4 w-4 text-blue-600 border-gray-300">
-                                <span class="text-gray-700 text-sm">Zoom</span>
-                            </label>
-
-                        </div>
-                    </div>
-
-                    <!-- Submit Button -->
-                    <div>
-                        <button type="submit"
-                            class="w-full md:w-auto px-8 py-3 bg-[#0E84C2] text-white rounded-lg hover:bg-[#006195] transition font-medium cursor-pointer">
-                            Submit
-                        </button>
-                    </div>
-
-                </form>
+                </div>
             </div>
         </section>
+
+        <div class="w-full h-[350px] md:h-[450px] overflow-hidden shadow-lg">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.0877228792577!2d77.08077431508068!3d28.629726982418586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d04b8cefa7fa1%3A0x3c6f3d0bbf43af79!2sVishwadeep%20Tower%2C%20Janakpuri%2C%20New%20Delhi%2C%20Delhi%20110058!5e0!3m2!1sen!2sin!4v1730000000000"
+                width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
 
 
         <footer class="bg-[#083866] text-gray-300 pt-16 pb-8 px-6 md:px-12">

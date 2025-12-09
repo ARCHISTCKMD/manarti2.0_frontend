@@ -1068,7 +1068,7 @@
 
         <!-- Popup Box -->
         <div id="popupBox"
-            class="bg-white rounded-xl shadow-lg w-[90%] md:w-[70%] lg:w-[60%] max-w-4xl transform scale-95 opacity-0 transition-all duration-300 ease-in-out border-gray-50 p-2">
+            class="bg-white rounded-xl shadow-lg w-[90%] md:w-[70%] lg:w-[75%] max-w-4xl transform scale-95 opacity-0 transition-all duration-300 ease-in-out border-gray-50 p-2">
             <div class="flex flex-col md:flex-row">
 
                 <!-- Left Side: Contact Info -->
@@ -1096,26 +1096,26 @@
                 </div> -->
 
                 <!-- Right Side: Form -->
-                <div class="lg:p-6 p-4 md:w-full overflow-y-auto max-h-[90vh] customScrollbar">
-                    <div class="flex justify-between items-center lg:mb-4 mb-2 border-b border-gray-200 pb-2">
-                        <h4 class="text-xl font-semibold text-gray-800">Medical-suturesss</h4>
+                <div class="lg:p-6 p-4 md:w-full overflow-y-auto max-h-[95vh] customScrollbar">
+                    <div class="flex justify-between items-center mb-2 border-b border-gray-200 pb-2">
+                        <h4 class="text-xl font-medium text-gray-800">Medical-suturesss</h4>
                         <button id="closePopup"
                             class="text-gray-700 text-3xl font-normal bg-transparent px-2 rounded transition-all duration-300 cursor-pointer hover:bg-gray-100">&times;</button>
                     </div>
 
-                    <form class="space-y-6 pt-4">
+                    <form class="space-y-4 pt-4">
                         <!-- Full Name -->
 
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:gap-8 gap-3">
                             <div class="form-input">
                                 <label class="text-sm text-gray-600">Full Name *</label>
-                                <input type="text" placeholder="" required
+                                <input type="text" id="fullName" name="fullName" placeholder="" required
                                     class="w-full border-b border-gray-300 py-1 focus:outline-none focus:border-[#0E84C2] placeholder:text-sm placeholder:text-gray-400">
                             </div>
 
                             <div class="form-input">
                                 <label class="text-sm text-gray-600">Email Address *</label>
-                                <input type="email" placeholder="" required
+                                <input type="email" id="email" name="email" placeholder="" required
                                     class="w-full border-b border-gray-300 py-1 focus:outline-none focus:border-[#0E84C2] placeholder:text-sm placeholder:text-gray-400">
                             </div>
                         </div>
@@ -1125,14 +1125,15 @@
                             <!-- Company / Hospital Name -->
                             <div class="form-input">
                                 <label class="text-sm text-gray-600">Company / Hospital Name *</label>
-                                <input type="text" placeholder="" required
+                                <input type="text" id="company" name="company" placeholder="" required
                                     class="w-full border-b border-gray-300 py-1 focus:outline-none focus:border-[#0E84C2] placeholder:text-sm placeholder:text-gray-400">
                             </div>
 
                             <!-- WhatsApp Number -->
                             <div class="form-input">
                                 <label class="text-sm text-gray-600">WhatsApp Number *</label>
-                                <input type="text" placeholder="+91 98765 43210" required
+                                <input type="text" id="whatsappNum" name="whatsappNum" placeholder="+91 98765 43210"
+                                    required
                                     class="w-full border-b border-gray-300 py-1 focus:outline-none focus:border-[#0E84C2] placeholder:text-xs placeholder:text-gray-400">
                             </div>
                         </div>
@@ -1141,25 +1142,19 @@
                             <!-- Country -->
                             <div class="form-input">
                                 <label class="text-sm text-gray-600">Country *</label>
-                                <input type="text" placeholder="" required
+                                <input type="text" id="country" name="country" placeholder="" required
                                     class="w-full border-b border-gray-300 py-1 focus:outline-none focus:border-[#0E84C2] placeholder:text-sm placeholder:text-gray-400">
                             </div>
 
-                            <!-- Quantity Required -->
-                            <div class="form-input">
-                                <label class="text-sm text-gray-600">Quantity Required (Approx.) *</label>
-                                <input type="text" placeholder="Minimum order quantities" required
-                                    class="w-full border-b border-gray-300 py-1 focus:outline-none focus:border-[#0E84C2] placeholder:text-xs placeholder:text-gray-400">
-                            </div>
-                        </div>
 
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:gap-8 gap-3">
+                        </div>
+                        <div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-8 gap-3">
                             <!-- Intended Use -->
                             <div class="form-input">
                                 <label class="text-sm text-gray-600">Intended Use *</label>
-                                <select required
-                                    class="w-full border-b border-gray-300 py-1 focus:outline-none focus:border-[#0E84C2] placeholder:text-xs placeholder:text-gray-400">
-                                    <option value="" disabled selected style="color:#9ca3af; font-size:12px;">Select an
+                                <select required id="intendedUse" name="intendedUse"
+                                    class="w-full border-b border-gray-300 py-1 focus:outline-none focus:border-[#0E84C2] placeholder:text-xs placeholder:text-gray-400 custom-select">
+                                    <option value="" disabled selected>Select an
                                         option</option>
                                     <option>Hospital Supply</option>
                                     <option>Distribution</option>
@@ -1170,13 +1165,20 @@
                                 </select>
                             </div>
 
+                            <!-- Quantity Required -->
+                            <div class="form-input">
+                                <label class="text-sm text-gray-600">Quantity Required (Approx.) *</label>
+                                <input type="text" id="quantityReq" name="quantityReq"
+                                    placeholder="Minimum order quantities" required
+                                    class="w-full border-b border-gray-300 py-1 focus:outline-none focus:border-[#0E84C2] placeholder:text-xs placeholder:text-gray-400">
+                            </div>
                             <!-- Upload Requirement File (Optional) -->
                             <div class="form-input flex justify-center flex-col items-center">
                                 <p class="mb-2 text-sm text-gray-600 w-full text-left">Upload Requirement</p>
                                 <label for="fileUpload"
-                                    class="flex items-center justify-center gap-2 px-5 py-3 bg-gray-200 text-gray-700 rounded-lg cursor-pointer hover:bg-[#0AB0B3] hover:text-white transition w-full">
-                                    <i class="fa-solid fa-upload"></i>
-                                    <span>Upload File</span>
+                                    class="flex items-center justify-center gap-2 px-5 py-2 bg-gray-200 text-gray-700 rounded-lg cursor-pointer hover:bg-[#0AB0B3] hover:text-white transition w-full">
+                                    <i class="fa-solid fa-upload text-xs"></i>
+                                    <span id='fileLable' class="text-xs">Upload File</span>
                                 </label>
 
                                 <input id="fileUpload" type="file" class="hidden" />
@@ -1185,41 +1187,18 @@
 
 
 
-                        <!-- Product Name (Auto Filler) -->
-                        <!-- <div class="form-input">
-                            <label class="text-sm text-gray-300">Product Name (Auto Filler) *</label>
-                            <input type="text" placeholder="Automatically filled product name" required
-                                class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-[#0E84C2]">
-                        </div> -->
-
-
-
-
-
-                        <!-- <div class="form-input">
-                            <label class="text-sm text-gray-300">Upload Requirement File (Optional)</label>
-                            <input type="file" accept=".pdf,.xlsx,.xls,.csv,.doc,.docx,.png,.jpg,.jpeg"
-                                class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-[#0E84C2]">
-                            <p class="text-xs text-gray-500 mt-1">Upload RFQ / Specs / Images</p>
-                        </div> -->
-
-
-                        <!-- Delivery Port -->
-                        <div class="form-input">
-                            <label class="text-sm text-gray-600">Delivery Port / Airport (If known)</label>
-                            <input type="text" placeholder="e.g., Mombasa Port, Dubai Airport, Dar es Salaam Port"
-                                class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-[#0E84C2] placeholder:text-xs placeholder:text-gray-400">
-                        </div>
-
                         <!-- Additional Notes -->
                         <div class="form-input">
                             <label class="text-sm text-gray-600">Additional Notes (Optional)</label>
-                            <textarea rows="4" placeholder="Write additional requirements or instructions"
+                            <textarea id="additionalNotes" name="additionalNotes" rows="3"
+                                placeholder="Write additional requirements or instructions"
                                 class="w-full border-b border-gray-300 py-1 focus:outline-none focus:border-[#0E84C2] placeholder:text-xs placeholder:text-gray-400"></textarea>
                         </div>
+                        <div class="flex justify-end">
                         <button type="submit"
                             class="bg-[#0E84C2] text-white rounded-lg hover:[bg-[#0E84C2]] transition cursor-pointer mt-4 py-3 px-6">Send
                             Message</button>
+                            </div>
                     </form>
                 </div>
             </div>
@@ -1279,6 +1258,17 @@
         document.querySelector(".close_sidebar, .sidebar-backdrop").addEventListener("click", function () {
             document.querySelector("body").classList.remove("sidebarOpened");
         });
+
+        const fileInput = document.getElementById("fileUpload");
+        const fileName = document.getElementById("fileLable");
+        if (fileInput) {
+            fileInput.addEventListener('change', () => {
+                console.log("file name", fileInput?.files[0]?.name)
+                fileLable.textContent = fileInput.files.length > 0
+                    ? fileInput.files[0].name
+                    : "Upload File";
+            })
+        }
     </script>
 
     <div class="sidebar-backdrop"></div>
