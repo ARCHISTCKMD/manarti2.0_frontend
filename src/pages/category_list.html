@@ -1145,6 +1145,13 @@
                                 <input type="text" id="country" name="country" placeholder="" required
                                     class="w-full border-b border-gray-300 py-1 focus:outline-none focus:border-[#0E84C2] placeholder:text-sm placeholder:text-gray-400">
                             </div>
+                            <!-- Delivery Port / Airport (If known) -->
+                            <div class="form-input">
+                                <label class="text-sm text-gray-600">Delivery Port / Airport (If known)</label>
+                                <input type="text" id="deliveryPort" name="deliveryPort"
+                                    placeholder="e.g., Mombasa Port, Dubai Airport, Dar es Salaam Port" required
+                                    class="w-full border-b border-gray-300 py-1 focus:outline-none focus:border-[#0E84C2] placeholder:text-sm placeholder:text-gray-400">
+                            </div>
 
 
                         </div>
@@ -1180,7 +1187,6 @@
                                     <i class="fa-solid fa-upload text-xs"></i>
                                     <span id='fileLable' class="text-xs">Upload File</span>
                                 </label>
-
                                 <input id="fileUpload" type="file" class="hidden" />
                             </div>
                         </div>
@@ -1195,10 +1201,10 @@
                                 class="w-full border-b border-gray-300 py-1 focus:outline-none focus:border-[#0E84C2] placeholder:text-xs placeholder:text-gray-400"></textarea>
                         </div>
                         <div class="flex justify-end">
-                        <button type="submit"
-                            class="bg-[#0E84C2] text-white rounded-lg hover:[bg-[#0E84C2]] transition cursor-pointer mt-4 py-3 px-6">Send
-                            Message</button>
-                            </div>
+                            <button type="submit"
+                                class="bg-[#0E84C2] text-white rounded-lg hover:[bg-[#0E84C2]] transition cursor-pointer mt-4 py-3 px-6">Send
+                                Message</button>
+                        </div>
                     </form>
                 </div>
             </div>

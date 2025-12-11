@@ -542,9 +542,8 @@
                         </ul>
                     </div>
                 </div>
-
                 <!-- RIGHT SIDE BANNER (75%) -->
-                <div class="lg:col-span-3 md:col-span-2 border border-[#E7E7E7] border-l-0 catalogue_banner p-4 ">
+                <div class="lg:col-span-3 md:col-span-2 border border-[#E7E7E7] border-l-0 catalogue_banner lg:p-4 p-2">
                     <div class="text-center">
                         <h4 class="text-[#0CB3B1] text-xl font-medium mb-6 inline-block border-b-2 pb-1">Medical
                             Disposable</h4>
@@ -726,7 +725,6 @@
                     </div>
 
                 </div>
-
             </div>
         </section>
 
@@ -1047,7 +1045,7 @@
             class="bg-white rounded-xl shadow-lg w-[90%] md:w-[70%] lg:w-[60%] max-w-4xl transform scale-95 opacity-0 transition-all duration-300 ease-in-out border-gray-50 overflow-hidden">
 
             <div class="flex items-center justify-between border-b bg-[#0889C3] p-4">
-                <h2 class="text-xl font-semibold text-white">Download Form</h2>
+                <h2 class="text-xl font-semibold text-white">Medical Disposable</h2>
                 <button id="closePopupBtn" class="text-white hover:bg-[#7ecaed7c] transition cursor-pointer rounded">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
@@ -1191,7 +1189,8 @@
                         <!-- Submit Button -->
                         <div class="flex justify-end">
                             <button type="submit"
-                                class="w-full md:w-auto px-8 py-3 bg-[#0E84C2] text-white rounded-lg hover:bg-[#006195] transition font-medium cursor-pointer">
+                                class="w-full md:w-auto px-8 py-3 bg-[#0E84C2] text-white rounded-lg hover:bg-[#006195] transition font-medium cursor-pointer"><i
+                                    class="fa-solid fa-cloud-arrow-up"></i>
                                 Download Now
                             </button>
                         </div>
@@ -1249,6 +1248,22 @@
         };
 
         closePopup.addEventListener('click', closePopupFunc);
+
+        // function formOpnCls(e, fromBody, addC) {
+        //     const form = document.querySelector('#' + fromBody);
+        //     const modalForm = form.childNodes[0];
+        //     console.log("clicked", form)
+        //     console.log("clicked", modalForm)
+        //     if (form) {
+        //         if (form.classList.contains("hidden")) {
+        //             form.classList.add(addC)
+        //             form.classList.remove('hidden')
+        //         } else {
+        //             form.classList.add('hidden')
+        //             form.classList.remove(addC)
+        //         }
+        //     }
+        // }
 
         // Close popup when clicking outside the box
         overlay.addEventListener('click', (e) => {
