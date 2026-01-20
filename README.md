@@ -1,5 +1,4 @@
-# manarti2.0_frontend
-
+# inertialTech_frontend
 
 //*** home page changes
 //navbar
